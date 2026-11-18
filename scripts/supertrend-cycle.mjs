@@ -113,6 +113,9 @@ function fail(code, msg) {
   process.exit(2);
 }
 
+// Cloud migration guard: exactly one scheduler may produce plans. Cloud deployments set ATLAS_CLOUD=1.
+if (process.env.ATLAS_CLOUD !== '1') fail('LOCAL_EXECUTION_DISABLED', 'Cycles run in the cloud deployment; set ATLAS_CLOUD=1 to run here.');
+
 const account = live.account ?? (live.accounts ?? [])[0];
 const title = String(account?.account_title ?? '').toLowerCase();
 const gateOk = cfg.account.matchTokens.every((t) => title.includes(t));
