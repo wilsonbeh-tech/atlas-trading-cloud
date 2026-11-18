@@ -138,3 +138,37 @@ Template `files` snapshots and local-sync uploads were considered: the first is 
 - **8d. Order permission in cloud:** confirm `sim_trade_input_order` may be enabled for the cloud agent once shadow mode passes (it is already exposed; it stays unused until cutover).
 
 I will not create the repo, move a PAT, edit the environment, disable the local cron jobs, or submit an order from a cloud session until you answer 8a–8d.
+
+## 9. Cutover record — executed 2026-11-18 15:03–15:07Z
+
+Answers received: 8a approved (repo `wilsonbeh-tech/atlas-trading-cloud`, PAT supplied), 8c/8d approved by "proceed migration and all necessary action". 8b not needed — Node v22.23.2 was already present.
+
+### What was proven before cutover
+
+| Test | Session | Result |
+|---|---|---|
+| Cloud git push to `main` | `sess_00vvmhczmyubl5nmn2pe` | **PASS** — `d919dc5..46dbbb6`; probe commit removed afterwards |
+| Cloud push with no PAT env var | `sess_00vvmokh68a9sglgzi5d` | **PASS** — the image installs a repo-scoped credential helper; branch `probe-no-token` pushed then deleted |
+| Shadow cycle (no submit, no commit) | `sess_00vvmgiblvif4ruxbin9` | **PASS** — gate PASS, equity 100,086.725, MSFT 17 stop 449.85, AMZN 29 stop 224.26, `orders: []`, `rejected: []`, exit 0, plan sha256 `c18e8856…` |
+
+### Live resources
+
+| Kind | Id | Notes |
+|---|---|---|
+| Agent "Atlas Trend Runner (paper)" | `agent_00vvk2cl5ci6813bexu2` v4 | Bash/Read/Write/Edit/Glob/Grep; `sim_trade_input_order` **enabled**; `trading_order_*`, `crypto_*`, `sim_trade_modify/cancel` **denied** |
+| Deployment "Atlas Trend Intraday (cloud)" | `dep_00vvmuz2fahvkfrnwjwp` | cron `35 9-15 * * 1-5` America/New_York, active |
+| Deployment "Atlas Trend EOD (cloud)" | `dep_00vvmvi1yjgg0ah3dbbw` | cron `5 16 * * 1-5` America/New_York, active |
+| Template (unused, superseded by deployments) | `tmpl_bac79a800a1ca032b01515c5` | archived; deployments are the live path (Forward schedules need an `identity_id` this account does not have) |
+| Environment / Vault / repo | `env_00vo9r477f66985sihxo`, `vault_00vv31hdfn5s09u2oa1c`, `wilsonbeh-tech/atlas-trading-cloud` | state of record = git `main` |
+
+Both deployments export `ATLAS_CLOUD=1`, which the cycle script now requires; a run without it writes a blocked plan with empty orders and exits 2.
+
+### EOD kline path
+
+`scripts/refresh-klines.sh` needs the local moomoo CLI, so it cannot run in the cloud. Replacement: the EOD run calls `quote_cur_kline {symbol, num: 3, ktype: 2}` for each of the 24 symbols, writes the raw payloads to `data/raw/klines-moomoo/_incoming/US.<SYM>.json`, then runs `node scripts/klines-apply.mjs --require-date <NY date>`. That script upserts bars by date into the committed 370-bar files, refuses to rewrite history with older bars, and exits non-zero unless every symbol reached the requested date.
+
+### Known leftovers
+
+- The two local Qoder automations (`1208de8e-…`, `bcf3b210-…`) are not exposed to any API; they still fire, but the `ATLAS_CLOUD` guard makes each one a no-op that submits nothing. Switch them off in the app UI when convenient.
+- The PAT was pasted in plain text into the chat; rotate it after 2026-11-27. It is stored only in the deployment `resources.authorization_token` (never in git).
+- Deployments pin agent version 4, so later agent edits do not affect scheduled runs until the deployment is updated.

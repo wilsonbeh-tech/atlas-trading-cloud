@@ -36,15 +36,19 @@ Windows: `scripts\momo-node.cmd`.
 
 ## Automation config record
 
+**Primary executor since 2026-11-18T15:07Z: Qoder Cloud Agents deployments.** State of record is the git remote `wilsonbeh-tech/atlas-trading-cloud` (`main`); every run pulls, runs and pushes.
+
 | Field | Value |
 |---|---|
-| Configured at | 2026-11-18T13:56Z by the operator session (agent:default) |
-| Strategy config | `config/supertrend.json` v1.0.0 (new; `config/strategy.json` unchanged) |
-| Runner | `scripts/supertrend-cycle.mjs` (deterministic; decisions traceable to spec) |
-| Intraday job | `Atlas Trend Intraday (hourly)`, id `1208de8e-d0fd-46aa-9999-5689d410dc74`, cron `35 14-20 * * 1-5` UTC |
-| EOD job | `Atlas Trend EOD stop recompute`, id `f59ee3d2-dfab-42b8-9e09-ae547933a0db` (recreated 2026-11-18T14:39Z after the prior job id was deleted externally), cron `5 21 * * 1-5` UTC |
-| Expiry | 2026-11-28T22:00:00Z |
-| Permissions | Full Access (bypassPermissions), local execution, independent conversations |
+| Configured at | 2026-11-18T15:07Z by the operator session (cloud cutover) |
+| Strategy config | `config/supertrend.json` v1.0.0 (`config/strategy.json` unchanged) |
+| Runner | `scripts/supertrend-cycle.mjs` (requires `ATLAS_CLOUD=1`; without it the run is blocked with an empty plan) |
+| Cloud agent | `Atlas Trend Runner (paper)` `agent_00vvk2cl5ci6813bexu2` v4 — `sim_trade_input_order` allowed, all other order/crypto tools denied |
+| Intraday deployment | `Atlas Trend Intraday (cloud)` `dep_00vvmuz2fahvkfrnwjwp` — cron `35 9-15 * * 1-5` America/New_York |
+| EOD deployment | `Atlas Trend EOD (cloud)` `dep_00vvmvi1yjgg0ah3dbbw` — cron `5 16 * * 1-5` America/New_York; refreshes klines via MCP + `scripts/klines-apply.mjs` |
+| Environment / Vault | `env_00vo9r477f66985sihxo` / `vault_00vv31hdfn5s09u2oa1c` |
+| Local automations (superseded) | `1208de8e-d0fd-46aa-9999-5689d410dc74`, `f59ee3d2-dfab-42b8-9e09-ae547933a0db` — still fire, but the `ATLAS_CLOUD` guard makes them no-ops |
+| Expiry | Last session 2026-11-27; stop the cloud deployments then |
 | Backup | `backups/2026-11-18T1340Z/` (AGENTS.md, strategy.json, docs, prior cron job) |
 
 ## If blocked
