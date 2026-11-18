@@ -1,7 +1,7 @@
 {
   "source": "mcp-agent",
-  "capturedAt": "2026-11-18T14:36:40Z",
-  "sessionNote": "US session open; America/New_York 09:36 Wed 2026-11-18",
+  "capturedAt": "2026-11-18T15:07:21Z",
+  "sessionNote": "US regular session open (10:07 ET Wed 2026-11-18); America/New_York 2026-11-18",
   "account": {
     "account_id": "5830107",
     "account_title": "Moomoo x Qoder AI Paper Trading Agent Challenge",
@@ -9,56 +9,482 @@
     "account_type": 2
   },
   "cash": {
-    "total_asset": 100037.97,
+    "total_asset": 100155.942,
     "balance": 83901.15,
     "hold": 0,
-    "long_mv": 16136.82,
+    "long_mv": 16254.792,
     "short_mv": 0,
-    "mv": 16136.82,
-    "max_power_long": 183939.12
+    "mv": 16254.792,
+    "max_power_long": 184057.092
   },
   "positions": [
-    { "symbol": "MSFT", "code": "US.MSFT", "stock_name": "Microsoft", "qty": "17", "qty_avbl": "17", "cost_price": "505", "buy_avg_price": "505", "cur_price": "504.885", "market_val": "8583.045", "mv": "8583.045", "unrealized_pl": "-1.955", "unrealized_pl_ratio": "-0.022772277227722775", "market": 100, "pstn_id": "728621", "pstn_type": 0 },
-    { "symbol": "AMZN", "code": "US.AMZN", "stock_name": "Amazon", "qty": "29", "qty_avbl": "29", "cost_price": "259.03", "buy_avg_price": "259.03", "cur_price": "260.475", "market_val": "7553.775", "mv": "7553.775", "unrealized_pl": "41.905", "unrealized_pl_ratio": "0.5578504420337413", "market": 100, "pstn_id": "728622", "pstn_type": 0 }
+    {
+      "symbol": "MSFT",
+      "code": "US.MSFT",
+      "stock_name": "Microsoft",
+      "qty": "17",
+      "qty_avbl": "17",
+      "cost_price": "505",
+      "buy_avg_price": "505",
+      "cur_price": "506.48",
+      "market_val": "8610.16",
+      "mv": "8610.16",
+      "unrealized_pl": "25.16",
+      "unrealized_pl_ratio": "0.29306930693069305",
+      "market": 100,
+      "pstn_id": "728621",
+      "pstn_type": 0
+    },
+    {
+      "symbol": "AMZN",
+      "code": "US.AMZN",
+      "stock_name": "Amazon",
+      "qty": "29",
+      "qty_avbl": "29",
+      "cost_price": "259.03",
+      "buy_avg_price": "259.03",
+      "cur_price": "263.608",
+      "market_val": "7644.632",
+      "mv": "7644.632",
+      "unrealized_pl": "132.762",
+      "unrealized_pl_ratio": "1.7673628537235073",
+      "market": 100,
+      "pstn_id": "728622",
+      "pstn_type": 0
+    }
   ],
   "quotes": [
-    { "code": "US.SPY", "last_price": 732.2055, "open_price": 733.49, "low_price": 732.17, "high_price": 735.06, "prev_close_price": 732.44, "volume": 3844015, "data_date": "2026-11-18", "data_time": 1795012593931, "suspension": false, "pre_market": { "price": 733.55, "change_rate": 0.151 } },
-    { "code": "US.QQQ", "last_price": 657.82, "open_price": 661.03, "low_price": 657.75, "high_price": 662.65, "prev_close_price": 656.95, "volume": 4418629, "data_date": "2026-11-18", "data_time": 1795012593969, "suspension": false, "pre_market": { "price": 661.17, "change_rate": 0.642 } },
-    { "code": "US.IWM", "last_price": 269.2079, "open_price": 268.09, "low_price": 267.9, "high_price": 269.38, "prev_close_price": 269.05, "volume": 1762608, "data_date": "2026-11-18", "data_time": 1795012593783, "suspension": false, "pre_market": { "price": 268.11, "change_rate": -0.349 } },
-    { "code": "US.SMH", "last_price": 459.15, "open_price": 468, "low_price": 459.15, "high_price": 469.5, "prev_close_price": 460.1, "volume": 893752, "data_date": "2026-11-18", "data_time": 1795012592512, "suspension": false, "pre_market": { "price": 468, "change_rate": 1.717 } },
-    { "code": "US.TLT", "last_price": 79.97, "open_price": 79.9, "low_price": 79.82, "high_price": 79.975, "prev_close_price": 79.55, "volume": 2114305, "data_date": "2026-11-18", "data_time": 1795012593165, "suspension": false, "pre_market": { "price": 79.89, "change_rate": 0.427 } },
-    { "code": "US.GLD", "last_price": 345.11, "open_price": 346.27, "low_price": 345.03, "high_price": 346.31, "prev_close_price": 352.48, "volume": 1659235, "data_date": "2026-11-18", "data_time": 1795012593774, "suspension": false, "pre_market": { "price": 346.2, "change_rate": -1.781 } },
-    { "code": "US.XLE", "last_price": 62.18, "open_price": 63.12, "low_price": 62.18, "high_price": 63.28, "prev_close_price": 63.36, "volume": 3538837, "data_date": "2026-11-18", "data_time": 1795012593406, "suspension": false, "pre_market": { "price": 63.05, "change_rate": -0.489 } },
-    { "code": "US.XLF", "last_price": 56.99, "open_price": 56.8, "low_price": 56.7109, "high_price": 57.01, "prev_close_price": 57.07, "volume": 2768383, "data_date": "2026-11-18", "data_time": 1795012593600, "suspension": false, "pre_market": { "price": 56.82, "change_rate": -0.438 } },
-    { "code": "US.XLK", "last_price": 163.22, "open_price": 164.79, "low_price": 163.18, "high_price": 165.39, "prev_close_price": 163.26, "volume": 1365124, "data_date": "2026-11-18", "data_time": 1795012592991, "suspension": false, "pre_market": { "price": 164.79, "change_rate": 0.937 } },
-    { "code": "US.XLV", "last_price": 185.07, "open_price": 183.73, "low_price": 183.56, "high_price": 185.25, "prev_close_price": 185.24, "volume": 1026645, "data_date": "2026-11-18", "data_time": 1795012590608, "suspension": false, "pre_market": { "price": 183.82, "change_rate": -0.766 } },
-    { "code": "US.XLY", "last_price": 118, "open_price": 117.41, "low_price": 117.23, "high_price": 118.14, "prev_close_price": 117.1, "volume": 561094, "data_date": "2026-11-18", "data_time": 1795012593691, "suspension": false, "pre_market": { "price": 117.34, "change_rate": 0.204 } },
-    { "code": "US.XLU", "last_price": 43.47, "open_price": 43.22, "low_price": 43.19, "high_price": 43.5, "prev_close_price": 43.42, "volume": 1106105, "data_date": "2026-11-18", "data_time": 1795012592685, "suspension": false, "pre_market": { "price": 43.23, "change_rate": -0.437 } },
-    { "code": "US.AAPL", "last_price": 354.94, "open_price": 352.05, "low_price": 351.87, "high_price": 355.87, "prev_close_price": 351.91, "volume": 2991668, "data_date": "2026-11-18", "data_time": 1795012593841, "suspension": false, "pre_market": { "price": 352.05, "change_rate": 0.039 } },
-    { "code": "US.MSFT", "last_price": 504.96, "open_price": 505.71, "low_price": 504.7, "high_price": 508.5, "prev_close_price": 506.24, "volume": 1050737, "data_date": "2026-11-18", "data_time": 1795012593618, "suspension": false, "pre_market": { "price": 505.97, "change_rate": -0.053 } },
-    { "code": "US.NVDA", "last_price": 155.965, "open_price": 159.23, "low_price": 155.86, "high_price": 159.7, "prev_close_price": 155.46, "volume": 47390646, "data_date": "2026-11-18", "data_time": 1795012593935, "suspension": false, "pre_market": { "price": 159.2, "change_rate": 2.405 } },
-    { "code": "US.AMZN", "last_price": 260.05, "open_price": 259.63, "low_price": 259.63, "high_price": 263.1, "prev_close_price": 257.89, "volume": 2394884, "data_date": "2026-11-18", "data_time": 1795012593887, "suspension": false, "pre_market": { "price": 259.65, "change_rate": 0.682 } },
-    { "code": "US.GOOGL", "last_price": 282.705, "open_price": 282.91, "low_price": 282.6105, "high_price": 284.9631, "prev_close_price": 280.2, "volume": 1900472, "data_date": "2026-11-18", "data_time": 1795012593821, "suspension": false, "pre_market": { "price": 282.91, "change_rate": 0.967 } },
-    { "code": "US.META", "last_price": 617.63, "open_price": 620, "low_price": 615.51, "high_price": 620.81, "prev_close_price": 618.87, "volume": 791830, "data_date": "2026-11-18", "data_time": 1795012593606, "suspension": false, "pre_market": { "price": 619, "change_rate": 0.021 } },
-    { "code": "US.AVGO", "last_price": 344.58, "open_price": 349.31, "low_price": 344.34, "high_price": 351.88, "prev_close_price": 341.6, "volume": 1543549, "data_date": "2026-11-18", "data_time": 1795012593072, "suspension": false, "pre_market": { "price": 349, "change_rate": 2.166 } },
-    { "code": "US.JPM", "last_price": 329.45, "open_price": 327.49, "low_price": 326.79, "high_price": 329.465, "prev_close_price": 329.96, "volume": 347151, "data_date": "2026-11-18", "data_time": 1795012592792, "suspension": false, "pre_market": { "price": 327, "change_rate": -0.897 } },
-    { "code": "US.LLY", "last_price": 1418.5, "open_price": 1404.62, "low_price": 1403.33, "high_price": 1422.99, "prev_close_price": 1415.55, "volume": 336998, "data_date": "2026-11-18", "data_time": 1795012592901, "suspension": false, "pre_market": { "price": 1404.7, "change_rate": -0.766 } },
-    { "code": "US.V", "last_price": 417.61, "open_price": 415.8, "low_price": 414.9314, "high_price": 417.88, "prev_close_price": 416.77, "volume": 406729, "data_date": "2026-11-18", "data_time": 1795012593176, "suspension": false, "pre_market": { "price": 416, "change_rate": -0.184 } },
-    { "code": "US.COST", "last_price": 1107.12, "open_price": 1105.14, "low_price": 1097.5, "high_price": 1108.73, "prev_close_price": 1110.08, "volume": 115278, "data_date": "2026-11-18", "data_time": 1795012590196, "suspension": false, "pre_market": { "price": 1104.61, "change_rate": -0.492 } },
-    { "code": "US.XOM", "last_price": 164.29, "open_price": 166.15, "low_price": 164.27, "high_price": 166.72, "prev_close_price": 167.21, "volume": 581359, "data_date": "2026-11-18", "data_time": 1795012592025, "suspension": false, "pre_market": { "price": 165.4817, "change_rate": -1.033 } }
+    {
+      "code": "US.SPY",
+      "last_price": 732.85,
+      "open_price": 733.49,
+      "low_price": 728.58,
+      "high_price": 735.06,
+      "prev_close_price": 732.44,
+      "data_date": "2026-11-18",
+      "data_time": 1795014441927,
+      "suspension": false,
+      "pre_market": {
+        "price": 733.55,
+        "change_rate": 0.151
+      }
+    },
+    {
+      "code": "US.QQQ",
+      "last_price": 660.25,
+      "open_price": 661.03,
+      "low_price": 653.8,
+      "high_price": 662.7987,
+      "prev_close_price": 656.95,
+      "data_date": "2026-11-18",
+      "data_time": 1795014442075,
+      "suspension": false,
+      "pre_market": {
+        "price": 661.17,
+        "change_rate": 0.642
+      }
+    },
+    {
+      "code": "US.IWM",
+      "last_price": 270.82,
+      "open_price": 268.09,
+      "low_price": 267.9,
+      "high_price": 271.64,
+      "prev_close_price": 269.05,
+      "data_date": "2026-11-18",
+      "data_time": 1795014441870,
+      "suspension": false,
+      "pre_market": {
+        "price": 268.11,
+        "change_rate": -0.349
+      }
+    },
+    {
+      "code": "US.SMH",
+      "last_price": 461.61,
+      "open_price": 468,
+      "low_price": 453.83,
+      "high_price": 469.5,
+      "prev_close_price": 460.1,
+      "data_date": "2026-11-18",
+      "data_time": 1795014441968,
+      "suspension": false,
+      "pre_market": {
+        "price": 468,
+        "change_rate": 1.717
+      }
+    },
+    {
+      "code": "US.TLT",
+      "last_price": 79.92,
+      "open_price": 79.9,
+      "low_price": 79.82,
+      "high_price": 80.155,
+      "prev_close_price": 79.55,
+      "data_date": "2026-11-18",
+      "data_time": 1795014441290,
+      "suspension": false,
+      "pre_market": {
+        "price": 79.89,
+        "change_rate": 0.427
+      }
+    },
+    {
+      "code": "US.GLD",
+      "last_price": 344.34,
+      "open_price": 346.27,
+      "low_price": 344.28,
+      "high_price": 346.31,
+      "prev_close_price": 352.48,
+      "data_date": "2026-11-18",
+      "data_time": 1795014442201,
+      "suspension": false,
+      "pre_market": {
+        "price": 346.2,
+        "change_rate": -1.781
+      }
+    },
+    {
+      "code": "US.XLE",
+      "last_price": 62.34,
+      "open_price": 63.12,
+      "low_price": 61.64,
+      "high_price": 63.28,
+      "prev_close_price": 63.36,
+      "data_date": "2026-11-18",
+      "data_time": 1795014441053,
+      "suspension": false,
+      "pre_market": {
+        "price": 63.05,
+        "change_rate": -0.489
+      }
+    },
+    {
+      "code": "US.XLF",
+      "last_price": 56.585,
+      "open_price": 56.8,
+      "low_price": 56.53,
+      "high_price": 57.01,
+      "prev_close_price": 57.07,
+      "data_date": "2026-11-18",
+      "data_time": 1795014439544,
+      "suspension": false,
+      "pre_market": {
+        "price": 56.82,
+        "change_rate": -0.438
+      }
+    },
+    {
+      "code": "US.XLK",
+      "last_price": 163.96,
+      "open_price": 164.79,
+      "low_price": 161.95,
+      "high_price": 165.39,
+      "prev_close_price": 163.26,
+      "data_date": "2026-11-18",
+      "data_time": 1795014441988,
+      "suspension": false,
+      "pre_market": {
+        "price": 164.79,
+        "change_rate": 0.937
+      }
+    },
+    {
+      "code": "US.XLV",
+      "last_price": 184.08,
+      "open_price": 183.73,
+      "low_price": 183.23,
+      "high_price": 185.285,
+      "prev_close_price": 185.24,
+      "data_date": "2026-11-18",
+      "data_time": 1795014441012,
+      "suspension": false,
+      "pre_market": {
+        "price": 183.82,
+        "change_rate": -0.766
+      }
+    },
+    {
+      "code": "US.XLY",
+      "last_price": 118.67,
+      "open_price": 117.41,
+      "low_price": 117.23,
+      "high_price": 119.155,
+      "prev_close_price": 117.1,
+      "data_date": "2026-11-18",
+      "data_time": 1795014439661,
+      "suspension": false,
+      "pre_market": {
+        "price": 117.34,
+        "change_rate": 0.204
+      }
+    },
+    {
+      "code": "US.XLU",
+      "last_price": 43.485,
+      "open_price": 43.22,
+      "low_price": 43.19,
+      "high_price": 43.61,
+      "prev_close_price": 43.42,
+      "data_date": "2026-11-18",
+      "data_time": 1795014437064,
+      "suspension": false,
+      "pre_market": {
+        "price": 43.23,
+        "change_rate": -0.437
+      }
+    },
+    {
+      "code": "US.AAPL",
+      "last_price": 354.73,
+      "open_price": 352.05,
+      "low_price": 351.87,
+      "high_price": 356.42,
+      "prev_close_price": 351.91,
+      "data_date": "2026-11-18",
+      "data_time": 1795014441076,
+      "suspension": false,
+      "pre_market": {
+        "price": 352.05,
+        "change_rate": 0.039
+      }
+    },
+    {
+      "code": "US.MSFT",
+      "last_price": 506.6,
+      "open_price": 505.71,
+      "low_price": 501.86,
+      "high_price": 508.5,
+      "prev_close_price": 506.24,
+      "data_date": "2026-11-18",
+      "data_time": 1795014441181,
+      "suspension": false,
+      "pre_market": {
+        "price": 505.97,
+        "change_rate": -0.053
+      }
+    },
+    {
+      "code": "US.NVDA",
+      "last_price": 155.1001,
+      "open_price": 159.23,
+      "low_price": 153.26,
+      "high_price": 159.7,
+      "prev_close_price": 155.46,
+      "data_date": "2026-11-18",
+      "data_time": 1795014442201,
+      "suspension": false,
+      "pre_market": {
+        "price": 159.2,
+        "change_rate": 2.405
+      }
+    },
+    {
+      "code": "US.AMZN",
+      "last_price": 263.82,
+      "open_price": 259.63,
+      "low_price": 259.63,
+      "high_price": 264.34,
+      "prev_close_price": 257.89,
+      "data_date": "2026-11-18",
+      "data_time": 1795014442277,
+      "suspension": false,
+      "pre_market": {
+        "price": 259.65,
+        "change_rate": 0.682
+      }
+    },
+    {
+      "code": "US.GOOGL",
+      "last_price": 283.775,
+      "open_price": 282.91,
+      "low_price": 281.41,
+      "high_price": 284.9631,
+      "prev_close_price": 280.2,
+      "data_date": "2026-11-18",
+      "data_time": 1795014441935,
+      "suspension": false,
+      "pre_market": {
+        "price": 282.91,
+        "change_rate": 0.967
+      }
+    },
+    {
+      "code": "US.META",
+      "last_price": 619.28,
+      "open_price": 620,
+      "low_price": 613.69,
+      "high_price": 620.81,
+      "prev_close_price": 618.87,
+      "data_date": "2026-11-18",
+      "data_time": 1795014439401,
+      "suspension": false,
+      "pre_market": {
+        "price": 619,
+        "change_rate": 0.021
+      }
+    },
+    {
+      "code": "US.AVGO",
+      "last_price": 349.185,
+      "open_price": 349.31,
+      "low_price": 340.74,
+      "high_price": 351.88,
+      "prev_close_price": 341.6,
+      "data_date": "2026-11-18",
+      "data_time": 1795014442271,
+      "suspension": false,
+      "pre_market": {
+        "price": 349,
+        "change_rate": 2.166
+      }
+    },
+    {
+      "code": "US.JPM",
+      "last_price": 327.93,
+      "open_price": 327.49,
+      "low_price": 326.79,
+      "high_price": 330.09,
+      "prev_close_price": 329.96,
+      "data_date": "2026-11-18",
+      "data_time": 1795014441742,
+      "suspension": false,
+      "pre_market": {
+        "price": 327,
+        "change_rate": -0.897
+      }
+    },
+    {
+      "code": "US.LLY",
+      "last_price": 1403.085,
+      "open_price": 1404.62,
+      "low_price": 1399.08,
+      "high_price": 1423.11,
+      "prev_close_price": 1415.55,
+      "data_date": "2026-11-18",
+      "data_time": 1795014440763,
+      "suspension": false,
+      "pre_market": {
+        "price": 1404.7,
+        "change_rate": -0.766
+      }
+    },
+    {
+      "code": "US.V",
+      "last_price": 413.265,
+      "open_price": 415.8,
+      "low_price": 412.93,
+      "high_price": 417.88,
+      "prev_close_price": 416.77,
+      "data_date": "2026-11-18",
+      "data_time": 1795014441268,
+      "suspension": false,
+      "pre_market": {
+        "price": 416,
+        "change_rate": -0.184
+      }
+    },
+    {
+      "code": "US.COST",
+      "last_price": 1107.72,
+      "open_price": 1105.14,
+      "low_price": 1097.5,
+      "high_price": 1110.45,
+      "prev_close_price": 1110.08,
+      "data_date": "2026-11-18",
+      "data_time": 1795014431678,
+      "suspension": false,
+      "pre_market": {
+        "price": 1104.61,
+        "change_rate": -0.492
+      }
+    },
+    {
+      "code": "US.XOM",
+      "last_price": 164.6351,
+      "open_price": 166.15,
+      "low_price": 162.45,
+      "high_price": 166.72,
+      "prev_close_price": 167.21,
+      "data_date": "2026-11-18",
+      "data_time": 1795014442123,
+      "suspension": false,
+      "pre_market": {
+        "price": 165.4817,
+        "change_rate": -1.033
+      }
+    }
   ],
   "open_orders": [],
   "cancelled_today": [
-    { "order_id": "3249211", "symbol": "US.XLV", "side": 1, "qty": "107", "price": "185.52", "status": 5, "text": "add to target 20% (rank-driven rebalance)" },
-    { "order_id": "3249212", "symbol": "US.V", "side": 1, "qty": "47", "price": "417.4", "status": 5, "text": "add to target 20% (rank-driven rebalance)" },
-    { "order_id": "3249213", "symbol": "US.LLY", "side": 1, "qty": "11", "price": "1417.67", "status": 5, "text": "add to target 14% (rank-driven rebalance)" },
-    { "order_id": "3249214", "symbol": "US.AAPL", "side": 1, "qty": "39", "price": "352.44", "status": 5, "text": "add to target 14% (rank-driven rebalance)" },
-    { "order_id": "3249215", "symbol": "US.XLF", "side": 1, "qty": "190", "price": "57.16", "status": 5, "text": "add to target 10.9% (rank-driven rebalance)" },
-    { "order_id": "3249216", "symbol": "US.MSFT", "side": 1, "qty": "16", "price": "507", "status": 5, "text": "add to target 8.2% (rank-driven rebalance)" }
+    {
+      "order_id": "3249216",
+      "symbol": "US.MSFT",
+      "side": 1,
+      "qty": "16",
+      "price": "507",
+      "status": 5
+    },
+    {
+      "order_id": "3249215",
+      "symbol": "US.XLF",
+      "side": 1,
+      "qty": "190",
+      "price": "57.16",
+      "status": 5
+    },
+    {
+      "order_id": "3249214",
+      "symbol": "US.AAPL",
+      "side": 1,
+      "qty": "39",
+      "price": "352.44",
+      "status": 5
+    },
+    {
+      "order_id": "3249213",
+      "symbol": "US.LLY",
+      "side": 1,
+      "qty": "11",
+      "price": "1417.67",
+      "status": 5
+    },
+    {
+      "order_id": "3249212",
+      "symbol": "US.V",
+      "side": 1,
+      "qty": "47",
+      "price": "417.4",
+      "status": 5
+    },
+    {
+      "order_id": "3249211",
+      "symbol": "US.XLV",
+      "side": 1,
+      "qty": "107",
+      "price": "185.52",
+      "status": 5
+    }
   ],
   "filled_today": [
-    { "order_id": "3249430", "symbol": "US.MSFT", "side": 1, "qty": "17", "price": "506.76", "avg_fill_price": "505", "status": 4, "text": "Atlas Trend v1.0 first entry; user-confirmed; stop 449.85" },
-    { "order_id": "3249431", "symbol": "US.AMZN", "side": 1, "qty": "29", "price": "259.19", "avg_fill_price": "259.03", "status": 4, "text": "Atlas Trend v1.0 first entry; user-confirmed; stop 224.26" }
+    {
+      "order_id": "3249430",
+      "symbol": "US.MSFT",
+      "side": 1,
+      "qty": "17",
+      "price": "506.76",
+      "avg_fill_price": "505",
+      "status": 4
+    },
+    {
+      "order_id": "3249431",
+      "symbol": "US.AMZN",
+      "side": 1,
+      "qty": "29",
+      "price": "259.19",
+      "avg_fill_price": "259.03",
+      "status": 4
+    }
   ],
   "orders_today": 8
 }
