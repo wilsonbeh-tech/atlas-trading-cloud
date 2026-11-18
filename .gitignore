@@ -1,0 +1,9 @@
+.env
+.env.*
+!.env.example
+*.tmp
+data/raw/*.err
+data/raw/klines-moomoo/*.tmp
+node_modules/
+.DS_Store
+Thumbs.db

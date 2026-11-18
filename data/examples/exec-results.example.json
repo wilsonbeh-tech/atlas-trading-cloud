@@ -1,0 +1,20 @@
+[
+  {
+    "symbol": "US.XLV",
+    "side": "BUY",
+    "qty": 105,
+    "price": 189.13,
+    "order_id": "123456789",
+    "status": "FILLED",
+    "reason": "add to target 20% (rank-driven rebalance)"
+  },
+  {
+    "symbol": "US.MSFT",
+    "side": "SELL",
+    "qty": 5,
+    "price": 524.67,
+    "order_id": "123456790",
+    "status": "FILLED",
+    "reason": "trim to target 8.2%"
+  }
+]

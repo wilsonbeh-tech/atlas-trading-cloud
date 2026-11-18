@@ -1,0 +1,13 @@
+{
+  "source": "test",
+  "account": { "account_id": "test", "account_title": "Qoder AI Trading Agent Challenge Paper Trading Account", "market_id": 100 },
+  "cash": { "total_asset": "100000", "balance": "100000", "long_mv": "0", "short_mv": "0" },
+  "positions": [],
+  "quotes": [
+    { "code": "US.SPY", "last_price": 754.37, "suspension": false },
+    { "code": "US.XLV", "last_price": 189.13, "suspension": false },
+    { "code": "US.V", "last_price": 426.4, "suspension": false }
+  ],
+  "open_orders": [ { "symbol": "US.XLV", "side": "BUY", "qty": 105, "status": "SUBMITTED" } ],
+  "orders_today": 1
+}

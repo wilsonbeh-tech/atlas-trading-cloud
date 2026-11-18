@@ -1,0 +1,571 @@
+{
+  "generatedAt": "2026-11-18T12:36:21.933Z",
+  "regime": {
+    "state": "RISK_ON",
+    "reasons": [
+      "US.SPY above SMA200 with SMA50 > SMA200"
+    ],
+    "spyClose": 754.37,
+    "spySma50": 764.0880000000001,
+    "spySma200": 729.3150000000007
+  },
+  "dataThrough": "2026-11-13",
+  "rows": [
+    {
+      "symbol": "US.LLY",
+      "close": 1443.5,
+      "r20": 0.14973198142587485,
+      "r60": 0.16140607777035765,
+      "r120": 0.3593174691363836,
+      "vol20": 0.3843396712009402,
+      "atr14": 50.97357142857147,
+      "sma50": 1239.6091999999996,
+      "sma200": 1106.2827999999995,
+      "rsi14": 75.135593733903,
+      "avgDollarVolume20": 4071259761.8,
+      "aboveFast": true,
+      "aboveSlow": true,
+      "trendPass": true,
+      "score": 1.56990266308897,
+      "rank": 1,
+      "eligibility": {
+        "eligible": true,
+        "reasons": []
+      }
+    },
+    {
+      "symbol": "US.V",
+      "close": 425.76,
+      "r20": 0.0594470848781945,
+      "r60": 0.16630598548144082,
+      "r120": 0.3089433393795924,
+      "vol20": 0.258699783187371,
+      "atr14": 10.35714285714287,
+      "sma50": 389.70459999999997,
+      "sma200": 345.7897000000001,
+      "rsi14": 64.15094339622638,
+      "avgDollarVolume20": 2900394505.05,
+      "aboveFast": true,
+      "aboveSlow": true,
+      "trendPass": true,
+      "score": 1.4074623243202549,
+      "rank": 2,
+      "eligibility": {
+        "eligible": true,
+        "reasons": []
+      }
+    },
+    {
+      "symbol": "US.COST",
+      "close": 1106.21,
+      "r20": 0.12004252518604774,
+      "r60": 0.18675506635340566,
+      "r120": 0.10636489108475189,
+      "vol20": 0.22640732531780505,
+      "atr14": 21.674999999999972,
+      "sma50": 966.0332,
+      "sma200": 972.9406999999985,
+      "rsi14": 73.95001167951418,
+      "avgDollarVolume20": 2429632702.15,
+      "aboveFast": true,
+      "aboveSlow": true,
+      "trendPass": false,
+      "score": 1.2474272698177828,
+      "rank": 3,
+      "eligibility": {
+        "eligible": false,
+        "reasons": [
+          "trend filter failed (close>SMA50>SMA200)"
+        ]
+      }
+    },
+    {
+      "symbol": "US.XLV",
+      "close": 188.85,
+      "r20": 0.06870013015675402,
+      "r60": 0.0996913759972049,
+      "r120": 0.28216443750424336,
+      "vol20": 0.2096429279619261,
+      "atr14": 3.6957142857142884,
+      "sma50": 174.9178,
+      "sma200": 159.30044999999993,
+      "rsi14": 70.42253521126769,
+      "avgDollarVolume20": 2038125466.7,
+      "aboveFast": true,
+      "aboveSlow": true,
+      "trendPass": true,
+      "score": 1.157887799244788,
+      "rank": 4,
+      "eligibility": {
+        "eligible": true,
+        "reasons": []
+      }
+    },
+    {
+      "symbol": "US.AAPL",
+      "close": 356.27,
+      "r20": 0.03808275058275057,
+      "r60": 0.14534173471355993,
+      "r120": 0.15735958158723973,
+      "vol20": 0.27847058836547867,
+      "atr14": 9.447857142857146,
+      "sma50": 338.78979999999996,
+      "sma200": 300.77464999999995,
+      "rsi14": 58.677117711771174,
+      "avgDollarVolume20": 16302863029.85,
+      "aboveFast": true,
+      "aboveSlow": true,
+      "trendPass": true,
+      "score": 0.9446052583296286,
+      "rank": 5,
+      "eligibility": {
+        "eligible": true,
+        "reasons": []
+      }
+    },
+    {
+      "symbol": "US.MSFT",
+      "close": 523.88,
+      "r20": -0.009772233248275142,
+      "r60": 0.08880806401330155,
+      "r120": 0.2616014449127031,
+      "vol20": 0.36903153926597243,
+      "atr14": 17.553571428571416,
+      "sma50": 518.9972,
+      "sma200": 440.4918,
+      "rsi14": 46.90164866401363,
+      "avgDollarVolume20": 13916891703.1,
+      "aboveFast": true,
+      "aboveSlow": true,
+      "trendPass": true,
+      "score": 0.7291982951240256,
+      "rank": 6,
+      "eligibility": {
+        "eligible": true,
+        "reasons": []
+      }
+    },
+    {
+      "symbol": "US.XLF",
+      "close": 58.68,
+      "r20": 0.05691642651296824,
+      "r60": 0.03400881057268723,
+      "r120": 0.13963876480870074,
+      "vol20": 0.21671922613461697,
+      "atr14": 1.0114285714285718,
+      "sma50": 55.926599999999986,
+      "sma200": 53.664349999999985,
+      "rsi14": 64.05919661733611,
+      "avgDollarVolume20": 1882990815.8,
+      "aboveFast": true,
+      "aboveSlow": true,
+      "trendPass": true,
+      "score": 0.5698036437620984,
+      "rank": 7,
+      "eligibility": {
+        "eligible": true,
+        "reasons": []
+      }
+    },
+    {
+      "symbol": "US.META",
+      "close": 641.69,
+      "r20": -0.09535759096612295,
+      "r60": 0.17654932159882675,
+      "r120": 0.0497308969556185,
+      "vol20": 0.4106621274781265,
+      "atr14": 20.958571428571435,
+      "sma50": 679.7032,
+      "sma200": 630.0233000000002,
+      "rsi14": 53.307578008915335,
+      "avgDollarVolume20": 15091102390.45,
+      "aboveFast": false,
+      "aboveSlow": true,
+      "trendPass": false,
+      "score": 0.4076950718578618,
+      "rank": 8,
+      "eligibility": {
+        "eligible": false,
+        "reasons": [
+          "trend filter failed (close>SMA50>SMA200)"
+        ]
+      }
+    },
+    {
+      "symbol": "US.XLY",
+      "close": 119.98,
+      "r20": 0.06686821981148872,
+      "r60": 0.030578938326748073,
+      "r120": 0.008659100462379055,
+      "vol20": 0.2722944319925633,
+      "atr14": 2.556428571428572,
+      "sma50": 113.77780000000001,
+      "sma200": 115.08420000000007,
+      "rsi14": 63.68421052631579,
+      "avgDollarVolume20": 1057614450.3,
+      "aboveFast": true,
+      "aboveSlow": true,
+      "trendPass": false,
+      "score": 0.25450530026322427,
+      "rank": 9,
+      "eligibility": {
+        "eligible": false,
+        "reasons": [
+          "trend filter failed (close>SMA50>SMA200)"
+        ]
+      }
+    },
+    {
+      "symbol": "US.JPM",
+      "close": 346.19,
+      "r20": 0.019045095961379932,
+      "r60": -0.010320182961692459,
+      "r120": 0.13934507158137222,
+      "vol20": 0.2739534133204137,
+      "atr14": 7.780714285714282,
+      "sma50": 339.704,
+      "sma200": 322.43510000000015,
+      "rsi14": 59.09022893909921,
+      "avgDollarVolume20": 2178253543.8,
+      "aboveFast": true,
+      "aboveSlow": true,
+      "trendPass": true,
+      "score": 0.2465364331258536,
+      "rank": 10,
+      "eligibility": {
+        "eligible": true,
+        "reasons": []
+      }
+    },
+    {
+      "symbol": "US.XOM",
+      "close": 170.59,
+      "r20": -0.046876746005140135,
+      "r60": 0.026722840806500114,
+      "r120": 0.14605307356399067,
+      "vol20": 0.3072939254998821,
+      "atr14": 4.782142857142858,
+      "sma50": 169.3786,
+      "sma200": 155.28295,
+      "rsi14": 33.39681028326589,
+      "avgDollarVolume20": 2480288851.45,
+      "aboveFast": true,
+      "aboveSlow": true,
+      "trendPass": true,
+      "score": 0.222753521503141,
+      "rank": 11,
+      "eligibility": {
+        "eligible": true,
+        "reasons": []
+      }
+    },
+    {
+      "symbol": "US.XLU",
+      "close": 44.04,
+      "r20": 0.04335465529495375,
+      "r60": 0.013578826237053976,
+      "r120": -0.014985461865354543,
+      "vol20": 0.1534327896251123,
+      "atr14": 0.5992857142857133,
+      "sma50": 41.8314,
+      "sma200": 43.87305000000001,
+      "rsi14": 69.55380577427826,
+      "avgDollarVolume20": 1078248931.85,
+      "aboveFast": true,
+      "aboveSlow": true,
+      "trendPass": false,
+      "score": 0.20566233058690098,
+      "rank": 12,
+      "eligibility": {
+        "eligible": false,
+        "reasons": [
+          "trend filter failed (close>SMA50>SMA200)"
+        ]
+      }
+    },
+    {
+      "symbol": "US.XLE",
+      "close": 64.96,
+      "r20": -0.04806565064478319,
+      "r60": 0.025090736941770553,
+      "r120": 0.13765323992994727,
+      "vol20": 0.3052217718726063,
+      "atr14": 1.7100000000000024,
+      "sma50": 64.90939999999999,
+      "sma200": 58.9407,
+      "rsi14": 34.37917222963951,
+      "avgDollarVolume20": 2394612448.45,
+      "aboveFast": true,
+      "aboveSlow": true,
+      "trendPass": true,
+      "score": 0.19844999604922686,
+      "rank": 13,
+      "eligibility": {
+        "eligible": true,
+        "reasons": []
+      }
+    },
+    {
+      "symbol": "US.AMZN",
+      "close": 266.66,
+      "r20": 0.06664000000000003,
+      "r60": 0.02518165391565108,
+      "r120": 0.005164159975875382,
+      "vol20": 0.41968912451199186,
+      "atr14": 10.745000000000001,
+      "sma50": 254.81160000000003,
+      "sma200": 244.59549999999987,
+      "rsi14": 62.46276067527313,
+      "avgDollarVolume20": 12815736644.05,
+      "aboveFast": true,
+      "aboveSlow": true,
+      "trendPass": true,
+      "score": 0.07466377908801809,
+      "rank": 14,
+      "eligibility": {
+        "eligible": true,
+        "reasons": []
+      }
+    },
+    {
+      "symbol": "US.SPY",
+      "close": 754.37,
+      "r20": -0.011634457910252194,
+      "r60": -0.008334319254380773,
+      "r120": 0.010123056734644864,
+      "vol20": 0.22071844842846408,
+      "atr14": 12.766428571428564,
+      "sma50": 764.0880000000001,
+      "sma200": 729.3149999999996,
+      "rsi14": 45.15247664375109,
+      "avgDollarVolume20": 35455365867.2,
+      "aboveFast": false,
+      "aboveSlow": true,
+      "trendPass": false,
+      "score": -0.025707286464151657,
+      "rank": 15,
+      "eligibility": {
+        "eligible": false,
+        "reasons": [
+          "trend filter failed (close>SMA50>SMA200)"
+        ]
+      }
+    },
+    {
+      "symbol": "US.TLT",
+      "close": 79.38,
+      "r20": -0.004140007527286382,
+      "r60": -0.024216349108789226,
+      "r120": -0.044880279148116986,
+      "vol20": 0.12529720895775023,
+      "atr14": 0.7649999999999986,
+      "sma50": 79.82560000000002,
+      "sma200": 82.71434999999995,
+      "rsi14": 33.44594594594592,
+      "avgDollarVolume20": 2897176526.4,
+      "aboveFast": false,
+      "aboveSlow": false,
+      "trendPass": false,
+      "score": -0.08686855209168579,
+      "rank": 16,
+      "eligibility": {
+        "eligible": false,
+        "reasons": [
+          "trend filter failed (close>SMA50>SMA200)"
+        ]
+      }
+    },
+    {
+      "symbol": "US.IWM",
+      "close": 277.54,
+      "r20": 0.026253512793965372,
+      "r60": -0.06517565428273087,
+      "r120": -0.039886532673746755,
+      "vol20": 0.24934421017324668,
+      "atr14": 5.462142857142851,
+      "sma50": 280.6720000000001,
+      "sma200": 278.4773499999999,
+      "rsi14": 50.53574907461525,
+      "avgDollarVolume20": 6503429101.05,
+      "aboveFast": false,
+      "aboveSlow": false,
+      "trendPass": false,
+      "score": -0.2972736694889426,
+      "rank": 17,
+      "eligibility": {
+        "eligible": false,
+        "reasons": [
+          "trend filter failed (close>SMA50>SMA200)"
+        ]
+      }
+    },
+    {
+      "symbol": "US.QQQ",
+      "close": 679.89,
+      "r20": -0.04213863060016898,
+      "r60": -0.04266463904025697,
+      "r120": -0.06700790427050174,
+      "vol20": 0.35395609547369883,
+      "atr14": 18.608571428571445,
+      "sma50": 717.7186000000002,
+      "sma200": 681.2005500000004,
+      "rsi14": 40.85686796083535,
+      "avgDollarVolume20": 33940400979.4,
+      "aboveFast": false,
+      "aboveSlow": false,
+      "trendPass": false,
+      "score": -0.5267693701176426,
+      "rank": 18,
+      "eligibility": {
+        "eligible": false,
+        "reasons": [
+          "trend filter failed (close>SMA50>SMA200)"
+        ]
+      }
+    },
+    {
+      "symbol": "US.XLK",
+      "close": 170.28,
+      "r20": -0.07189186242982504,
+      "r60": -0.0689485483077259,
+      "r120": -0.07807255008121272,
+      "vol20": 0.4483104794068668,
+      "atr14": 6.265000000000005,
+      "sma50": 187.05839999999998,
+      "sma200": 170.54014999999995,
+      "rsi14": 36.14374568071874,
+      "avgDollarVolume20": 2198663291.7,
+      "aboveFast": false,
+      "aboveSlow": false,
+      "trendPass": false,
+      "score": -0.8192033469303399,
+      "rank": 19,
+      "eligibility": {
+        "eligible": false,
+        "reasons": [
+          "trend filter failed (close>SMA50>SMA200)"
+        ]
+      }
+    },
+    {
+      "symbol": "US.AVGO",
+      "close": 347.01,
+      "r20": 0.05554372623574144,
+      "r60": -0.04502297933236099,
+      "r120": -0.17492510342859857,
+      "vol20": 0.6997667475726004,
+      "atr14": 20.24785714285714,
+      "sma50": 345.2536,
+      "sma200": 366.47814999999974,
+      "rsi14": 54.6241575946086,
+      "avgDollarVolume20": 8840998167.25,
+      "aboveFast": true,
+      "aboveSlow": false,
+      "trendPass": false,
+      "score": -0.88562458180655,
+      "rank": 20,
+      "eligibility": {
+        "eligible": false,
+        "reasons": [
+          "trend filter failed (close>SMA50>SMA200)"
+        ]
+      }
+    },
+    {
+      "symbol": "US.GLD",
+      "close": 355.45,
+      "r20": -0.06952697573361954,
+      "r60": -0.14403024611087034,
+      "r120": -0.1414251207729469,
+      "vol20": 0.2800769353137101,
+      "atr14": 7.597142857142858,
+      "sma50": 380.90600000000006,
+      "sma200": 408.4167,
+      "rsi14": 42.55626429173186,
+      "avgDollarVolume20": 3415020660.05,
+      "aboveFast": false,
+      "aboveSlow": false,
+      "trendPass": false,
+      "score": -1.0714162994341887,
+      "rank": 21,
+      "eligibility": {
+        "eligible": false,
+        "reasons": [
+          "trend filter failed (close>SMA50>SMA200)"
+        ]
+      }
+    },
+    {
+      "symbol": "US.SMH",
+      "close": 486.75,
+      "r20": -0.09826043461346068,
+      "r60": -0.1348973607038123,
+      "r120": -0.19163317500913402,
+      "vol20": 0.6571624130102162,
+      "atr14": 27.235000000000003,
+      "sma50": 559.804,
+      "sma200": 523.8860500000002,
+      "rsi14": 39.173671125843484,
+      "avgDollarVolume20": 5951627589.2,
+      "aboveFast": false,
+      "aboveSlow": false,
+      "trendPass": false,
+      "score": -1.5888394926194853,
+      "rank": 22,
+      "eligibility": {
+        "eligible": false,
+        "reasons": [
+          "trend filter failed (close>SMA50>SMA200)"
+        ]
+      }
+    },
+    {
+      "symbol": "US.GOOGL",
+      "close": 295.77,
+      "r20": -0.13159517308200475,
+      "r60": -0.1312380672639154,
+      "r120": -0.2384912461380021,
+      "vol20": 0.5150962416951813,
+      "atr14": 11.910714285714294,
+      "sma50": 328.1858,
+      "sma200": 338.20000000000005,
+      "rsi14": 38.43107052481018,
+      "avgDollarVolume20": 12123488884.1,
+      "aboveFast": false,
+      "aboveSlow": false,
+      "trendPass": false,
+      "score": -1.6014106334027254,
+      "rank": 23,
+      "eligibility": {
+        "eligible": false,
+        "reasons": [
+          "trend filter failed (close>SMA50>SMA200)"
+        ]
+      }
+    },
+    {
+      "symbol": "US.NVDA",
+      "close": 162.85,
+      "r20": -0.23948068930089195,
+      "r60": -0.24818798762753347,
+      "r120": -0.24033213602649628,
+      "vol20": 0.5277847145644429,
+      "atr14": 11.004999999999995,
+      "sma50": 214.63199999999995,
+      "sma200": 203.92024999999995,
+      "rsi14": 19.116792562463672,
+      "avgDollarVolume20": 38522920215,
+      "aboveFast": false,
+      "aboveSlow": false,
+      "trendPass": false,
+      "score": -2.333440453806064,
+      "rank": 24,
+      "eligibility": {
+        "eligible": false,
+        "reasons": [
+          "trend filter failed (close>SMA50>SMA200)"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "source": "mcp-agent",
+  "account": {
+    "account_id": "0000000",
+    "account_title": "Qoder AI Trading Agent Challenge Paper Trading Account",
+    "account_type": 1,
+    "market_id": 100
+  },
+  "cash": {
+    "total_asset": "100000",
+    "balance": "100000",
+    "long_mv": "0",
+    "short_mv": "0"
+  },
+  "positions": [],
+  "quotes": [
+    { "code": "US.SPY", "last_price": 754.37, "data_date": "2026-11-13", "suspension": false },
+    { "code": "US.XLV", "last_price": 189.13, "data_date": "2026-11-13", "suspension": false },
+    { "code": "US.V", "last_price": 426.4, "data_date": "2026-11-13", "suspension": false }
+  ],
+  "open_orders": [],
+  "orders_today": 0
+}

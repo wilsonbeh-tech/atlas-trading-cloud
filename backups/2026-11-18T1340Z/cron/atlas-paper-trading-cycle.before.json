@@ -1,0 +1,23 @@
+{
+  "id": "1208de8e-d0fd-46aa-9999-5689d410dc74",
+  "name": "Atlas Paper Trading Cycle",
+  "trigger": {
+    "kind": "schedule",
+    "schedule": {
+      "kind": "every",
+      "everyMs": 3600000,
+      "weekdays": [1, 2, 3, 4, 5],
+      "timeZone": "America/New_York",
+      "anchorAt": "2026-11-17T14:35:00Z"
+    }
+  },
+  "outputMode": "independent",
+  "executionPolicy": { "permissionMode": "bypassPermissions" },
+  "enabled": false,
+  "pauseReason": "manual",
+  "revision": 2,
+  "expiresAt": 1795903200000,
+  "instruction": {
+    "text": "You are the Atlas paper-trading cycle for the Moomoo x Qoder AI Trading Agent Challenge. Work only in C:\\Users\\behfa\\Documents\\Qoder\\2026-11-16\\2000c586\\moomoo-trading-agent and use the local Moomoo MCP tools.\n\nBefore acting, read AGENTS.md, README.md, docs/RISK_POLICY.md and skills/momo-momentum/SKILL.md. Follow them exactly.\n\nHARD RULES:\n- Paper trading only. Use sim_trade_* tools only. Never call a live trading tool.\n- Trade only an account whose account_title contains both 'Qoder' and 'Challenge' (case-insensitive). If no such account is visible in sim_trade_account_list, submit NO orders to any account, append an INCIDENT decision using src/lib/ledger.js logDecision (action INCIDENT, step account gate), report the blocker, and stop. Never substitute the generic 'US Margin Account [Paper Trading]'.\n- Do not edit risk limits in config/strategy.json, do not bypass guardOrders, do not edit data/*.jsonl, do not reset data/state.json, and never print, log or commit tokens.\n\nCYCLE:\n1. Call sim_trade_account_list and enforce the account gate above.\n2. For the competition account, fetch sim_trade_cash_info, sim_trade_position_list (market 100), quote_stock_quote for every symbol in config/strategy.json universe, and today's orders/open orders via sim_trade_history_order_list. Write data/raw/live-input.json in the shape documented in skills/momo-momentum/SKILL.md (account, cash, positions, quotes, open_orders, orders_today).\n3. Run: bash scripts/momo-node.sh src/cli.js import-live ; then signals ; then plan. Stop on any error.\n4. Read reports/plan.json. Submit ONLY orders present in guard.approved, one by one, via sim_trade_input_order with order_type=1, order_side=1 for BUY and 2 for SELL, integer qty as a string, the plan limit price, order_trade_time_type=1, and a short text note. Never submit rejected orders. If there are no approved orders, do nothing.\n5. Write the raw submission results to reports/exec-results.json in the documented shape, then run: bash scripts/momo-node.sh src/cli.js record --results reports/exec-results.json\n6. Run: bash scripts/momo-node.sh src/cli.js dashboard\n7. Report regime, equity, approved/rejected counts, submitted count, risk halt/flatten state, and any blocker.\n\nSTOP AND REPORT without trading if: the competition account is absent; MCP tools fail; quotes are missing or stale; risk state is halted (no buys, flatten only); or any command fails. Never retry a rejected order with a different account, symbol or order type. Keep the run under 10 minutes."
+  }
+}

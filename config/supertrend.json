@@ -1,0 +1,80 @@
+{
+  "name": "Atlas Trend SuperTrend(10,3)",
+  "version": "1.0.0",
+  "spec": "docs/STRATEGY_SPEC.md",
+  "account": {
+    "id": "5830107",
+    "matchTokens": ["qoder", "challenge"],
+    "marketId": 100
+  },
+  "competition": {
+    "end": "2026-11-28",
+    "noNewEntriesAfter": "2026-11-25",
+    "finalSession": "2026-11-27",
+    "finalFlattenET": "12:45",
+    "holidays": ["2026-11-26"],
+    "earlyClose": { "2026-11-27": "13:00" }
+  },
+  "signals": {
+    "stPeriod": 10,
+    "stMult": 3,
+    "smaTrend": 200,
+    "whipsawLookback": 8,
+    "entryWindow": 10
+  },
+  "sizing": {
+    "riskPct": 0.01,
+    "atrMult": 3,
+    "maxNameWeight": 0.12,
+    "maxPositions": 6,
+    "maxSectorNames": 2,
+    "maxSectorWeight": 0.24,
+    "maxGross": 0.72,
+    "minCash": 0.10,
+    "minNotional": 500
+  },
+  "risk": {
+    "dailyLossFlattenPct": 0.015,
+    "drawdownDeRiskPct": 0.04,
+    "drawdownKillPct": 0.06,
+    "killCooldownSessions": 5,
+    "maxOrdersPerDay": 12,
+    "maxLimitDeviationPct": 0.03,
+    "buyOffset": 0.0015,
+    "sellOffset": 0.0015,
+    "noChasePct": 0.01
+  },
+  "exits": {
+    "timeStopSessions": 7
+  },
+  "blackouts": {
+    "2026-11-18": ["US.TGT", "US.LOW", "US.TJX", "US.PANW", "US.WMT"],
+    "2026-11-19": ["US.WMT"]
+  },
+  "sector": {
+    "US.SPY": "index",
+    "US.QQQ": "index",
+    "US.IWM": "index",
+    "US.SMH": "semis",
+    "US.TLT": "bonds",
+    "US.GLD": "gold",
+    "US.XLE": "energy",
+    "US.XLF": "financials",
+    "US.XLK": "tech",
+    "US.XLV": "health",
+    "US.XLY": "consumer",
+    "US.XLU": "utilities",
+    "US.AAPL": "tech",
+    "US.MSFT": "tech",
+    "US.NVDA": "semis",
+    "US.AMZN": "consumer",
+    "US.GOOGL": "communication",
+    "US.META": "communication",
+    "US.AVGO": "semis",
+    "US.JPM": "financials",
+    "US.LLY": "health",
+    "US.V": "financials",
+    "US.COST": "consumer",
+    "US.XOM": "energy"
+  }
+}

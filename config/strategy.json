@@ -1,0 +1,100 @@
+{
+  "name": "Atlas Dual-Momentum",
+  "version": "1.1.0",
+  "account": {
+    "matchTitle": "Qoder AI Trading Agent Challenge",
+    "matchTokens": ["qoder", "challenge"],
+    "marketId": 100,
+    "fallbackTitle": "US Margin Account [Paper Trading]",
+    "startingEquity": 100000
+  },
+  "competition": {
+    "start": "2026-11-17",
+    "end": "2026-11-28",
+    "holidays": ["2026-11-26"]
+  },
+  "universe": [
+    "US.SPY",
+    "US.QQQ",
+    "US.IWM",
+    "US.SMH",
+    "US.TLT",
+    "US.GLD",
+    "US.XLE",
+    "US.XLF",
+    "US.XLK",
+    "US.XLV",
+    "US.XLY",
+    "US.XLU",
+    "US.AAPL",
+    "US.MSFT",
+    "US.NVDA",
+    "US.AMZN",
+    "US.GOOGL",
+    "US.META",
+    "US.AVGO",
+    "US.JPM",
+    "US.LLY",
+    "US.V",
+    "US.COST",
+    "US.XOM"
+  ],
+  "benchmark": "US.SPY",
+  "signals": {
+    "returnWindows": [
+      20,
+      60,
+      120
+    ],
+    "weights": {
+      "r20": 0.2,
+      "r60": 0.45,
+      "r120": 0.35
+    },
+    "volLookback": 20,
+    "atrLookback": 14,
+    "trendFast": 50,
+    "trendSlow": 200
+  },
+  "allocation": {
+    "targetVolAnnual": 0.18,
+    "maxGross": 0.9,
+    "minGross": 0.3,
+    "riskOffGross": 0.3,
+    "maxPositions": 8,
+    "riskOffPositions": 3,
+    "maxNameWeight": 0.2,
+    "maxNameWeightHard": 0.4,
+    "minCash": 0.1,
+    "holdBuffer": 2
+  },
+  "risk": {
+    "stopLossPct": 0.15,
+    "trailingAtrMult": 5,
+    "dailyLossFlattenPct": 0.025,
+    "drawdownDeRiskPct": 0.08,
+    "drawdownKillPct": 0.12,
+    "killCooldownDays": 5,
+    "maxOrdersPerDay": 40,
+    "maxPositionsHard": 100,
+    "minPrice": 1,
+    "maxLimitDeviationPct": 0.03,
+    "minNotional": 500,
+    "rebalanceBandPct": 0.015
+  },
+  "execution": {
+    "orderType": 1,
+    "limitOffsetPct": 0.0015,
+    "sessionType": 1,
+    "slippageBps": 5,
+    "platformFeePerOrder": 0.99,
+    "secFeePerShareSold": 0.000166,
+    "secFeeCap": 8.3
+  },
+  "backtest": {
+    "startCash": 100000,
+    "historyBars": 370,
+    "rebalanceEvery": 10,
+    "warmupBars": 130
+  }
+}

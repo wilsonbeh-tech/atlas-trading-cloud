@@ -1,0 +1,2 @@
+{"ts":"2026-11-18T13:30:01.793Z","symbol":"US.MSFT","side":"BUY","qty":17,"orderQty":17,"limitPrice":506.76,"reason":"Atlas Trend v1.0: ST flip 9 bars, close>200d, stop 449.85","orderId":"3249430","status":"SUBMITTED","source":"mcp-agent"}
+{"ts":"2026-11-18T13:30:01.797Z","symbol":"US.AMZN","side":"BUY","qty":29,"orderQty":29,"limitPrice":259.19,"reason":"Atlas Trend v1.0: ST flip 9 bars, close>200d, stop 224.26","orderId":"3249431","status":"SUBMITTED","source":"mcp-agent"}

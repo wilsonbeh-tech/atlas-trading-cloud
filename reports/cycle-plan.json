@@ -1,0 +1,45 @@
+{
+  "generatedAt": "2026-11-18T14:37:43.023Z",
+  "mode": "intraday",
+  "today": "2026-11-18",
+  "etTime": "09:37",
+  "marketOpen": true,
+  "equity": 100037.97,
+  "dayPnlPct": 0,
+  "drawdownPct": 0,
+  "risk": {
+    "flatten": false,
+    "deRisk": false,
+    "killActive": false,
+    "killUntil": null,
+    "reasons": []
+  },
+  "positions": [
+    {
+      "symbol": "US.MSFT",
+      "qty": 17,
+      "entryDate": "2026-11-18",
+      "stop": 449.85,
+      "peakClose": 506.24,
+      "sessionsHeld": 1
+    },
+    {
+      "symbol": "US.AMZN",
+      "qty": 29,
+      "entryDate": "2026-11-18",
+      "stop": 224.26,
+      "peakClose": 259.03,
+      "sessionsHeld": 1
+    }
+  ],
+  "plan": {
+    "executedAt": null,
+    "picks": 2,
+    "outgoing": 0
+  },
+  "ordersToday": 8,
+  "orderBudget": 4,
+  "orders": [],
+  "rejected": [],
+  "nextSession": null
+}

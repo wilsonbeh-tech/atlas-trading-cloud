@@ -1,0 +1,57 @@
+{
+  "startedAt": null,
+  "dayStartEquity": 100000,
+  "peakEquity": 100000,
+  "lastEquity": 100000,
+  "lastRunAt": "2026-11-18T12:36:22.913Z",
+  "haltUntil": null,
+  "positionsMeta": {
+    "US.XLV": {
+      "entryPrice": 185.52,
+      "entryDate": "2026-11-18",
+      "peakPrice": 185.52,
+      "atr": 3.6957142857142884
+    },
+    "US.V": {
+      "entryPrice": 417.4,
+      "entryDate": "2026-11-18",
+      "peakPrice": 417.4,
+      "atr": 10.35714285714287
+    },
+    "US.LLY": {
+      "entryPrice": 1417.67,
+      "entryDate": "2026-11-18",
+      "peakPrice": 1417.67,
+      "atr": 50.97357142857147
+    },
+    "US.AAPL": {
+      "entryPrice": 352.44,
+      "entryDate": "2026-11-18",
+      "peakPrice": 352.44,
+      "atr": 9.447857142857146
+    },
+    "US.XLF": {
+      "entryPrice": 57.16,
+      "entryDate": "2026-11-18",
+      "peakPrice": 57.16,
+      "atr": 1.0114285714285718
+    },
+    "US.MSFT": {
+      "entryPrice": 507,
+      "entryDate": "2026-11-18",
+      "peakPrice": 507,
+      "atr": 17.553571428571416
+    },
+    "US.AMZN": {
+      "entryPrice": 259.03,
+      "entryDate": "2026-11-18",
+      "peakPrice": 259.03,
+      "atr": 10.745000000000001
+    }
+  },
+  "dailyOrders": {
+    "2026-11-18": 8
+  },
+  "lastEquityDate": "2026-11-18",
+  "startingEquity": 100000
+}
