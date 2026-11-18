@@ -7,3 +7,6 @@ data/raw/klines-moomoo/*.tmp
 node_modules/
 .DS_Store
 Thumbs.db
+
+# embedded repositories
+_qca_build/hub/
