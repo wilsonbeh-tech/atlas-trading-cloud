@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-18T20:35:48.390Z",
-  "mode": "intraday",
+  "generatedAt": "2026-11-18T21:06:57.505Z",
+  "mode": "eod",
   "today": "2026-11-18",
-  "etTime": "15:35",
-  "marketOpen": true,
-  "equity": 100229.545,
-  "dayPnlPct": -0.07,
-  "drawdownPct": -0.07,
+  "etTime": "16:06",
+  "marketOpen": false,
+  "equity": 100279.83,
+  "dayPnlPct": -0.02,
+  "drawdownPct": -0.02,
   "risk": {
     "flatten": false,
     "deRisk": false,
@@ -19,16 +19,16 @@
       "symbol": "US.MSFT",
       "qty": 17,
       "entryDate": "2026-11-18",
-      "stop": 449.85,
-      "peakClose": 506.24,
+      "stop": 454.55,
+      "peakClose": 508.29,
       "sessionsHeld": 1
     },
     {
       "symbol": "US.AMZN",
       "qty": 29,
       "entryDate": "2026-11-18",
-      "stop": 224.26,
-      "peakClose": 259.03,
+      "stop": 234.74,
+      "peakClose": 267.74,
       "sessionsHeld": 1
     }
   ],
@@ -41,5 +41,5 @@
   "orderBudget": 4,
   "orders": [],
   "rejected": [],
-  "nextSession": null
+  "nextSession": "2026-11-19"
 }

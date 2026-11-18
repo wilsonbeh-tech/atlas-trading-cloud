@@ -6263,6 +6263,7 @@
       "low_price": 63.495,
       "name": "Energy Select Sector SPDR Fund",
       "open_price": 64.52,
+      "pe": 0,
       "sc_name": "能源指数ETF-SPDR",
       "tc_name": "能源指數ETF-SPDR",
       "time_key": 1794805200000,
@@ -6280,12 +6281,31 @@
       "low_price": 63.065,
       "name": "Energy Select Sector SPDR Fund",
       "open_price": 64.09,
+      "pe": 0,
       "sc_name": "能源指数ETF-SPDR",
       "tc_name": "能源指數ETF-SPDR",
       "time_key": 1794891600000,
       "turnover": 1477936363,
       "turnover_rate": 0.03531,
       "volume": 23204818
+    },
+    {
+      "change_rate": -3.2670454545454546,
+      "close_price": 61.29,
+      "code": "US.XLE",
+      "date": 20261118,
+      "high_price": 63.28,
+      "last_close_price": 63.36,
+      "low_price": 61.255,
+      "name": "Energy Select Sector SPDR Fund",
+      "open_price": 63,
+      "pe": 0,
+      "sc_name": "能源指数ETF-SPDR",
+      "tc_name": "能源指數ETF-SPDR",
+      "time_key": 1794978000000,
+      "turnover": 3329185327.071,
+      "turnover_rate": 0.08194,
+      "volume": 53853790
     }
   ]
 }

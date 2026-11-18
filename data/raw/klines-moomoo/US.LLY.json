@@ -6659,6 +6659,24 @@
       "turnover": 3752085578,
       "turnover_rate": 0.00282,
       "volume": 2649264
+    },
+    {
+      "change_rate": -2.3171205538483277,
+      "close_price": 1382.75,
+      "code": "US.LLY",
+      "date": 20261118,
+      "high_price": 1423.11,
+      "last_close_price": 1415.55,
+      "low_price": 1380,
+      "name": "Eli Lilly and Co",
+      "open_price": 1407.93,
+      "pe": 60.25,
+      "sc_name": "礼来",
+      "tc_name": "禮來",
+      "time_key": 1794978000000,
+      "turnover": 3590363096.387,
+      "turnover_rate": 0.00274,
+      "volume": 2571921
     }
   ]
 }
