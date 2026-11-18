@@ -169,6 +169,6 @@ Both deployments export `ATLAS_CLOUD=1`, which the cycle script now requires; a 
 
 ### Known leftovers
 
-- The two local Qoder automations (`1208de8e-…`, `bcf3b210-…`) are not exposed to any API; they still fire, but the `ATLAS_CLOUD` guard makes each one a no-op that submits nothing. Switch them off in the app UI when convenient.
+- The two local Qoder automations (`1208de8e-…` intraday, `f59ee3d2-…` EOD) were **switched off in the app UI on 2026-11-18T15:19Z** — verified in the app's `scheduled_tasks` table: `enabled=0`, `pause_reason=manual`, `next_run_at` null for both (the older `bcf3b210-…` was already off). No supported API exposes the local automation toggle, so this was done by clicking the switches on the Automations page; re-enabling either would only produce a blocked plan because of the `ATLAS_CLOUD` guard.
 - The PAT was pasted in plain text into the chat; rotate it after 2026-11-27. It is stored only in the deployment `resources.authorization_token` (never in git).
 - Deployments pin agent version 4, so later agent edits do not affect scheduled runs until the deployment is updated.

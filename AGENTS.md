@@ -47,7 +47,7 @@ Windows: `scripts\momo-node.cmd`.
 | Intraday deployment | `Atlas Trend Intraday (cloud)` `dep_00vvmuz2fahvkfrnwjwp` — cron `35 9-15 * * 1-5` America/New_York |
 | EOD deployment | `Atlas Trend EOD (cloud)` `dep_00vvmvi1yjgg0ah3dbbw` — cron `5 16 * * 1-5` America/New_York; refreshes klines via MCP + `scripts/klines-apply.mjs` |
 | Environment / Vault | `env_00vo9r477f66985sihxo` / `vault_00vv31hdfn5s09u2oa1c` |
-| Local automations (superseded) | `1208de8e-d0fd-46aa-9999-5689d410dc74`, `f59ee3d2-dfab-42b8-9e09-ae547933a0db` — still fire, but the `ATLAS_CLOUD` guard makes them no-ops |
+| Local automations (switched off) | `1208de8e-d0fd-46aa-9999-5689d410dc74` (intraday) and `f59ee3d2-dfab-42b8-9e09-ae547933a0db` (EOD) — disabled in the app UI on 2026-11-18T15:19Z (`enabled=0`, `pauseReason=manual`, no next run). `bcf3b210-b523-4cd7-a71e-df1fdbdb57ce` was already off. The `ATLAS_CLOUD` guard stays as a second lock if any of them is re-enabled |
 | Expiry | Last session 2026-11-27; stop the cloud deployments then |
 | Backup | `backups/2026-11-18T1340Z/` (AGENTS.md, strategy.json, docs, prior cron job) |
 
