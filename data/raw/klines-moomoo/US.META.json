@@ -6674,9 +6674,27 @@
       "sc_name": "Meta Platforms",
       "tc_name": "Meta Platforms",
       "time_key": 1794978000000,
-      "turnover": 6332749385.44,
-      "turnover_rate": 0.00471,
-      "volume": 10278235
+      "turnover": 6424661501,
+      "turnover_rate": 0.00478,
+      "volume": 10428709
+    },
+    {
+      "change_rate": -3.2707096271780394,
+      "close_price": 596.22,
+      "code": "US.META",
+      "date": 20261119,
+      "high_price": 630.06,
+      "last_close_price": 616.38,
+      "low_price": 595.78,
+      "name": "Meta Platforms",
+      "open_price": 624.66,
+      "pe": 25.381,
+      "sc_name": "Meta Platforms",
+      "tc_name": "Meta Platforms",
+      "time_key": 1795064400000,
+      "turnover": 9146756556.31,
+      "turnover_rate": 0.00689,
+      "volume": 15045653
     }
   ]
 }

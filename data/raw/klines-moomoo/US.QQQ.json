@@ -6306,9 +6306,27 @@
       "sc_name": "纳指100ETF-Invesco QQQ Trust",
       "tc_name": "納指100ETF-Invesco QQQ Trust",
       "time_key": 1794978000000,
-      "turnover": 27081707155.872,
-      "turnover_rate": 0.05878,
-      "volume": 41113701
+      "turnover": 29749364068,
+      "turnover_rate": 0.06477,
+      "volume": 45145655
+    },
+    {
+      "change_rate": -2.194053160679899,
+      "close_price": 645.04,
+      "code": "US.QQQ",
+      "date": 20261119,
+      "high_price": 676.49,
+      "last_close_price": 659.51,
+      "low_price": 644.34,
+      "name": "Invesco QQQ Trust",
+      "open_price": 671.09,
+      "pe": 0,
+      "sc_name": "纳指100ETF-Invesco QQQ Trust",
+      "tc_name": "納指100ETF-Invesco QQQ Trust",
+      "time_key": 1795064400000,
+      "turnover": 44174178986.231,
+      "turnover_rate": 0.09662,
+      "volume": 67340967
     }
   ]
 }

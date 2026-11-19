@@ -6674,9 +6674,27 @@
       "sc_name": "微软",
       "tc_name": "微軟",
       "time_key": 1794978000000,
-      "turnover": 10497707222.626,
-      "turnover_rate": 0.00279,
-      "volume": 20714732
+      "turnover": 11168864281,
+      "turnover_rate": 0.00297,
+      "volume": 22050085
+    },
+    {
+      "change_rate": -1.9654134450805643,
+      "close_price": 498.3,
+      "code": "US.MSFT",
+      "date": 20261119,
+      "high_price": 526.49,
+      "last_close_price": 508.29,
+      "low_price": 498.16,
+      "name": "Microsoft",
+      "open_price": 519.5,
+      "pe": 27.76,
+      "sc_name": "微软",
+      "tc_name": "微軟",
+      "time_key": 1795064400000,
+      "turnover": 14350073525.178,
+      "turnover_rate": 0.00382,
+      "volume": 28340035
     }
   ]
 }

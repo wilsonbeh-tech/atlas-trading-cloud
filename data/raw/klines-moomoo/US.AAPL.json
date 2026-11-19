@@ -6674,9 +6674,27 @@
       "sc_name": "苹果",
       "tc_name": "蘋果",
       "time_key": 1794978000000,
-      "turnover": 11722073320.012,
-      "turnover_rate": 0.00229,
-      "volume": 33214966
+      "turnover": 12083450235.528,
+      "turnover_rate": 0.00236,
+      "volume": 34209928
+    },
+    {
+      "change_rate": -0.9192793304014754,
+      "close_price": 349.21,
+      "code": "US.AAPL",
+      "date": 20261119,
+      "high_price": 355.28,
+      "last_close_price": 352.45,
+      "low_price": 346.47,
+      "name": "Apple",
+      "open_price": 352.91,
+      "pe": 38.887,
+      "sc_name": "苹果",
+      "tc_name": "蘋果",
+      "time_key": 1795064400000,
+      "turnover": 13926079323.214,
+      "turnover_rate": 0.00274,
+      "volume": 39828459
     }
   ]
 }

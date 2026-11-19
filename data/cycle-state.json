@@ -1,29 +1,5 @@
 {
   "positions": {
-    "US.MSFT": {
-      "symbol": "US.MSFT",
-      "entryDate": "2026-11-18",
-      "entryPrice": 505,
-      "initialStop": 449.85,
-      "stop": 454.55,
-      "peakClose": 508.29,
-      "sessionsHeld": 1,
-      "lastBarDate": "2026-11-18",
-      "qty": 17,
-      "updatedAt": "2026-11-18T21:06:57.505Z"
-    },
-    "US.AMZN": {
-      "symbol": "US.AMZN",
-      "entryDate": "2026-11-18",
-      "entryPrice": 259.03,
-      "initialStop": 224.26,
-      "stop": 234.74,
-      "peakClose": 267.74,
-      "sessionsHeld": 1,
-      "lastBarDate": "2026-11-18",
-      "qty": 29,
-      "updatedAt": "2026-11-18T21:06:57.505Z"
-    },
     "US.SPCX": {
       "symbol": "US.SPCX",
       "entryDate": "2026-11-19",

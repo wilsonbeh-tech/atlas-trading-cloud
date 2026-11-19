@@ -1,38 +1,22 @@
 {
-  "generatedAt": "2026-11-19T20:35:57.730Z",
-  "mode": "intraday",
+  "generatedAt": "2026-11-19T21:06:53.757Z",
+  "mode": "eod",
   "today": "2026-11-19",
-  "etTime": "15:35",
-  "marketOpen": true,
-  "equity": 99011.875,
-  "dayPnlPct": -1.62,
-  "drawdownPct": -1.62,
+  "etTime": "16:06",
+  "marketOpen": false,
+  "equity": 99074.51,
+  "dayPnlPct": -1.56,
+  "drawdownPct": -1.56,
   "risk": {
     "flatten": true,
     "deRisk": false,
     "killActive": false,
     "killUntil": null,
     "reasons": [
-      "daily -1.62%"
+      "daily -1.56%"
     ]
   },
   "positions": [
-    {
-      "symbol": "US.MSFT",
-      "qty": 17,
-      "entryDate": "2026-11-18",
-      "stop": 454.55,
-      "peakClose": 508.29,
-      "sessionsHeld": 1
-    },
-    {
-      "symbol": "US.AMZN",
-      "qty": 29,
-      "entryDate": "2026-11-18",
-      "stop": 234.74,
-      "peakClose": 267.74,
-      "sessionsHeld": 1
-    },
     {
       "symbol": "US.SPCX",
       "qty": 50,
@@ -56,37 +40,9 @@
     "picks": 0,
     "outgoing": 0
   },
-  "ordersToday": 4,
-  "orderBudget": 8,
-  "orders": [
-    {
-      "symbol": "US.MSFT",
-      "side": "SELL",
-      "qty": 17,
-      "limitPrice": 499.06,
-      "stop": 454.55,
-      "reason": "risk flatten: daily -1.62%"
-    },
-    {
-      "symbol": "US.AMZN",
-      "side": "SELL",
-      "qty": 29,
-      "limitPrice": 256.84,
-      "stop": 234.74,
-      "reason": "risk flatten: daily -1.62%"
-    }
-  ],
-  "rejected": [
-    {
-      "symbol": "US.SPCX",
-      "side": "SELL",
-      "reason": "no valid quote"
-    },
-    {
-      "symbol": "US.COHH",
-      "side": "SELL",
-      "reason": "no valid quote"
-    }
-  ],
-  "nextSession": null
+  "ordersToday": 6,
+  "orderBudget": 6,
+  "orders": [],
+  "rejected": [],
+  "nextSession": "2026-11-20"
 }
