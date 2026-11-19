@@ -21,3 +21,7 @@
 {"ts":"2026-11-18T14:39:19.494Z","source":"operator","action":"CRON_ENABLED","jobId":"f59ee3d2-dfab-42b8-9e09-ae547933a0db","name":"Atlas Trend EOD stop recompute","schedule":"cron 5 21 * * 1-5 UTC","expiresAt":"2026-11-28T22:00:00Z","note":"recreated after unexplained deletion of bcf3b210"}
 {"ts":"2026-11-18T21:06:57.632Z","source":"supertrend-cycle","action":"STOP_RECOMPUTE","symbol":"US.MSFT","oldStop":449.85,"newStop":454.55,"peakClose":508.29,"atr":17.91,"bar":"2026-11-18"}
 {"ts":"2026-11-18T21:06:57.632Z","source":"supertrend-cycle","action":"STOP_RECOMPUTE","symbol":"US.AMZN","oldStop":224.26,"newStop":234.74,"peakClose":267.74,"atr":11,"bar":"2026-11-18"}
+{"ts":"2026-11-19T15:36:40.091Z","source":"supertrend-cycle","action":"POSITION_INIT","symbol":"US.SPCX","qty":50,"entryPrice":143.5,"stop":129.15,"reason":"state initialised from account position"}
+{"ts":"2026-11-19T15:36:40.095Z","source":"supertrend-cycle","action":"POSITION_QTY_SYNC","symbol":"US.SPCX","to":50}
+{"ts":"2026-11-19T15:36:40.095Z","source":"supertrend-cycle","action":"POSITION_INIT","symbol":"US.COHH","qty":1000,"entryPrice":3.03,"stop":2.73,"reason":"state initialised from account position"}
+{"ts":"2026-11-19T15:36:40.095Z","source":"supertrend-cycle","action":"POSITION_QTY_SYNC","symbol":"US.COHH","to":1000}
