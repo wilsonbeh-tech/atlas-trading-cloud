@@ -4,3 +4,5 @@
 {"ts":"2026-11-18T12:36:22.957Z","symbol":"US.AAPL","side":"BUY","qty":39,"limitPrice":352.44,"notional":13724.49,"reason":"insufficient cash","targetWeight":0.1404,"currentWeight":0,"weightOfEquity":0.1372,"account":"Moomoo x Qoder AI Paper Trading Agent Challenge"}
 {"ts":"2026-11-18T12:36:22.959Z","symbol":"US.MSFT","side":"BUY","qty":16,"limitPrice":507,"notional":8099.84,"reason":"insufficient cash","targetWeight":0.0818,"currentWeight":0,"weightOfEquity":0.081,"account":"Moomoo x Qoder AI Paper Trading Agent Challenge"}
 {"ts":"2026-11-18T12:36:22.960Z","symbol":"US.XLF","side":"BUY","qty":190,"limitPrice":57.16,"notional":10843.3,"reason":"open order already exists for this symbol","targetWeight":0.1088,"currentWeight":0,"weightOfEquity":0.1084,"account":"Moomoo x Qoder AI Paper Trading Agent Challenge"}
+{"ts":"2026-11-19T20:35:57.815Z","source":"supertrend-cycle","symbol":"US.SPCX","side":"SELL","reason":"no valid quote"}
+{"ts":"2026-11-19T20:35:57.815Z","source":"supertrend-cycle","symbol":"US.COHH","side":"SELL","reason":"no valid quote"}

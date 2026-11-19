@@ -1,502 +1,166 @@
 {
- "source": "mcp-agent",
- "capturedAt": "2026-11-19T19:35:41Z",
- "sessionNote": "Intraday run 2026-11-19 14:35 ET. Regular session live; broad intraday selloff vs open (SPY 720.80 vs open 737.54, QQQ 651.02 vs 670.78). Strategy positions: MSFT 17, AMZN 29. Two non-universe positions (SPCX 50, COHH 1000) from another process, outside the 24-symbol universe; 2 open non-universe SELL orders. Broker orders today: 4 (2 filled buys, 2 open sells).",
- "account": {
-  "account_id": "5830107",
-  "account_title": "Moomoo x Qoder AI Paper Trading Agent Challenge",
-  "account_type": 2,
-  "broker_id": 0,
-  "intra_account_id": 0,
-  "market_id": 100
- },
- "cash": {
-  "balance": "73708.674",
-  "hold": "2.156",
-  "long_mv": "25555.31",
-  "max_power_long": "172972.658",
-  "mv": "25555.31",
-  "realized_profit": null,
-  "short_mv": "0",
-  "total_asset": "99266.14",
-  "unrealized_profit": null
- },
- "positions": [
-  {
-   "symbol": "US.SPCX",
-   "qty": "50",
-   "qty_avbl": "0",
-   "cost_price": "143.5",
-   "cur_price": "137.76",
-   "mv": "6888",
-   "unrealized_profit": "-287",
-   "pstn_id": "729501"
+  "source": "mcp-agent",
+  "capturedAt": "2026-11-19T20:35:30Z",
+  "sessionNote": "Intraday run 2026-11-19 15:35 ET. Regular session live, index complex down sharply vs open (SPY 716.42 vs open 737.54; QQQ 645.33 vs 670.78). Strategy positions MSFT 17, AMZN 29. Two non-universe positions (SPCX 50, COHH 1000) from another process with 2 open non-universe SELL orders. Broker orders today: 4.",
+  "account": {
+    "account_id": "5830107",
+    "account_title": "Moomoo x Qoder AI Paper Trading Agent Challenge",
+    "account_type": 2,
+    "broker_id": 0,
+    "intra_account_id": 0,
+    "market_id": 100
   },
-  {
-   "symbol": "US.COHH",
-   "qty": "1000",
-   "qty_avbl": "0",
-   "cost_price": "3.03",
-   "cur_price": "2.59",
-   "mv": "2590",
-   "unrealized_profit": "-440",
-   "pstn_id": "729495"
+  "cash": {
+    "balance": "73708.674",
+    "hold": "2.156",
+    "long_mv": "25301.045",
+    "max_power_long": "172718.393",
+    "mv": "25301.045",
+    "realized_profit": null,
+    "short_mv": "0",
+    "total_asset": "99011.875",
+    "unrealized_profit": null
   },
-  {
-   "symbol": "US.MSFT",
-   "qty": "17",
-   "qty_avbl": "17",
-   "cost_price": "505",
-   "cur_price": "502.95",
-   "mv": "8550.15",
-   "unrealized_profit": "-34.85",
-   "pstn_id": "728621"
-  },
-  {
-   "symbol": "US.AMZN",
-   "qty": "29",
-   "qty_avbl": "29",
-   "cost_price": "259.03",
-   "cur_price": "259.52",
-   "mv": "7526.08",
-   "unrealized_profit": "14.21",
-   "pstn_id": "728622"
+  "positions": [
+    {
+      "symbol": "US.COHH",
+      "qty": "1000",
+      "qty_avbl": "0",
+      "cost_price": "3.03",
+      "cur_price": "2.52",
+      "mv": "2520",
+      "profit": "-510",
+      "pstn_id": "729495"
+    },
+    {
+      "symbol": "US.MSFT",
+      "qty": "17",
+      "qty_avbl": "17",
+      "cost_price": "505",
+      "cur_price": "499.745",
+      "mv": "8495.665",
+      "profit": "-89.335",
+      "pstn_id": "728621"
+    },
+    {
+      "symbol": "US.AMZN",
+      "qty": "29",
+      "qty_avbl": "29",
+      "cost_price": "259.03",
+      "cur_price": "257.23",
+      "mv": "7459.67",
+      "profit": "-52.2",
+      "pstn_id": "728622"
+    },
+    {
+      "symbol": "US.SPCX",
+      "qty": "50",
+      "qty_avbl": "0",
+      "cost_price": "143.5",
+      "cur_price": "136.53",
+      "mv": "6826.5",
+      "profit": "-348.5",
+      "pstn_id": "729501"
+    }
+  ],
+  "quotes": [
+    { "code": "US.SPY", "symbol": "US.SPY", "last_price": 716.42, "open_price": 737.54, "low_price": 715.65, "high_price": 739.8999, "prev_close_price": 730.2, "data_date": "2026-11-19", "data_time": 1795120522043, "suspension": false, "pre_market": { "price": 737.54 } },
+    { "code": "US.QQQ", "symbol": "US.QQQ", "last_price": 645.33, "open_price": 670.78, "low_price": 644.34, "high_price": 676.46, "prev_close_price": 659.51, "data_date": "2026-11-19", "data_time": 1795120521928, "suspension": false, "pre_market": { "price": 670.82 } },
+    { "code": "US.IWM", "symbol": "US.IWM", "last_price": 264.81, "open_price": 271.02, "low_price": 264.02, "high_price": 271.8, "prev_close_price": 270.12, "data_date": "2026-11-19", "data_time": 1795120522091, "suspension": false, "pre_market": { "price": 271.04 } },
+    { "code": "US.SMH", "symbol": "US.SMH", "last_price": 448.5, "open_price": 472.69, "low_price": 447.62, "high_price": 479.96, "prev_close_price": 459.54, "data_date": "2026-11-19", "data_time": 1795120521221, "suspension": false, "pre_market": { "price": 472.93 } },
+    { "code": "US.TLT", "symbol": "US.TLT", "last_price": 80.35, "open_price": 80.1, "low_price": 79.81, "high_price": 80.45, "prev_close_price": 80.22, "data_date": "2026-11-19", "data_time": 1795120519884, "suspension": false, "pre_market": { "price": 80.09 } },
+    { "code": "US.GLD", "symbol": "US.GLD", "last_price": 335.96, "open_price": 339.9, "low_price": 335.37, "high_price": 340.518, "prev_close_price": 341.19, "data_date": "2026-11-19", "data_time": 1795120519829, "suspension": false, "pre_market": { "price": 339.88 } },
+    { "code": "US.XLE", "symbol": "US.XLE", "last_price": 60.9203, "open_price": 61.7, "low_price": 60.735, "high_price": 61.94, "prev_close_price": 61.29, "data_date": "2026-11-19", "data_time": 1795120521386, "suspension": false, "pre_market": { "price": 61.69 } },
+    { "code": "US.XLF", "symbol": "US.XLF", "last_price": 55.6, "open_price": 56.52, "low_price": 55.3, "high_price": 56.635, "prev_close_price": 56.42, "data_date": "2026-11-19", "data_time": 1795120519631, "suspension": false, "pre_market": { "price": 56.52 } },
+    { "code": "US.XLK", "symbol": "US.XLK", "last_price": 160.7803, "open_price": 167.34, "low_price": 160.47, "high_price": 169.31, "prev_close_price": 163.81, "data_date": "2026-11-19", "data_time": 1795120520382, "suspension": false, "pre_market": { "price": 167.39 } },
+    { "code": "US.XLV", "symbol": "US.XLV", "last_price": 177.37, "open_price": 180.77, "low_price": 176.96, "high_price": 181.25, "prev_close_price": 181.17, "data_date": "2026-11-19", "data_time": 1795120520015, "suspension": false, "pre_market": { "price": 180.82 } },
+    { "code": "US.XLY", "symbol": "US.XLY", "last_price": 116.01, "open_price": 119.6, "low_price": 115.83, "high_price": 119.71, "prev_close_price": 119.2, "data_date": "2026-11-19", "data_time": 1795120521059, "suspension": false, "pre_market": { "price": 119.9 } },
+    { "code": "US.XLU", "symbol": "US.XLU", "last_price": 43.035, "open_price": 43.35, "low_price": 42.75, "high_price": 43.44, "prev_close_price": 43.55, "data_date": "2026-11-19", "data_time": 1795120516196, "suspension": false, "pre_market": { "price": 43.31 } },
+    { "code": "US.AAPL", "symbol": "US.AAPL", "last_price": 348.76, "open_price": 353.16, "low_price": 346.47, "high_price": 355.28, "prev_close_price": 352.45, "data_date": "2026-11-19", "data_time": 1795120521923, "suspension": false, "pre_market": { "price": 353.43 } },
+    { "code": "US.MSFT", "symbol": "US.MSFT", "last_price": 499.81, "open_price": 518.94, "low_price": 498.88, "high_price": 526.49, "prev_close_price": 507.31, "data_date": "2026-11-19", "data_time": 1795120521914, "suspension": false, "pre_market": { "price": 518.83 } },
+    { "code": "US.NVDA", "symbol": "US.NVDA", "last_price": 146.97, "open_price": 153.11, "low_price": 146.673, "high_price": 158.1301, "prev_close_price": 150.96, "data_date": "2026-11-19", "data_time": 1795120522088, "suspension": false, "pre_market": { "price": 153.09 } },
+    { "code": "US.AMZN", "symbol": "US.AMZN", "last_price": 257.23, "open_price": 272.51, "low_price": 256.75, "high_price": 274, "prev_close_price": 267.74, "data_date": "2026-11-19", "data_time": 1795120521915, "suspension": false, "pre_market": { "price": 272.584 } },
+    { "code": "US.GOOGL", "symbol": "US.GOOGL", "last_price": 274.085, "open_price": 294.79, "low_price": 273.61, "high_price": 295.43, "prev_close_price": 282.44, "data_date": "2026-11-19", "data_time": 1795120521991, "suspension": false, "pre_market": { "price": 294.77 } },
+    { "code": "US.META", "symbol": "US.META", "last_price": 596.33, "open_price": 625, "low_price": 595.7913, "high_price": 630.0113, "prev_close_price": 616.38, "data_date": "2026-11-19", "data_time": 1795120521970, "suspension": false, "pre_market": { "price": 625.99 } },
+    { "code": "US.AVGO", "symbol": "US.AVGO", "last_price": 346.39, "open_price": 362.8, "low_price": 345.14, "high_price": 369.26, "prev_close_price": 354.05, "data_date": "2026-11-19", "data_time": 1795120521488, "suspension": false, "pre_market": { "price": 362.99 } },
+    { "code": "US.JPM", "symbol": "US.JPM", "last_price": 320.15, "open_price": 326.4, "low_price": 317.43, "high_price": 328.27, "prev_close_price": 324.11, "data_date": "2026-11-19", "data_time": 1795120515692, "suspension": false, "pre_market": { "price": 326.936 } },
+    { "code": "US.LLY", "symbol": "US.LLY", "last_price": 1352.2896, "open_price": 1369.02, "low_price": 1341.46, "high_price": 1381.9999, "prev_close_price": 1382.75, "data_date": "2026-11-19", "data_time": 1795120521727, "suspension": false, "pre_market": { "price": 1369.19 } },
+    { "code": "US.V", "symbol": "US.V", "last_price": 402.151, "open_price": 410.37, "low_price": 400.735, "high_price": 413.51, "prev_close_price": 415.22, "data_date": "2026-11-19", "data_time": 1795120520847, "suspension": false, "pre_market": { "price": 410.45 } },
+    { "code": "US.COST", "symbol": "US.COST", "last_price": 1090.705, "open_price": 1089.56, "low_price": 1083.15, "high_price": 1094.54, "prev_close_price": 1096.62, "data_date": "2026-11-19", "data_time": 1795120521949, "suspension": false, "pre_market": { "price": 1089.56 } },
+    { "code": "US.XOM", "symbol": "US.XOM", "last_price": 158.93, "open_price": 161.4, "low_price": 158.61, "high_price": 162.0686, "prev_close_price": 160.58, "data_date": "2026-11-19", "data_time": 1795120521031, "suspension": false, "pre_market": { "price": 161.0721 } }
+  ],
+  "open_orders": [
+    {
+      "order_id": "3253270",
+      "symbol": "SPCX",
+      "stock_name": "SpaceX",
+      "market": 2,
+      "side": 2,
+      "qty": "50",
+      "price": "145",
+      "order_type": 1,
+      "status": 2,
+      "cum_qty": "0",
+      "avg_fill_price": "0",
+      "create_time": "1795101447000000",
+      "update_time": "1795101447000000",
+      "order_trade_time_type": 2
+    },
+    {
+      "order_id": "3253260",
+      "symbol": "COHH",
+      "stock_name": "Leverage Shares 2X Long COHR Daily ETF",
+      "market": 2,
+      "side": 2,
+      "qty": "1000",
+      "price": "3.04",
+      "order_type": 1,
+      "status": 2,
+      "cum_qty": "0",
+      "avg_fill_price": "0",
+      "create_time": "1795101385000000",
+      "update_time": "1795104523000000",
+      "order_trade_time_type": 1
+    }
+  ],
+  "cancelled_today": [],
+  "filled_today": [
+    {
+      "order_id": "3253234",
+      "symbol": "SPCX",
+      "stock_name": "SpaceX",
+      "market": 2,
+      "side": 1,
+      "qty": "50",
+      "price": "143.5",
+      "order_type": 1,
+      "status": 4,
+      "cum_qty": "50",
+      "avg_fill_price": "143.5",
+      "create_time": "1795101205000000",
+      "update_time": "1795101306000000",
+      "order_trade_time_type": 2
+    },
+    {
+      "order_id": "3253201",
+      "symbol": "COHH",
+      "stock_name": "Leverage Shares 2X Long COHR Daily ETF",
+      "market": 2,
+      "side": 1,
+      "qty": "1000",
+      "price": "3.03",
+      "order_type": 1,
+      "status": 4,
+      "cum_qty": "1000",
+      "avg_fill_price": "3.03",
+      "create_time": "1795100854000000",
+      "update_time": "1795101030000000",
+      "order_trade_time_type": 2
+    }
+  ],
+  "orders_today": 4,
+  "orders_today_breakdown": {
+    "stateDailyOrders": 0,
+    "brokerOrders": 4
   }
- ],
- "quotes": [
-  {
-   "code": "US.SPY",
-   "symbol": "US.SPY",
-   "last_price": 720.8,
-   "open_price": 737.54,
-   "low_price": 717.55,
-   "high_price": 739.8999,
-   "prev_close_price": 730.2,
-   "data_date": "2026-11-19",
-   "data_time": 1795116926357,
-   "suspension": false,
-   "pre_market": {
-    "price": 737.54
-   }
-  },
-  {
-   "code": "US.QQQ",
-   "symbol": "US.QQQ",
-   "last_price": 651.0156,
-   "open_price": 670.78,
-   "low_price": 647.17,
-   "high_price": 676.46,
-   "prev_close_price": 659.51,
-   "data_date": "2026-11-19",
-   "data_time": 1795116925146,
-   "suspension": false,
-   "pre_market": {
-    "price": 670.82
-   }
-  },
-  {
-   "code": "US.IWM",
-   "symbol": "US.IWM",
-   "last_price": 265.93,
-   "open_price": 271.02,
-   "low_price": 264.02,
-   "high_price": 271.8,
-   "prev_close_price": 270.12,
-   "data_date": "2026-11-19",
-   "data_time": 1795116926097,
-   "suspension": false,
-   "pre_market": {
-    "price": 271.04
-   }
-  },
-  {
-   "code": "US.SMH",
-   "symbol": "US.SMH",
-   "last_price": 454.36,
-   "open_price": 472.69,
-   "low_price": 447.82,
-   "high_price": 479.96,
-   "prev_close_price": 459.54,
-   "data_date": "2026-11-19",
-   "data_time": 1795116926019,
-   "suspension": false,
-   "pre_market": {
-    "price": 472.93
-   }
-  },
-  {
-   "code": "US.TLT",
-   "symbol": "US.TLT",
-   "last_price": 80.235,
-   "open_price": 80.1,
-   "low_price": 79.81,
-   "high_price": 80.41,
-   "prev_close_price": 80.22,
-   "data_date": "2026-11-19",
-   "data_time": 1795116926485,
-   "suspension": false,
-   "pre_market": {
-    "price": 80.09
-   }
-  },
-  {
-   "code": "US.GLD",
-   "symbol": "US.GLD",
-   "last_price": 336.73,
-   "open_price": 339.9,
-   "low_price": 335.93,
-   "high_price": 340.518,
-   "prev_close_price": 341.19,
-   "data_date": "2026-11-19",
-   "data_time": 1795116925708,
-   "suspension": false,
-   "pre_market": {
-    "price": 339.88
-   }
-  },
-  {
-   "code": "US.XLE",
-   "symbol": "US.XLE",
-   "last_price": 61.08,
-   "open_price": 61.7,
-   "low_price": 60.735,
-   "high_price": 61.94,
-   "prev_close_price": 61.29,
-   "data_date": "2026-11-19",
-   "data_time": 1795116921116,
-   "suspension": false,
-   "pre_market": {
-    "price": 61.69
-   }
-  },
-  {
-   "code": "US.XLF",
-   "symbol": "US.XLF",
-   "last_price": 55.765,
-   "open_price": 56.52,
-   "low_price": 55.3,
-   "high_price": 56.635,
-   "prev_close_price": 56.42,
-   "data_date": "2026-11-19",
-   "data_time": 1795116921113,
-   "suspension": false,
-   "pre_market": {
-    "price": 56.52
-   }
-  },
-  {
-   "code": "US.XLK",
-   "symbol": "US.XLK",
-   "last_price": 162.28,
-   "open_price": 167.34,
-   "low_price": 160.96,
-   "high_price": 169.31,
-   "prev_close_price": 163.81,
-   "data_date": "2026-11-19",
-   "data_time": 1795116926049,
-   "suspension": false,
-   "pre_market": {
-    "price": 167.39
-   }
-  },
-  {
-   "code": "US.XLV",
-   "symbol": "US.XLV",
-   "last_price": 177.83,
-   "open_price": 180.77,
-   "low_price": 176.975,
-   "high_price": 181.25,
-   "prev_close_price": 181.17,
-   "data_date": "2026-11-19",
-   "data_time": 1795116921354,
-   "suspension": false,
-   "pre_market": {
-    "price": 180.82
-   }
-  },
-  {
-   "code": "US.XLY",
-   "symbol": "US.XLY",
-   "last_price": 116.58,
-   "open_price": 119.6,
-   "low_price": 116.225,
-   "high_price": 119.71,
-   "prev_close_price": 119.2,
-   "data_date": "2026-11-19",
-   "data_time": 1795116926258,
-   "suspension": false,
-   "pre_market": {
-    "price": 119.9
-   }
-  },
-  {
-   "code": "US.XLU",
-   "symbol": "US.XLU",
-   "last_price": 43.1101,
-   "open_price": 43.35,
-   "low_price": 42.75,
-   "high_price": 43.44,
-   "prev_close_price": 43.55,
-   "data_date": "2026-11-19",
-   "data_time": 1795116924510,
-   "suspension": false,
-   "pre_market": {
-    "price": 43.31
-   }
-  },
-  {
-   "code": "US.AAPL",
-   "symbol": "US.AAPL",
-   "last_price": 350.065,
-   "open_price": 353.16,
-   "low_price": 346.47,
-   "high_price": 355.28,
-   "prev_close_price": 352.45,
-   "data_date": "2026-11-19",
-   "data_time": 1795116926386,
-   "suspension": false,
-   "pre_market": {
-    "price": 353.43
-   }
-  },
-  {
-   "code": "US.MSFT",
-   "symbol": "US.MSFT",
-   "last_price": 502.82,
-   "open_price": 518.94,
-   "low_price": 500.26,
-   "high_price": 526.49,
-   "prev_close_price": 507.31,
-   "data_date": "2026-11-19",
-   "data_time": 1795116926031,
-   "suspension": false,
-   "pre_market": {
-    "price": 518.83
-   }
-  },
-  {
-   "code": "US.NVDA",
-   "symbol": "US.NVDA",
-   "last_price": 148.5186,
-   "open_price": 153.11,
-   "low_price": 147.82,
-   "high_price": 158.1301,
-   "prev_close_price": 150.96,
-   "data_date": "2026-11-19",
-   "data_time": 1795116926505,
-   "suspension": false,
-   "pre_market": {
-    "price": 153.09
-   }
-  },
-  {
-   "code": "US.AMZN",
-   "symbol": "US.AMZN",
-   "last_price": 259.34,
-   "open_price": 272.51,
-   "low_price": 258.48,
-   "high_price": 274,
-   "prev_close_price": 267.74,
-   "data_date": "2026-11-19",
-   "data_time": 1795116926358,
-   "suspension": false,
-   "pre_market": {
-    "price": 272.584
-   }
-  },
-  {
-   "code": "US.GOOGL",
-   "symbol": "US.GOOGL",
-   "last_price": 279.1,
-   "open_price": 294.79,
-   "low_price": 278,
-   "high_price": 295.43,
-   "prev_close_price": 282.44,
-   "data_date": "2026-11-19",
-   "data_time": 1795116926444,
-   "suspension": false,
-   "pre_market": {
-    "price": 294.77
-   }
-  },
-  {
-   "code": "US.META",
-   "symbol": "US.META",
-   "last_price": 604.09,
-   "open_price": 625,
-   "low_price": 598.04,
-   "high_price": 630.0113,
-   "prev_close_price": 616.38,
-   "data_date": "2026-11-19",
-   "data_time": 1795116926201,
-   "suspension": false,
-   "pre_market": {
-    "price": 625.99
-   }
-  },
-  {
-   "code": "US.AVGO",
-   "symbol": "US.AVGO",
-   "last_price": 349.615,
-   "open_price": 362.8,
-   "low_price": 346.37,
-   "high_price": 369.26,
-   "prev_close_price": 354.05,
-   "data_date": "2026-11-19",
-   "data_time": 1795116926059,
-   "suspension": false,
-   "pre_market": {
-    "price": 362.99
-   }
-  },
-  {
-   "code": "US.JPM",
-   "symbol": "US.JPM",
-   "last_price": 320.864,
-   "open_price": 326.4,
-   "low_price": 317.43,
-   "high_price": 328.27,
-   "prev_close_price": 324.11,
-   "data_date": "2026-11-19",
-   "data_time": 1795116926521,
-   "suspension": false,
-   "pre_market": {
-    "price": 326.936
-   }
-  },
-  {
-   "code": "US.LLY",
-   "symbol": "US.LLY",
-   "last_price": 1356.0101,
-   "open_price": 1369.02,
-   "low_price": 1341.46,
-   "high_price": 1381.9999,
-   "prev_close_price": 1382.75,
-   "data_date": "2026-11-19",
-   "data_time": 1795116926431,
-   "suspension": false,
-   "pre_market": {
-    "price": 1369.19
-   }
-  },
-  {
-   "code": "US.V",
-   "symbol": "US.V",
-   "last_price": 403.49,
-   "open_price": 410.37,
-   "low_price": 400.735,
-   "high_price": 413.51,
-   "prev_close_price": 415.22,
-   "data_date": "2026-11-19",
-   "data_time": 1795116926369,
-   "suspension": false,
-   "pre_market": {
-    "price": 410.45
-   }
-  },
-  {
-   "code": "US.COST",
-   "symbol": "US.COST",
-   "last_price": 1092.7,
-   "open_price": 1089.56,
-   "low_price": 1083.15,
-   "high_price": 1094.54,
-   "prev_close_price": 1096.62,
-   "data_date": "2026-11-19",
-   "data_time": 1795116921411,
-   "suspension": false,
-   "pre_market": {
-    "price": 1089.56
-   }
-  },
-  {
-   "code": "US.XOM",
-   "symbol": "US.XOM",
-   "last_price": 158.96,
-   "open_price": 161.4,
-   "low_price": 158.61,
-   "high_price": 162.0686,
-   "prev_close_price": 160.58,
-   "data_date": "2026-11-19",
-   "data_time": 1795116921211,
-   "suspension": false,
-   "pre_market": {
-    "price": 161.0721
-   }
-  }
- ],
- "open_orders": [
-  {
-   "order_id": "3253270",
-   "symbol": "SPCX",
-   "stock_name": "SpaceX",
-   "market": 2,
-   "side": 2,
-   "qty": "50",
-   "price": "145",
-   "order_type": 1,
-   "status": 2,
-   "cum_qty": "0",
-   "avg_fill_price": "0",
-   "create_time": "1795101447000000",
-   "update_time": "1795101447000000",
-   "order_trade_time_type": 2
-  },
-  {
-   "order_id": "3253260",
-   "symbol": "COHH",
-   "stock_name": "Leverage Shares 2X Long COHR Daily ETF",
-   "market": 2,
-   "side": 2,
-   "qty": "1000",
-   "price": "3.04",
-   "order_type": 1,
-   "status": 2,
-   "cum_qty": "0",
-   "avg_fill_price": "0",
-   "create_time": "1795101385000000",
-   "update_time": "1795104523000000",
-   "order_trade_time_type": 1
-  }
- ],
- "cancelled_today": [],
- "filled_today": [
-  {
-   "order_id": "3253234",
-   "symbol": "SPCX",
-   "stock_name": "SpaceX",
-   "market": 2,
-   "side": 1,
-   "qty": "50",
-   "price": "143.5",
-   "order_type": 1,
-   "status": 4,
-   "cum_qty": "50",
-   "avg_fill_price": "143.5",
-   "create_time": "1795101205000000",
-   "update_time": "1795101306000000",
-   "order_trade_time_type": 2
-  },
-  {
-   "order_id": "3253201",
-   "symbol": "COHH",
-   "stock_name": "Leverage Shares 2X Long COHR Daily ETF",
-   "market": 2,
-   "side": 1,
-   "qty": "1000",
-   "price": "3.03",
-   "order_type": 1,
-   "status": 4,
-   "cum_qty": "1000",
-   "avg_fill_price": "3.03",
-   "create_time": "1795100854000000",
-   "update_time": "1795101030000000",
-   "order_trade_time_type": 2
-  }
- ],
- "orders_today": 4,
- "orders_today_breakdown": {
-  "stateDailyOrders": 0,
-  "brokerOrders": 4
- }
 }

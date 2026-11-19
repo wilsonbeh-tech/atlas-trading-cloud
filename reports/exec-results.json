@@ -1,22 +1,20 @@
 [
   {
     "symbol": "US.MSFT",
-    "side": "BUY",
+    "side": "SELL",
     "qty": 17,
-    "price": 505.0,
-    "avg_fill_price": 505.0,
-    "order_id": "3249430",
-    "status": "FILLED",
-    "reason": "Atlas Trend v1.0 entry; ST flip 9 bars, close>200d; stop 449.85"
+    "price": 499.06,
+    "order_id": "3254326",
+    "status": "SUBMITTED",
+    "reason": "risk flatten: daily -1.62%"
   },
   {
     "symbol": "US.AMZN",
-    "side": "BUY",
+    "side": "SELL",
     "qty": 29,
-    "price": 259.03,
-    "avg_fill_price": 259.03,
-    "order_id": "3249431",
-    "status": "FILLED",
-    "reason": "Atlas Trend v1.0 entry; ST flip 9 bars, close>200d; stop 224.26"
+    "price": 256.84,
+    "order_id": "3254327",
+    "status": "SUBMITTED",
+    "reason": "risk flatten: daily -1.62%"
   }
 ]

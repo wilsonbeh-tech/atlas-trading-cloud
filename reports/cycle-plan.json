@@ -1,18 +1,20 @@
 {
-  "generatedAt": "2026-11-19T19:35:43.059Z",
+  "generatedAt": "2026-11-19T20:35:57.730Z",
   "mode": "intraday",
   "today": "2026-11-19",
-  "etTime": "14:35",
+  "etTime": "15:35",
   "marketOpen": true,
-  "equity": 99266.14,
-  "dayPnlPct": -1.37,
-  "drawdownPct": -1.37,
+  "equity": 99011.875,
+  "dayPnlPct": -1.62,
+  "drawdownPct": -1.62,
   "risk": {
-    "flatten": false,
+    "flatten": true,
     "deRisk": false,
     "killActive": false,
     "killUntil": null,
-    "reasons": []
+    "reasons": [
+      "daily -1.62%"
+    ]
   },
   "positions": [
     {
@@ -56,7 +58,35 @@
   },
   "ordersToday": 4,
   "orderBudget": 8,
-  "orders": [],
-  "rejected": [],
+  "orders": [
+    {
+      "symbol": "US.MSFT",
+      "side": "SELL",
+      "qty": 17,
+      "limitPrice": 499.06,
+      "stop": 454.55,
+      "reason": "risk flatten: daily -1.62%"
+    },
+    {
+      "symbol": "US.AMZN",
+      "side": "SELL",
+      "qty": 29,
+      "limitPrice": 256.84,
+      "stop": 234.74,
+      "reason": "risk flatten: daily -1.62%"
+    }
+  ],
+  "rejected": [
+    {
+      "symbol": "US.SPCX",
+      "side": "SELL",
+      "reason": "no valid quote"
+    },
+    {
+      "symbol": "US.COHH",
+      "side": "SELL",
+      "reason": "no valid quote"
+    }
+  ],
   "nextSession": null
 }

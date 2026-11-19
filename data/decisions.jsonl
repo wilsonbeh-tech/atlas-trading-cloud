@@ -25,3 +25,4 @@
 {"ts":"2026-11-19T15:36:40.095Z","source":"supertrend-cycle","action":"POSITION_QTY_SYNC","symbol":"US.SPCX","to":50}
 {"ts":"2026-11-19T15:36:40.095Z","source":"supertrend-cycle","action":"POSITION_INIT","symbol":"US.COHH","qty":1000,"entryPrice":3.03,"stop":2.73,"reason":"state initialised from account position"}
 {"ts":"2026-11-19T15:36:40.095Z","source":"supertrend-cycle","action":"POSITION_QTY_SYNC","symbol":"US.COHH","to":1000}
+{"ts":"2026-11-19T20:36:10.374Z","action":"ORDERS_SUBMITTED","summary":"2 orders submitted (mcp-agent)"}
