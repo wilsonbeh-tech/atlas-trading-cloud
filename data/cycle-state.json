@@ -1,16 +1,5 @@
 {
   "positions": {
-    "US.SPCX": {
-      "symbol": "US.SPCX",
-      "entryDate": "2026-11-19",
-      "entryPrice": 143.5,
-      "initialStop": 129.15,
-      "stop": 129.15,
-      "peakClose": 143.5,
-      "sessionsHeld": 1,
-      "lastBarDate": null,
-      "qty": 50
-    },
     "US.COHH": {
       "symbol": "US.COHH",
       "entryDate": "2026-11-19",
@@ -26,7 +15,7 @@
   "killUntil": null,
   "peakEquity": 100643.181,
   "dayStart": {
-    "date": "2026-11-19",
-    "equity": 100643.181
+    "date": "2026-11-20",
+    "equity": 98411.51
   }
 }

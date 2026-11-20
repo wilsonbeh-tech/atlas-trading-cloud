@@ -1,30 +1,20 @@
 {
-  "generatedAt": "2026-11-19T21:06:53.757Z",
-  "mode": "eod",
-  "today": "2026-11-19",
-  "etTime": "16:06",
-  "marketOpen": false,
-  "equity": 99074.51,
-  "dayPnlPct": -1.56,
-  "drawdownPct": -1.56,
+  "generatedAt": "2026-11-20T14:35:43.080Z",
+  "mode": "intraday",
+  "today": "2026-11-20",
+  "etTime": "09:35",
+  "marketOpen": true,
+  "equity": 98411.51,
+  "dayPnlPct": 0,
+  "drawdownPct": -2.22,
   "risk": {
-    "flatten": true,
+    "flatten": false,
     "deRisk": false,
     "killActive": false,
     "killUntil": null,
-    "reasons": [
-      "daily -1.56%"
-    ]
+    "reasons": []
   },
   "positions": [
-    {
-      "symbol": "US.SPCX",
-      "qty": 50,
-      "entryDate": "2026-11-19",
-      "stop": 129.15,
-      "peakClose": 143.5,
-      "sessionsHeld": 1
-    },
     {
       "symbol": "US.COHH",
       "qty": 1000,
@@ -35,14 +25,14 @@
     }
   ],
   "plan": {
-    "forSession": "2026-11-19",
-    "executedAt": "2026-11-19T14:35:54.675Z",
+    "forSession": "2026-11-20",
+    "executedAt": "2026-11-20T14:35:43.080Z",
     "picks": 0,
     "outgoing": 0
   },
-  "ordersToday": 6,
-  "orderBudget": 6,
+  "ordersToday": 1,
+  "orderBudget": 11,
   "orders": [],
   "rejected": [],
-  "nextSession": "2026-11-20"
+  "nextSession": null
 }

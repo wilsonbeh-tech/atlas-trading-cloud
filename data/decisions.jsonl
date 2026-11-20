@@ -28,3 +28,4 @@
 {"ts":"2026-11-19T20:36:10.374Z","action":"ORDERS_SUBMITTED","summary":"2 orders submitted (mcp-agent)"}
 {"ts":"2026-11-19T21:06:53.864Z","source":"supertrend-cycle","action":"POSITION_CLOSED","symbol":"US.MSFT","reason":"no longer held in account"}
 {"ts":"2026-11-19T21:06:53.865Z","source":"supertrend-cycle","action":"POSITION_CLOSED","symbol":"US.AMZN","reason":"no longer held in account"}
+{"ts":"2026-11-20T14:35:43.173Z","source":"supertrend-cycle","action":"POSITION_CLOSED","symbol":"US.SPCX","reason":"no longer held in account"}
