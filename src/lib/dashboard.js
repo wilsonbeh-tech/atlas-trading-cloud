@@ -15,6 +15,8 @@ export function buildDashboard() {
   const backtest = readJson(path.join(REPORTS, 'backtest.json'));
   const signals = readJson(path.join(REPORTS, 'signals.json'));
   const plan = readJson(path.join(REPORTS, 'plan.json'));
+  const cycle = readJson(path.join(REPORTS, 'cycle-plan.json'));
+  const cycleState = readJson(path.join(DATA, 'cycle-state.json'), {});
   const state = readJson(path.join(DATA, 'state.json'), {});
   const snapshot = readJson(path.join(DATA, 'raw', 'snapshot.json'));
   const decisions = readJsonl(path.join(DATA, 'decisions.jsonl')).slice(-60).reverse();
@@ -44,20 +46,32 @@ export function buildDashboard() {
 
   const m = backtest?.metrics ?? {};
   const bench = backtest?.benchmark?.metrics ?? null;
-  const hasLive = Boolean(snapshot);
-  const equity = snapshot?.cash?.total_asset ? Number(snapshot.cash.total_asset) : state.lastEquity ?? null;
+  const snapAt = Date.parse(snapshot?.fetchedAt ?? '') || 0;
+  const cycleAt = Date.parse(cycle?.generatedAt ?? '') || 0;
+  const usingCycle = cycleAt > snapAt;
+  const hasLive = Boolean(snapshot) || usingCycle;
+  const snapEquity = snapshot?.cash?.total_asset != null ? Number(snapshot.cash.total_asset) : null;
+  const cycleEquity = cycle?.equity != null ? Number(cycle.equity) : null;
+  const equity = (usingCycle ? cycleEquity : snapEquity) ?? state.lastEquity ?? null;
   const baseline = state.startingEquity ?? 100000;
   const liveReturn = equity ? equity / baseline - 1 : null;
   const positions = snapshot?.positions ?? [];
+  const heldPositions = Object.values(cycleState?.positions ?? {}).filter((p) => Number(p.qty) > 0);
   const positionValue = (p) => Number(p.mv ?? p.marketValue ?? p.qty * (p.cur_price ?? p.curPrice) ?? 0);
-  const gross = equity ? positions.filter((p) => p.qty > 0).reduce((a, p) => a + positionValue(p), 0) / equity : 0;
-  const maxName = equity ? Math.max(0, ...positions.map((p) => (p.qty > 0 ? positionValue(p) / equity : 0))) : 0;
+  const notional = (p) => Number(p.qty) * Number(p.entryPrice ?? p.buy_avg_price ?? p.avgPrice ?? 0);
+  const openHoldings = usingCycle ? heldPositions : positions.filter((p) => p.qty > 0);
+  const gross = equity ? openHoldings.reduce((a, p) => a + (usingCycle ? notional(p) : positionValue(p)), 0) / equity : 0;
+  const maxName = equity ? Math.max(0, ...openHoldings.map((p) => (usingCycle ? notional(p) : positionValue(p)) / equity)) : 0;
   const ordersToday = state.dailyOrders?.[nyDate()] ?? 0;
-  const dd = state.peakEquity && equity ? equity / state.peakEquity - 1 : 0;
+  const peakEquity = Number((usingCycle ? cycleState?.peakEquity : state.peakEquity) ?? state.peakEquity ?? 0);
+  const dd = peakEquity && equity ? equity / peakEquity - 1 : 0;
+  const dataAsOf = usingCycle ? cycle.generatedAt : snapshot?.fetchedAt ?? null;
+  const risk = cycle?.risk ?? null;
+  const leaderboard = readJson(path.join(DATA, 'leaderboard.json'), null);
   const competition = competitionWindow(readJson(path.join(ROOT, 'config', 'strategy.json'), {}));
 
   const html = `<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="refresh" content="900">
 <title>Atlas · Moomoo x Qoder Trading Agent</title>
 <style>
 :root{--bg:#0b0f14;--panel:#111823;--line:#1e2a3a;--text:#e8eef7;--muted:#8ba0b8;--accent:#4f9cff;--good:#31c48d;--bad:#f36b6b;--warn:#f5b84d}
@@ -97,9 +111,10 @@ footer{color:var(--muted);font-size:12px;margin-top:26px;border-top:1px solid va
 </style></head><body><div class="wrap">
 <header>
   <div><h1>Atlas · Dual-Momentum Paper Agent</h1>
-  <sub>${snapshot?.account?.account_title ?? 'No account snapshot'} · generated ${new Date().toISOString().replace('T', ' ').slice(0, 19)} UTC</sub></div>
+  <sub>${snapshot?.account?.account_title ?? 'No account snapshot'} · data as of ${dataAsOf ? String(dataAsOf).replace('T', ' ').slice(0, 19) + ' UTC' : 'n/a'} · generated ${new Date().toISOString().replace('T', ' ').slice(0, 19)} UTC</sub></div>
   <div style="display:flex;gap:8px;flex-wrap:wrap">
     <span class="tag">Moomoo x Qoder Challenge</span>
+    ${usingCycle && risk ? `<span class="tag" style="color:${risk.killActive ? 'var(--bad)' : risk.flatten ? 'var(--warn)' : 'var(--good)'};border-color:${risk.killActive ? '#4d2323' : risk.flatten ? '#4a3a1d' : '#1d4a3a'}">${risk.killActive ? 'KILL' : risk.flatten ? 'FLATTEN' : risk.deRisk ? 'DE-RISK' : 'NORMAL'}</span>` : ''}
     <span class="tag">${backtest ? `Backtest ${backtest.from} → ${backtest.to}` : 'No backtest yet'}</span>
     ${snapshot ? '' : '<span class="tag" style="color:var(--warn);border-color:#4a3a1d">Offline research preview</span>'}
   </div>
@@ -121,24 +136,30 @@ footer{color:var(--muted);font-size:12px;margin-top:26px;border-top:1px solid va
     <h2>Risk budget utilisation</h2>
     ${riskBar('Gross exposure', gross, 0.9, pct(gross))}
     ${riskBar('Largest position', maxName, 0.4, pct(maxName))}
-    ${riskBar('Open positions', positions.filter((p) => p.qty > 0).length / 8, 1, `${positions.filter((p) => p.qty > 0).length} / 8`)}
+    ${riskBar('Open positions', openHoldings.length / 8, 1, `${openHoldings.length} / 8`)}
     ${riskBar('Orders submitted today', ordersToday / 40, 1, `${ordersToday} / 40`)}
     ${riskBar('Drawdown vs kill', Math.abs(Math.min(dd, 0)) / 0.12, 1, pct(dd))}
   </div>
 
   <div class="card half">
-    <h2>Current positions</h2>
-    <div class="scroll"><table><thead><tr><th>Symbol</th><th>Qty</th><th>Avg</th><th>Last</th><th>P&L</th><th>Weight</th></tr></thead><tbody>
-    ${positions.filter((p) => p.qty !== 0).map((p) => {
-      const mv = positionValue(p);
-      const w = equity ? mv / equity : 0;
-      const pnl = Number(p.profit ?? p.unrealizedPnl ?? 0);
-      const avg = p.buy_avg_price ?? p.avgPrice;
-      const last = p.cur_price ?? p.curPrice;
-      return `<tr><td>${p.symbol}</td><td class="mono">${p.qty}</td><td class="mono">${fmt(avg)}</td><td class="mono">${fmt(last)}</td><td class="mono ${pnl >= 0 ? 'good' : 'bad'}">${pnl >= 0 ? '+' : ''}${usd(pnl)}</td><td class="mono">${pct(w)}</td></tr>`;
-    }).join('') || '<tr><td colspan="6" style="color:var(--muted)">No open positions</td></tr>'}
+    <h2>Current positions <span class="pill" style="float:right">${usingCycle ? 'runner state' : 'account snapshot'}</span></h2>
+    <div class="scroll"><table><thead>${usingCycle
+      ? '<tr><th>Symbol</th><th>Qty</th><th>Entry</th><th>Stop</th><th>Held</th><th>Weight</th></tr>'
+      : '<tr><th>Symbol</th><th>Qty</th><th>Avg</th><th>Last</th><th>P&L</th><th>Weight</th></tr>'}</thead><tbody>
+    ${(usingCycle
+      ? heldPositions.map((p) => `<tr><td>${p.symbol}</td><td class="mono">${p.qty}</td><td class="mono">${fmt(p.entryPrice)}</td><td class="mono">${fmt(p.stop)}</td><td class="mono">${p.sessionsHeld ?? '—'}s</td><td class="mono">${pct(equity ? notional(p) / equity : 0)}</td></tr>`).join('')
+      : positions.filter((p) => p.qty !== 0).map((p) => {
+        const mv = positionValue(p);
+        const w = equity ? mv / equity : 0;
+        const pnl = Number(p.profit ?? p.unrealizedPnl ?? 0);
+        const avg = p.buy_avg_price ?? p.avgPrice;
+        const last = p.cur_price ?? p.curPrice;
+        return `<tr><td>${p.symbol}</td><td class="mono">${p.qty}</td><td class="mono">${fmt(avg)}</td><td class="mono">${fmt(last)}</td><td class="mono ${pnl >= 0 ? 'good' : 'bad'}">${pnl >= 0 ? '+' : ''}${usd(pnl)}</td><td class="mono">${pct(w)}</td></tr>`;
+      }).join('')) || '<tr><td colspan="6" style="color:var(--muted)">No open positions</td></tr>'}
     </tbody></table></div>
   </div>
+
+  ${leaderboardCard(leaderboard)}
 
   <div class="card wide">
     <h2>Latest signals</h2>
@@ -199,6 +220,44 @@ function riskBar(label, value, limit, display) {
   const ratio = Math.min(1, Math.max(0, value / limit));
   const cls = ratio > 0.9 ? 'bad' : ratio > 0.75 ? 'warn' : '';
   return `<div style="margin:12px 0"><div style="display:flex;justify-content:space-between"><span>${label}</span><span class="mono">${display}</span></div><div class="bar ${cls}"><i style="width:${ratio * 100}%"></i></div></div>`;
+}
+
+const INSTRUMENT_LABEL = { stock: 'stock', etf: 'ETF', option: 'stock option', index_option: 'index option', cash: 'cash' };
+
+function copyVerdict(p, ageHours) {
+  const holdings = (Array.isArray(p.holdings) ? p.holdings : []).filter((h) => h && h.symbol);
+  if (!holdings.length) return { tone: '', label: 'holdings not disclosed' };
+  if (ageHours > 48) return { tone: 'warn', label: 'stale capture' };
+  const maxW = Math.max(0, ...holdings.map((h) => Number(h.weightPct ?? 0)));
+  if (maxW > 40) return { tone: 'bad', label: `single name ${fmt(maxW, 1)}% > 40% cap` };
+  const bad = holdings.find((h) => !INSTRUMENT_LABEL[h.type ?? 'stock']);
+  if (bad) return { tone: 'bad', label: `ineligible ${bad.symbol}` };
+  return { tone: 'buy', label: `${holdings.length} legs · review` };
+}
+
+function leaderboardCard(lb) {
+  const capturedAt = Date.parse(lb?.capturedAt ?? '') || 0;
+  const ageHours = capturedAt ? (Date.now() - capturedAt) / 36e5 : Infinity;
+  const rows = (lb?.participants ?? []).slice(0, 10);
+  const head = '<tr><th>#</th><th>Participant</th><th>Return</th><th class="col-hide">Equity</th><th>Holdings</th><th>Copy check</th></tr>';
+  const body = rows.map((p) => {
+    const v = copyVerdict(p, ageHours);
+    const chips = (p.holdings ?? []).map((h) => {
+      const type = INSTRUMENT_LABEL[h.type ?? 'stock'] ?? escapeHtml(h.type);
+      const wt = h.weightPct != null ? ` ${fmt(h.weightPct, 1)}%` : '';
+      return `<span class="tag" style="margin:0 4px 4px 0">${escapeHtml(h.symbol)} <span style="color:var(--muted)">${type}${wt}</span></span>`;
+    }).join('');
+    const ret = p.returnPct != null ? pct(Number(p.returnPct) / 100) : '—';
+    return `<tr><td class="mono">${p.rank ?? '—'}</td><td>${escapeHtml(p.name ?? '—')}</td><td class="mono ${Number(p.returnPct) >= 0 ? 'good' : 'bad'}">${ret}</td><td class="mono col-hide">${p.equity != null ? usd(p.equity) : '—'}</td><td>${chips || '<span style="color:var(--muted)">not disclosed</span>'}</td><td><span class="pill ${v.tone}">${v.label}</span></td></tr>`;
+  }).join('');
+  const note = lb
+    ? `captured ${String(lb.capturedAt).replace('T', ' ').slice(0, 16)} UTC via ${escapeHtml(lb.source ?? 'manual entry')}`
+    : 'no capture yet — Moomoo MCP has no leaderboard endpoint; add data/leaderboard.json from the app (Discover → Paper Trade → Competition)';
+  return `<div class="card wide">
+    <h2>Competition leaderboard <span class="pill" style="float:right">top 10 · ${note}</span></h2>
+    <div class="scroll"><table><thead>${head}</thead><tbody>${body || '<tr><td colspan="6" style="color:var(--muted)">No leaderboard capture yet</td></tr>'}</tbody></table></div>
+    <div class="legend"><span>Copy check flags holdings that are undisclosed, older than 48h, above the handbook 40% single-name cap, or of an ineligible instrument. A passing check is still only a review candidate — no order is placed without the guard and your approval.</span></div>
+  </div>`;
 }
 
 function equityChart(equity, exposure, benchmark = []) {
