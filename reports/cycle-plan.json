@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-20T18:35:40.550Z",
+  "generatedAt": "2026-11-20T19:35:37.673Z",
   "mode": "intraday",
   "today": "2026-11-20",
-  "etTime": "13:35",
+  "etTime": "14:35",
   "marketOpen": true,
-  "equity": 98096.51,
-  "dayPnlPct": -0.32,
-  "drawdownPct": -2.53,
+  "equity": 98048.51,
+  "dayPnlPct": -0.37,
+  "drawdownPct": -2.58,
   "risk": {
     "flatten": false,
     "deRisk": false,
