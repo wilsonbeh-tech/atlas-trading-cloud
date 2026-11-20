@@ -6309,8 +6309,8 @@
       "volume": 13988158
     },
     {
-      "change_rate": -1.9107502594469201,
-      "close_price": 160.68,
+      "change_rate": -1.9046456260301567,
+      "close_price": 160.69,
       "code": "US.XLK",
       "date": 20261119,
       "high_price": 169.31,
@@ -6322,9 +6322,27 @@
       "sc_name": "科技行业精选指数ETF-SPDR",
       "tc_name": "科技行業精選指數ETF-SPDR",
       "time_key": 1795064400000,
-      "turnover": 3430508163.825,
-      "turnover_rate": 0.03103,
-      "volume": 20897169
+      "turnover": 3457491803.603,
+      "turnover_rate": 0.03137,
+      "volume": 21065083
+    },
+    {
+      "change_rate": -7.100628539423735,
+      "close_price": 149.28,
+      "code": "US.XLK",
+      "date": 20261120,
+      "high_price": 159.01,
+      "last_close_price": 160.69,
+      "low_price": 148.09,
+      "name": "The Technology Select Sector SPDR® Fund",
+      "open_price": 158.71,
+      "pe": 0,
+      "sc_name": "科技行业精选指数ETF-SPDR",
+      "tc_name": "科技行業精選指數ETF-SPDR",
+      "time_key": 1795150800000,
+      "turnover": 5516851148.168,
+      "turnover_rate": 0.05388,
+      "volume": 36180417
     }
   ]
 }

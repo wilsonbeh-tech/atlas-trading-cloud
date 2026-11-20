@@ -6691,9 +6691,27 @@
       "sc_name": "好市多",
       "tc_name": "好市多",
       "time_key": 1795064400000,
-      "turnover": 2305045684.404,
-      "turnover_rate": 0.00477,
-      "volume": 2111575
+      "turnover": 2325897178,
+      "turnover_rate": 0.00482,
+      "volume": 2132216
+    },
+    {
+      "change_rate": 0.9617582256840642,
+      "close_price": 1104.35,
+      "code": "US.COST",
+      "date": 20261120,
+      "high_price": 1122.81,
+      "last_close_price": 1093.83,
+      "low_price": 1098.51,
+      "name": "Costco",
+      "open_price": 1102.04,
+      "pe": 53.196,
+      "sc_name": "好市多",
+      "tc_name": "好市多",
+      "time_key": 1795150800000,
+      "turnover": 4519276632.684,
+      "turnover_rate": 0.00923,
+      "volume": 4084267
     }
   ]
 }

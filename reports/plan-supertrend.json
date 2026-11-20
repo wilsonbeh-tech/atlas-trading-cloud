@@ -1,23 +1,22 @@
 {
-  "generatedAt": "2026-11-19T21:06:53.757Z",
+  "generatedAt": "2026-11-20T21:06:36.771Z",
   "strategy": "Atlas Trend SuperTrend(10,3)",
   "version": "1.0.0",
   "spec": "docs/STRATEGY_SPEC.md",
   "mode": "eod",
-  "forSession": "2026-11-20",
-  "equity": 99074.51,
+  "forSession": "2026-11-23",
+  "equity": 98181.51,
   "orders": [],
   "outgoing": [],
   "picks": [],
   "market": {
-    "breadthUp": 7,
+    "breadthUp": 6,
     "breadthTotal": 24,
     "spy": {
-      "close": 715.87,
+      "close": 690.87,
       "superTrend": "DOWN",
-      "barsSinceFlip": 14
+      "barsSinceFlip": 15
     }
   },
-  "warnings": [],
-  "executedAt": "2026-11-20T14:35:43.080Z"
+  "warnings": []
 }

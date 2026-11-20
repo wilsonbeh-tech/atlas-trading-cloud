@@ -6692,9 +6692,27 @@
       "sc_name": "英伟达",
       "tc_name": "英偉達",
       "time_key": 1795064400000,
-      "turnover": 46801121153.764,
-      "turnover_rate": 0.01333,
-      "volume": 311082774
+      "turnover": 48628983088,
+      "turnover_rate": 0.01384,
+      "volume": 322940099
+    },
+    {
+      "change_rate": -13.796410467187286,
+      "close_price": 125.84,
+      "code": "US.NVDA",
+      "date": 20261120,
+      "high_price": 143.725,
+      "last_close_price": 145.98,
+      "low_price": 124.5,
+      "name": "NVIDIA",
+      "open_price": 143.52,
+      "pe": 25.681,
+      "sc_name": "英伟达",
+      "tc_name": "英偉達",
+      "time_key": 1795150800000,
+      "turnover": 80660736897.881,
+      "turnover_rate": 0.02601,
+      "volume": 606775773
     }
   ]
 }

@@ -6692,9 +6692,27 @@
       "sc_name": "Visa",
       "tc_name": "Visa",
       "time_key": 1795064400000,
-      "turnover": 3347110830.569,
-      "turnover_rate": 0.00489,
-      "volume": 8265262
+      "turnover": 3351443429.174,
+      "turnover_rate": 0.0049,
+      "volume": 8282588
+    },
+    {
+      "change_rate": 0.0435052827843381,
+      "close_price": 402.425,
+      "code": "US.V",
+      "date": 20261120,
+      "high_price": 408.735,
+      "last_close_price": 402.25,
+      "low_price": 401.19,
+      "name": "Visa",
+      "open_price": 403.555,
+      "pe": 32.664,
+      "sc_name": "Visa",
+      "tc_name": "Visa",
+      "time_key": 1795150800000,
+      "turnover": 3384655975.257,
+      "turnover_rate": 0.00494,
+      "volume": 8351538
     }
   ]
 }

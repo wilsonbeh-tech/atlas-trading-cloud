@@ -6307,8 +6307,8 @@
       "volume": 18365088
     },
     {
-      "change_rate": -1.2169919632606199,
-      "close_price": 43.02,
+      "change_rate": -1.2399540757749712,
+      "close_price": 43.01,
       "code": "US.XLU",
       "date": 20261119,
       "high_price": 43.44,
@@ -6320,9 +6320,27 @@
       "sc_name": "公用事业精选行业指数ETF-SPDR",
       "tc_name": "公用事業精選行業指數ETF-SPDR",
       "time_key": 1795064400000,
-      "turnover": 1449721774.271,
-      "turnover_rate": 0.06277,
-      "volume": 33664685
+      "turnover": 1460127601.001,
+      "turnover_rate": 0.06322,
+      "volume": 33905981
+    },
+    {
+      "change_rate": -0.6742617995814927,
+      "close_price": 42.72,
+      "code": "US.XLU",
+      "date": 20261120,
+      "high_price": 43.45,
+      "last_close_price": 43.01,
+      "low_price": 42.63,
+      "name": "Utilities Select Sector SPDR Fund",
+      "open_price": 43.27,
+      "pe": 0,
+      "sc_name": "公用事业精选行业指数ETF-SPDR",
+      "tc_name": "公用事業精選行業指數ETF-SPDR",
+      "time_key": 1795150800000,
+      "turnover": 1295420291.495,
+      "turnover_rate": 0.05601,
+      "volume": 30039197
     }
   ]
 }

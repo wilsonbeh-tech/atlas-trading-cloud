@@ -6692,9 +6692,27 @@
       "sc_name": "亚马逊",
       "tc_name": "亞馬遜",
       "time_key": 1795064400000,
-      "turnover": 13652890929.237,
-      "turnover_rate": 0.00527,
-      "volume": 51889792
+      "turnover": 13997108195,
+      "turnover_rate": 0.0054,
+      "volume": 53117924
+    },
+    {
+      "change_rate": -3.978707697089793,
+      "close_price": 247.13,
+      "code": "US.AMZN",
+      "date": 20261120,
+      "high_price": 259.97,
+      "last_close_price": 257.37,
+      "low_price": 245.31,
+      "name": "Amazon",
+      "open_price": 253.48,
+      "pe": 34.467,
+      "sc_name": "亚马逊",
+      "tc_name": "亞馬遜",
+      "time_key": 1795150800000,
+      "turnover": 17980535094.258,
+      "turnover_rate": 0.00731,
+      "volume": 71932471
     }
   ]
 }

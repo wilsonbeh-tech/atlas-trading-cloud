@@ -6324,9 +6324,27 @@
       "sc_name": "半导体指数ETF-VanEck",
       "tc_name": "半導體指數ETF-VanEck",
       "time_key": 1795064400000,
-      "turnover": 4651000206.038,
-      "turnover_rate": 0.07692,
-      "volume": 10106575
+      "turnover": 4875765065.235,
+      "turnover_rate": 0.08076,
+      "volume": 10590774
+    },
+    {
+      "change_rate": -10.63511218378475,
+      "close_price": 399.89,
+      "code": "US.SMH",
+      "date": 20261120,
+      "high_price": 438.44,
+      "last_close_price": 447.48,
+      "low_price": 396.85,
+      "name": "VanEck Semiconductor ETF",
+      "open_price": 438.1,
+      "pe": 0,
+      "sc_name": "半导体指数ETF-VanEck",
+      "tc_name": "半導體指數ETF-VanEck",
+      "time_key": 1795150800000,
+      "turnover": 9238558662.227,
+      "turnover_rate": 0.17088,
+      "volume": 22409766
     }
   ]
 }
