@@ -1,60 +1,6 @@
 {
   "kline_list": [
     {
-      "change_rate": 0.45011252813203295,
-      "close_price": 200.85,
-      "code": "US.AAPL",
-      "date": 20250530,
-      "high_price": 201.96,
-      "last_close_price": 199.95,
-      "low_price": 196.78,
-      "name": "Apple",
-      "open_price": 199.37,
-      "pe": 33.034,
-      "sc_name": "苹果",
-      "tc_name": "蘋果",
-      "time_key": 1748577600000,
-      "turnover": 14161447441,
-      "turnover_rate": 0.00475,
-      "volume": 70819942
-    },
-    {
-      "change_rate": 0.42320139407518054,
-      "close_price": 201.7,
-      "code": "US.AAPL",
-      "date": 20250602,
-      "high_price": 202.13,
-      "last_close_price": 200.85,
-      "low_price": 200.12,
-      "name": "Apple",
-      "open_price": 200.28,
-      "pe": 33.174,
-      "sc_name": "苹果",
-      "tc_name": "蘋果",
-      "time_key": 1748836800000,
-      "turnover": 7127388684,
-      "turnover_rate": 0.00238,
-      "volume": 35423294
-    },
-    {
-      "change_rate": 0.7783837382250868,
-      "close_price": 203.27,
-      "code": "US.AAPL",
-      "date": 20250603,
-      "high_price": 203.77,
-      "last_close_price": 201.7,
-      "low_price": 200.955,
-      "name": "Apple",
-      "open_price": 201.35,
-      "pe": 33.432,
-      "sc_name": "苹果",
-      "tc_name": "蘋果",
-      "time_key": 1748923200000,
-      "turnover": 9406795541,
-      "turnover_rate": 0.00311,
-      "volume": 46381567
-    },
-    {
       "change_rate": -0.22138042996999066,
       "close_price": 202.82,
       "code": "US.AAPL",
@@ -6697,8 +6643,8 @@
       "volume": 40906860
     },
     {
-      "change_rate": -1.82268549010624,
-      "close_price": 342.845,
+      "change_rate": -1.904298273245325,
+      "close_price": 342.56,
       "code": "US.AAPL",
       "date": 20261120,
       "high_price": 354.34,
@@ -6706,13 +6652,13 @@
       "low_price": 340.56,
       "name": "Apple",
       "open_price": 352.865,
-      "pe": 38.178,
+      "pe": 38.146,
       "sc_name": "苹果",
       "tc_name": "蘋果",
       "time_key": 1795150800000,
-      "turnover": 26230323015.13,
-      "turnover_rate": 0.00523,
-      "volume": 76001038
+      "turnover": 27860681030,
+      "turnover_rate": 0.00556,
+      "volume": 80692545
     }
   ]
 }

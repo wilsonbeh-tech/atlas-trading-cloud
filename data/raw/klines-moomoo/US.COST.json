@@ -1,60 +1,6 @@
 {
   "kline_list": [
     {
-      "change_rate": 3.1167595217796458,
-      "close_price": 1040.18,
-      "code": "US.COST",
-      "date": 20250530,
-      "high_price": 1052.49,
-      "last_close_price": 1008.74,
-      "low_price": 1002,
-      "name": "Costco",
-      "open_price": 1002.3,
-      "pe": 62.812,
-      "sc_name": "好市多",
-      "tc_name": "好市多",
-      "time_key": 1748577600000,
-      "turnover": 5620844189,
-      "turnover_rate": 0.01223,
-      "volume": 5403837
-    },
-    {
-      "change_rate": 1.6026072409582957,
-      "close_price": 1056.849999999,
-      "code": "US.COST",
-      "date": 20250602,
-      "high_price": 1060.5,
-      "last_close_price": 1040.18,
-      "low_price": 1034.27,
-      "name": "Costco",
-      "open_price": 1034.27,
-      "pe": 63.819,
-      "sc_name": "好市多",
-      "tc_name": "好市多",
-      "time_key": 1748836800000,
-      "turnover": 2258986911,
-      "turnover_rate": 0.00486,
-      "volume": 2148004
-    },
-    {
-      "change_rate": -0.11922221696562352,
-      "close_price": 1055.589999999,
-      "code": "US.COST",
-      "date": 20250603,
-      "high_price": 1067.079999999,
-      "last_close_price": 1056.849999999,
-      "low_price": 1043.2552,
-      "name": "Costco",
-      "open_price": 1054.15,
-      "pe": 63.743,
-      "sc_name": "好市多",
-      "tc_name": "好市多",
-      "time_key": 1748923200000,
-      "turnover": 2099015167,
-      "turnover_rate": 0.00451,
-      "volume": 1992850
-    },
-    {
       "change_rate": -0.3694616279998574,
       "close_price": 1051.69,
       "code": "US.COST",
@@ -6696,8 +6642,8 @@
       "volume": 2132216
     },
     {
-      "change_rate": 0.9617582256840642,
-      "close_price": 1104.35,
+      "change_rate": 0.7606300796284614,
+      "close_price": 1102.15,
       "code": "US.COST",
       "date": 20261120,
       "high_price": 1122.81,
@@ -6705,13 +6651,13 @@
       "low_price": 1098.51,
       "name": "Costco",
       "open_price": 1102.04,
-      "pe": 53.196,
+      "pe": 53.09,
       "sc_name": "好市多",
       "tc_name": "好市多",
       "time_key": 1795150800000,
-      "turnover": 4519276632.684,
-      "turnover_rate": 0.00923,
-      "volume": 4084267
+      "turnover": 4583635313,
+      "turnover_rate": 0.00935,
+      "volume": 4136781
     }
   ]
 }

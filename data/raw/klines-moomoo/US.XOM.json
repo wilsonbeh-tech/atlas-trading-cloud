@@ -1,60 +1,6 @@
 {
   "kline_list": [
     {
-      "change_rate": -0.3797838153666374,
-      "close_price": 102.3,
-      "code": "US.XOM",
-      "date": 20250530,
-      "high_price": 102.39,
-      "last_close_price": 102.69,
-      "low_price": 101.185,
-      "name": "Exxon Mobil",
-      "open_price": 102.16,
-      "pe": 13.048,
-      "sc_name": "埃克森美孚",
-      "tc_name": "埃克森美孚",
-      "time_key": 1748577600000,
-      "turnover": 2924626429,
-      "turnover_rate": 0.00666,
-      "volume": 28645787
-    },
-    {
-      "change_rate": 0.7331378299120235,
-      "close_price": 103.05,
-      "code": "US.XOM",
-      "date": 20250602,
-      "high_price": 103.85,
-      "last_close_price": 102.3,
-      "low_price": 102.22,
-      "name": "Exxon Mobil",
-      "open_price": 103.75,
-      "pe": 13.144,
-      "sc_name": "埃克森美孚",
-      "tc_name": "埃克森美孚",
-      "time_key": 1748836800000,
-      "turnover": 1779320178,
-      "turnover_rate": 0.00402,
-      "volume": 17290462
-    },
-    {
-      "change_rate": 0.727802037845706,
-      "close_price": 103.8,
-      "code": "US.XOM",
-      "date": 20250603,
-      "high_price": 104.66,
-      "last_close_price": 103.05,
-      "low_price": 102.21,
-      "name": "Exxon Mobil",
-      "open_price": 102.9,
-      "pe": 13.239,
-      "sc_name": "埃克森美孚",
-      "tc_name": "埃克森美孚",
-      "time_key": 1748923200000,
-      "turnover": 1993229281,
-      "turnover_rate": 0.00446,
-      "volume": 19194335
-    },
-    {
       "change_rate": -1.4450867052023122,
       "close_price": 102.3,
       "code": "US.XOM",
@@ -6709,9 +6655,9 @@
       "sc_name": "埃克森美孚",
       "tc_name": "埃克森美孚",
       "time_key": 1795150800000,
-      "turnover": 2857230745.003,
-      "turnover_rate": 0.00438,
-      "volume": 17840498
+      "turnover": 2992446388,
+      "turnover_rate": 0.00459,
+      "volume": 18684395
     }
   ]
 }

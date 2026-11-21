@@ -39,8 +39,9 @@ Every run:
 2. Call sim_trade_account_list. Find the account whose title contains "Qoder", "Trading",
    "Agent" and "Challenge". If it is absent, STOP and report the blocker. Do not use any
    other account.
-3. Pull sim_trade_cash_info, sim_trade_position_list and quote_stock_quote for the 24
-   universe symbols. Write data/raw/live-input.json with account, cash, positions, quotes
+3. Pull sim_trade_cash_info, sim_trade_position_list and quote_stock_quote for every
+   symbol in the config/supertrend.json sector map (27 today: 24 core + US.SH, US.SQQQ,
+   US.QID inverse sleeve). Write data/raw/live-input.json with account, cash, positions, quotes
    and today's order count.
 4. Run: node src/cli.js import-live && node src/cli.js signals && node src/cli.js plan
 5. Read reports/plan.json. If approved is empty, log the no-op and finish.

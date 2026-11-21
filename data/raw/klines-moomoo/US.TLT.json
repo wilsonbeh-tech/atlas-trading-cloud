@@ -1,57 +1,6 @@
 {
   "kline_list": [
     {
-      "change_rate": 0.150899593731863,
-      "close_price": 86.28,
-      "code": "US.TLT",
-      "date": 20250530,
-      "high_price": 86.47,
-      "last_close_price": 86.15,
-      "low_price": 85.88,
-      "name": "iShares 20+ Year Treasury Bond ETF",
-      "open_price": 86.085,
-      "sc_name": "20+年以上美国国债ETF-iShares",
-      "tc_name": "20+年以上美國國債ETF-iShares",
-      "time_key": 1748577600000,
-      "turnover": 4225270285,
-      "turnover_rate": 0.08311,
-      "volume": 49042064
-    },
-    {
-      "change_rate": -1.2980992118683357,
-      "close_price": 85.16,
-      "code": "US.TLT",
-      "date": 20250602,
-      "high_price": 85.47,
-      "last_close_price": 86.28,
-      "low_price": 84.79,
-      "name": "iShares 20+ Year Treasury Bond ETF",
-      "open_price": 85.29,
-      "sc_name": "20+年以上美国国债ETF-iShares",
-      "tc_name": "20+年以上美國國債ETF-iShares",
-      "time_key": 1748836800000,
-      "turnover": 3932190519,
-      "turnover_rate": 0.07998,
-      "volume": 46213110
-    },
-    {
-      "change_rate": -0.17613903240958198,
-      "close_price": 85.01,
-      "code": "US.TLT",
-      "date": 20250603,
-      "high_price": 85.735,
-      "last_close_price": 85.16,
-      "low_price": 84.885,
-      "name": "iShares 20+ Year Treasury Bond ETF",
-      "open_price": 85.44,
-      "sc_name": "20+年以上美国国债ETF-iShares",
-      "tc_name": "20+年以上美國國債ETF-iShares",
-      "time_key": 1748923200000,
-      "turnover": 2875470784,
-      "turnover_rate": 0.0589,
-      "volume": 33731261
-    },
-    {
       "change_rate": 1.6233384307728502,
       "close_price": 86.39,
       "code": "US.TLT",
@@ -6256,7 +6205,6 @@
       "volume": 31851862
     },
     {
-      "change_rate": 0,
       "close_price": 79.38,
       "code": "US.TLT",
       "date": 20261116,
@@ -6265,7 +6213,6 @@
       "low_price": 79.275,
       "name": "iShares 20+ Year Treasury Bond ETF",
       "open_price": 79.51,
-      "pe": 0,
       "sc_name": "20+年以上美国国债ETF-iShares",
       "tc_name": "20+年以上美國國債ETF-iShares",
       "time_key": 1794805200000,
@@ -6283,7 +6230,6 @@
       "low_price": 79.235,
       "name": "iShares 20+ Year Treasury Bond ETF",
       "open_price": 79.3,
-      "pe": 0,
       "sc_name": "20+年以上美国国债ETF-iShares",
       "tc_name": "20+年以上美國國債ETF-iShares",
       "time_key": 1794891600000,
@@ -6301,7 +6247,6 @@
       "low_price": 79.82,
       "name": "iShares 20+ Year Treasury Bond ETF",
       "open_price": 79.91,
-      "pe": 0,
       "sc_name": "20+年以上美国国债ETF-iShares",
       "tc_name": "20+年以上美國國債ETF-iShares",
       "time_key": 1794978000000,
@@ -6319,7 +6264,6 @@
       "low_price": 79.81,
       "name": "iShares 20+ Year Treasury Bond ETF",
       "open_price": 80.08,
-      "pe": 0,
       "sc_name": "20+年以上美国国债ETF-iShares",
       "tc_name": "20+年以上美國國債ETF-iShares",
       "time_key": 1795064400000,
@@ -6337,13 +6281,12 @@
       "low_price": 80.685,
       "name": "iShares 20+ Year Treasury Bond ETF",
       "open_price": 80.74,
-      "pe": 0,
       "sc_name": "20+年以上美国国债ETF-iShares",
       "tc_name": "20+年以上美國國債ETF-iShares",
       "time_key": 1795150800000,
-      "turnover": 5211398865.732,
-      "turnover_rate": 0.10858,
-      "volume": 64126753
+      "turnover": 5374119286,
+      "turnover_rate": 0.11199,
+      "volume": 66140020
     }
   ]
 }

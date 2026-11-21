@@ -1,22 +1,49 @@
 {
-  "generatedAt": "2026-11-20T21:06:36.771Z",
-  "strategy": "Atlas Trend SuperTrend(10,3)",
-  "version": "1.0.0",
+  "generatedAt": "2026-11-20T21:10:00.000Z",
+  "strategy": "Atlas Trend SuperTrend(10,3) + bear sleeve",
+  "version": "1.1.0",
   "spec": "docs/STRATEGY_SPEC.md",
   "mode": "eod",
   "forSession": "2026-11-23",
-  "equity": 98181.51,
+  "equity": 98041.51,
   "orders": [],
   "outgoing": [],
-  "picks": [],
+  "picks": [
+    {
+      "symbol": "US.SQQQ",
+      "close": 57.59,
+      "stop": 44.98,
+      "qty": 58,
+      "limit": 57.68,
+      "sleeve": "inverse",
+      "barsSinceFlip": 27,
+      "r20": 45.14,
+      "weightPct": 3.41,
+      "riskPct": 0.75
+    },
+    {
+      "symbol": "US.QID",
+      "close": 75.39,
+      "stop": 63.55,
+      "qty": 62,
+      "limit": 75.5,
+      "sleeve": "inverse",
+      "barsSinceFlip": 27,
+      "r20": 29.54,
+      "weightPct": 4.77,
+      "riskPct": 0.75
+    }
+  ],
   "market": {
-    "breadthUp": 6,
-    "breadthTotal": 24,
+    "breadthUp": 9,
+    "breadthTotal": 27,
     "spy": {
-      "close": 690.87,
+      "close": 689.81,
       "superTrend": "DOWN",
       "barsSinceFlip": 15
-    }
+    },
+    "bearRegime": true,
+    "inverseSleeve": true
   },
   "warnings": []
 }

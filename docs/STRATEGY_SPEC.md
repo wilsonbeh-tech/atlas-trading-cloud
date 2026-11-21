@@ -1,12 +1,12 @@
 # STRATEGY_SPEC.md — Primary: "Atlas Trend (SuperTrend 10,3)"
 
-Version 1.0.0 · 2026-11-18 · paper account 5830107 only · status: **live on paper; first entries MSFT 3249430 / AMZN 3249431; hourly + EOD automation enabled**
+Version 1.1.0 · 2026-11-21 · paper account 5830107 only · status: **live on paper; v1.1.0 adds the regime-gated inverse-ETF bear sleeve; hourly + EOD automation enabled**
 
 This is the full, implementable specification. Numbers below are the only numbers the Executor may use; they are stricter than the competition limits, never looser.
 
 ## 1. Universe and data
 
-- 24 liquid US names from `config/strategy.json` (SPY, QQQ, IWM, SMH, TLT, GLD, XLE, XLF, XLK, XLV, XLY, XLU, AAPL, MSFT, NVDA, AMZN, GOOGL, META, AVGO, JPM, LLY, V, COST, XOM). No leveraged ETFs, no options, no shorts.
+- 24 liquid US names from `config/supertrend.json` (SPY, QQQ, IWM, SMH, TLT, GLD, XLE, XLF, XLK, XLV, XLY, XLU, AAPL, MSFT, NVDA, AMZN, GOOGL, META, AVGO, JPM, LLY, V, COST, XOM), plus the 3-name inverse sleeve of `SH`, `SQQQ`, `QID` (bear regime only, §2b). No other leveraged ETFs, no options, no shorts.
 - Signals from **daily** bars only (`quote_history_kline`, forward-adjusted, 370 bars), computed after the 16:00 ET close. Live quotes via `quote_stock_quote` at every intraday check.
 - If any symbol's last bar is older than the previous US session, or a quote is stale >15 minutes, that symbol is **ineligible** and a data incident is logged.
 
@@ -22,6 +22,23 @@ Eligibility    : all three true, symbol not in an earnings blackout (§6)
 
 At the 17 Nov close this selects **MSFT (flip 9 bars ago) and AMZN (flip 9)**; everything else is either stale (>10 bars) or SuperTrend-down. This is expected: the system is allowed to hold cash, and will hold cash most of this week if no new flips occur.
 
+## 2b. Bear sleeve — inverse ETFs (added in v1.1.0)
+
+The challenge handbook states "Margin trading and short selling are available." We still take **no short sales**: bearish exposure is expressed by *buying* listed inverse ETFs, which needs no borrow, has bounded loss per dollar and is an ordinary long equity order under this specification.
+
+```
+Regime     : SPY close < SMA(200)  OR  SPY SuperTrend = down      (config.regime.indexSymbol)
+Symbols    : US.SH (1x), US.SQQQ (3x), US.QID (3x)                 (config.inverse.symbols)
+Trigger    : inverse ETF's own SuperTrend = up, and the up-leg is ≤40 sessions old
+             (continuation entry — in a bear tape the flip is never "fresh")
+Ranking    : 20-day return, same as the core sleeve
+```
+
+- **Why continuation, not fresh flips:** the core sleeve only enters a flip ≤10 sessions old. Under a sustained decline the inverse ETFs flip early and then trend; without a continuation window the bear sleeve could never fire. 40 sessions is the cap, and the 8-bar whipsaw guard does not apply to this sleeve (it would veto every continuation entry).
+- **Caps:** ≤2 inverse names, ≤12% weight per name, ≤0.75% equity risk per trade on a 3×ATR stop, cap on total inverse exposure is the same 24% sector cap (the three ETFs share the `inverse` sector).
+- **Regime exit:** when the regime test turns false (SPY back above SMA200 *and* SuperTrend up), the ETF's own SuperTrend normally flips down first and the standard exit rules close it. The regime test only gates *entries*; exits are always the §4 rules.
+- **Invalidation of the sleeve:** if the bear sleeve's realised hit rate is below 40% after 6 closed trades, or one inverse position gaps through its stop by more than 1.5% of equity, disable `config.inverse.enabled` and hold cash in bear regimes instead.
+
 ## 3. Position sizing
 
 | Rule | Value |
@@ -34,6 +51,7 @@ At the 17 Nov close this selects **MSFT (flip 9 bars ago) and AMZN (flip 9)**; e
 | Max gross exposure | **72%** |
 | Min cash | **10%** |
 | Min notional / whole shares | $500 / integer shares only |
+| Inverse sleeve override | risk **0.75%**, stop **3×ATR(14)**, ≤2 names, ≤12% each (never looser than the core) |
 
 `qty = min( floor(0.01 × equity / (close − stop)), floor(0.12 × equity / close) )`, then `qty × price ≥ 500`.
 

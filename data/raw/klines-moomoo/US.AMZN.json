@@ -1,60 +1,6 @@
 {
   "kline_list": [
     {
-      "change_rate": -0.3354399611084103,
-      "close_price": 205.01,
-      "code": "US.AMZN",
-      "date": 20250530,
-      "high_price": 205.99,
-      "last_close_price": 205.7,
-      "low_price": 201.695,
-      "name": "Amazon",
-      "open_price": 204.84,
-      "pe": 37.072,
-      "sc_name": "亚马逊",
-      "tc_name": "亞馬遜",
-      "time_key": 1748577600000,
-      "turnover": 10570082687,
-      "turnover_rate": 0.00551,
-      "volume": 51679406
-    },
-    {
-      "change_rate": 0.7999609775132921,
-      "close_price": 206.65,
-      "code": "US.AMZN",
-      "date": 20250602,
-      "high_price": 207,
-      "last_close_price": 205.01,
-      "low_price": 202.68,
-      "name": "Amazon",
-      "open_price": 204.98,
-      "pe": 37.368,
-      "sc_name": "亚马逊",
-      "tc_name": "亞馬遜",
-      "time_key": 1748836800000,
-      "turnover": 5985524853,
-      "turnover_rate": 0.0031,
-      "volume": 29113319
-    },
-    {
-      "change_rate": -0.4548753931768691,
-      "close_price": 205.71,
-      "code": "US.AMZN",
-      "date": 20250603,
-      "high_price": 208.9469,
-      "last_close_price": 206.65,
-      "low_price": 205.03,
-      "name": "Amazon",
-      "open_price": 207.105,
-      "pe": 37.198,
-      "sc_name": "亚马逊",
-      "tc_name": "亞馬遜",
-      "time_key": 1748923200000,
-      "turnover": 6847678430,
-      "turnover_rate": 0.00353,
-      "volume": 33139121
-    },
-    {
       "change_rate": 0.7389042827281124,
       "close_price": 207.23,
       "code": "US.AMZN",
@@ -6697,8 +6643,8 @@
       "volume": 53117924
     },
     {
-      "change_rate": -3.978707697089793,
-      "close_price": 247.13,
+      "change_rate": -4.09915685588841,
+      "close_price": 246.82,
       "code": "US.AMZN",
       "date": 20261120,
       "high_price": 259.97,
@@ -6706,13 +6652,13 @@
       "low_price": 245.31,
       "name": "Amazon",
       "open_price": 253.48,
-      "pe": 34.467,
+      "pe": 34.423,
       "sc_name": "亚马逊",
       "tc_name": "亞馬遜",
       "time_key": 1795150800000,
-      "turnover": 17980535094.258,
-      "turnover_rate": 0.00731,
-      "volume": 71932471
+      "turnover": 18622584211,
+      "turnover_rate": 0.00756,
+      "volume": 74362636
     }
   ]
 }

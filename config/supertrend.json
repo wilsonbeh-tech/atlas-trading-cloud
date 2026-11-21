@@ -1,6 +1,6 @@
 {
-  "name": "Atlas Trend SuperTrend(10,3)",
-  "version": "1.0.0",
+  "name": "Atlas Trend SuperTrend(10,3) + bear sleeve",
+  "version": "1.1.0",
   "spec": "docs/STRATEGY_SPEC.md",
   "account": {
     "id": "5830107",
@@ -21,6 +21,20 @@
     "smaTrend": 200,
     "whipsawLookback": 8,
     "entryWindow": 10
+  },
+  "regime": {
+    "indexSymbol": "US.SPY",
+    "note": "bearish when SPY is below its 200-day SMA or in a SuperTrend down-leg"
+  },
+  "inverse": {
+    "enabled": true,
+    "reason": "challenge permits margin shorting; inverse ETFs give bearish exposure with BUY-only mechanics, no borrow and bounded loss per dollar",
+    "symbols": ["US.SH", "US.SQQQ", "US.QID"],
+    "continuationSince": 40,
+    "maxNames": 2,
+    "maxWeight": 0.12,
+    "riskPct": 0.0075,
+    "atrMult": 3
   },
   "sizing": {
     "riskPct": 0.01,
@@ -75,6 +89,9 @@
     "US.LLY": "health",
     "US.V": "financials",
     "US.COST": "consumer",
-    "US.XOM": "energy"
+    "US.XOM": "energy",
+    "US.SH": "inverse",
+    "US.SQQQ": "inverse",
+    "US.QID": "inverse"
   }
 }

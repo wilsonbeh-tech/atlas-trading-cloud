@@ -5,7 +5,7 @@ set -u
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 DIR="$ROOT/data/raw/klines-moomoo"
 mkdir -p "$DIR"
-SYMS="SPY QQQ IWM SMH TLT GLD XLE XLF XLK XLV XLY XLU AAPL MSFT NVDA AMZN GOOGL META AVGO JPM LLY V COST XOM"
+SYMS="SPY QQQ IWM SMH TLT GLD XLE XLF XLK XLV XLY XLU AAPL MSFT NVDA AMZN GOOGL META AVGO JPM LLY V COST XOM SH SQQQ QID"
 ok=0; fail=0
 for s in $SYMS; do
   tmp="$DIR/US.$s.json.tmp"

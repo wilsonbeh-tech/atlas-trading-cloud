@@ -1,60 +1,6 @@
 {
   "kline_list": [
     {
-      "change_rate": 0.041327437285613916,
-      "close_price": 242.07,
-      "code": "US.AVGO",
-      "date": 20250530,
-      "high_price": 243.17,
-      "last_close_price": 241.97,
-      "low_price": 234.9,
-      "name": "Broadcom",
-      "open_price": 241.215,
-      "pe": 196.804,
-      "sc_name": "博通",
-      "tc_name": "博通",
-      "time_key": 1748577600000,
-      "turnover": 6525053846,
-      "turnover_rate": 0.00586,
-      "volume": 27088559
-    },
-    {
-      "change_rate": 2.743008220762589,
-      "close_price": 248.71,
-      "code": "US.AVGO",
-      "date": 20250602,
-      "high_price": 250,
-      "last_close_price": 242.07,
-      "low_price": 243.19,
-      "name": "Broadcom",
-      "open_price": 243.25,
-      "pe": 202.203,
-      "sc_name": "博通",
-      "tc_name": "博通",
-      "time_key": 1748836800000,
-      "turnover": 4761704455,
-      "turnover_rate": 0.00415,
-      "volume": 19197009
-    },
-    {
-      "change_rate": 3.272888102609465,
-      "close_price": 256.85,
-      "code": "US.AVGO",
-      "date": 20250603,
-      "high_price": 257.88,
-      "last_close_price": 248.71,
-      "low_price": 249.4,
-      "name": "Broadcom",
-      "open_price": 250.075,
-      "pe": 208.821,
-      "sc_name": "博通",
-      "tc_name": "博通",
-      "time_key": 1748923200000,
-      "turnover": 7737612482,
-      "turnover_rate": 0.00657,
-      "volume": 30380248
-    },
-    {
       "change_rate": 1.6468756079423787,
       "close_price": 261.079999999,
       "code": "US.AVGO",
@@ -6697,8 +6643,8 @@
       "volume": 26075610
     },
     {
-      "change_rate": -12.115967113803547,
-      "close_price": 304.65,
+      "change_rate": -12.185201211596713,
+      "close_price": 304.41,
       "code": "US.AVGO",
       "date": 20261120,
       "high_price": 343.01,
@@ -6706,13 +6652,13 @@
       "low_price": 301.02,
       "name": "Broadcom",
       "open_price": 343.01,
-      "pe": 63.867,
+      "pe": 63.817,
       "sc_name": "博通",
       "tc_name": "博通",
       "time_key": 1795150800000,
-      "turnover": 18201583782.483,
-      "turnover_rate": 0.01261,
-      "volume": 58287206
+      "turnover": 18766961376,
+      "turnover_rate": 0.01301,
+      "volume": 60112570
     }
   ]
 }

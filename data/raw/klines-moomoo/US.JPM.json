@@ -1,60 +1,6 @@
 {
   "kline_list": [
     {
-      "change_rate": -0.13995536558611038,
-      "close_price": 264,
-      "code": "US.JPM",
-      "date": 20250530,
-      "high_price": 265.329999999,
-      "last_close_price": 264.37,
-      "low_price": 262.725,
-      "name": "JPMorgan",
-      "open_price": 263.45,
-      "pe": 13.367,
-      "sc_name": "摩根大通",
-      "tc_name": "摩根大通",
-      "time_key": 1748577600000,
-      "turnover": 2899556434,
-      "turnover_rate": 0.00397,
-      "volume": 10977662
-    },
-    {
-      "change_rate": 0.25,
-      "close_price": 264.66,
-      "code": "US.JPM",
-      "date": 20250602,
-      "high_price": 265.029999999,
-      "last_close_price": 264,
-      "low_price": 261.899999999,
-      "name": "JPMorgan",
-      "open_price": 263.019999999,
-      "pe": 13.4,
-      "sc_name": "摩根大通",
-      "tc_name": "摩根大通",
-      "time_key": 1748836800000,
-      "turnover": 1586961393,
-      "turnover_rate": 0.00217,
-      "volume": 6011165
-    },
-    {
-      "change_rate": 0.6083276653064309,
-      "close_price": 266.269999999,
-      "code": "US.JPM",
-      "date": 20250603,
-      "high_price": 266.579999999,
-      "last_close_price": 264.66,
-      "low_price": 262.88,
-      "name": "JPMorgan",
-      "open_price": 263.73,
-      "pe": 13.482,
-      "sc_name": "摩根大通",
-      "tc_name": "摩根大通",
-      "time_key": 1748923200000,
-      "turnover": 1858776654,
-      "turnover_rate": 0.00253,
-      "volume": 6998383
-    },
-    {
       "change_rate": -0.7698952187658012,
       "close_price": 264.22,
       "code": "US.JPM",
@@ -6696,8 +6642,8 @@
       "volume": 6975430
     },
     {
-      "change_rate": -2.9792017987633503,
-      "close_price": 310.68,
+      "change_rate": -3.0260445943413905,
+      "close_price": 310.53,
       "code": "US.JPM",
       "date": 20261120,
       "high_price": 320.88,
@@ -6705,13 +6651,13 @@
       "low_price": 309.18,
       "name": "JPMorgan",
       "open_price": 319.89,
-      "pe": 15.518,
+      "pe": 15.51,
       "sc_name": "摩根大通",
       "tc_name": "摩根大通",
       "time_key": 1795150800000,
-      "turnover": 3804322003.441,
-      "turnover_rate": 0.00459,
-      "volume": 12135730
+      "turnover": 3922976798,
+      "turnover_rate": 0.00474,
+      "volume": 12517446
     }
   ]
 }

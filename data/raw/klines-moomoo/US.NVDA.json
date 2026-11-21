@@ -1,60 +1,6 @@
 {
   "kline_list": [
     {
-      "change_rate": -2.9168762123715783,
-      "close_price": 135.13,
-      "code": "US.NVDA",
-      "date": 20250530,
-      "high_price": 139.62,
-      "last_close_price": 139.19,
-      "low_price": 132.919999999,
-      "name": "NVIDIA",
-      "open_price": 138.715,
-      "pe": 45.962,
-      "sc_name": "英伟达",
-      "tc_name": "英偉達",
-      "time_key": 1748577600000,
-      "turnover": 45140546985,
-      "turnover_rate": 0.01418,
-      "volume": 333170851
-    },
-    {
-      "change_rate": 1.6650632724043515,
-      "close_price": 137.38,
-      "code": "US.NVDA",
-      "date": 20250602,
-      "high_price": 138.12,
-      "last_close_price": 135.13,
-      "low_price": 135.4,
-      "name": "NVIDIA",
-      "open_price": 135.49,
-      "pe": 46.727,
-      "sc_name": "英伟达",
-      "tc_name": "英偉達",
-      "time_key": 1748836800000,
-      "turnover": 27085434814,
-      "turnover_rate": 0.00841,
-      "volume": 197663116
-    },
-    {
-      "change_rate": 2.7951666909302664,
-      "close_price": 141.22,
-      "code": "US.NVDA",
-      "date": 20250603,
-      "high_price": 142,
-      "last_close_price": 137.38,
-      "low_price": 137.95,
-      "name": "NVIDIA",
-      "open_price": 138.78,
-      "pe": 48.034,
-      "sc_name": "英伟达",
-      "tc_name": "英偉達",
-      "time_key": 1748923200000,
-      "turnover": 31780492184,
-      "turnover_rate": 0.0096,
-      "volume": 225578783
-    },
-    {
       "change_rate": 0.49568049851295853,
       "close_price": 141.92,
       "code": "US.NVDA",
@@ -6697,8 +6643,8 @@
       "volume": 322940099
     },
     {
-      "change_rate": -13.796410467187286,
-      "close_price": 125.84,
+      "change_rate": -14.008768324428003,
+      "close_price": 125.53,
       "code": "US.NVDA",
       "date": 20261120,
       "high_price": 143.725,
@@ -6706,13 +6652,13 @@
       "low_price": 124.5,
       "name": "NVIDIA",
       "open_price": 143.52,
-      "pe": 25.681,
+      "pe": 25.618,
       "sc_name": "英伟达",
       "tc_name": "英偉達",
       "time_key": 1795150800000,
-      "turnover": 80660736897.881,
-      "turnover_rate": 0.02601,
-      "volume": 606775773
+      "turnover": 84273562007,
+      "turnover_rate": 0.02715,
+      "volume": 633418432
     }
   ]
 }

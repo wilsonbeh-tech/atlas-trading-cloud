@@ -351,19 +351,36 @@ if (MODE === 'eod') {
     sectorVal[s] = (sectorVal[s] ?? 0) + p.qty * (market[p.symbol]?.close ?? p.last ?? 0);
   }
   const picks = [];
+  const spyM = market[cfg.regime?.indexSymbol ?? 'US.SPY'];
+  const bearRegime = Boolean(cfg.inverse?.enabled && spyM
+    && (spyM.st === false || (spyM.sma200 != null && spyM.close < spyM.sma200)));
+  const isInverse = (sym) => (cfg.inverse?.symbols ?? []).includes(sym);
   if (canAdd) {
     const rows = SYMS.map((s) => market[`US.${s}`]).filter(Boolean)
-      .filter((m) => m.st === true && m.sma200 != null && m.close > m.sma200 && m.since < cfg.signals.entryWindow && m.downFlips === 0)
+      .filter((m) => {
+        if (bearRegime && isInverse(m.sym)) return m.st === true && m.since <= (cfg.inverse.continuationSince ?? 40);
+        return m.st === true && m.sma200 != null && m.close > m.sma200
+          && m.since < cfg.signals.entryWindow && m.downFlips === 0;
+      })
       .filter((m) => !leaving.has(m.sym) && !heldSyms.has(m.sym) && !cfg.blackouts[nextSession]?.includes(m.sym))
       .sort((a, b) => (b.r20 ?? -9) - (a.r20 ?? -9));
     for (const m of rows) {
       if (picks.length + heldAfter.length >= cfg.sizing.maxPositions) break;
       const sector = cfg.sector[m.sym] ?? 'other';
-      if ((sectorNames[sector] ?? 0) >= cfg.sizing.maxSectorNames) continue;
-      const stop = r2(m.close - cfg.sizing.atrMult * m.atr);
+      const inv = isInverse(m.sym);
+      const nameCap = sector === 'inverse'
+        ? (cfg.inverse.maxNames ?? cfg.sizing.maxSectorNames)
+        : cfg.sizing.maxSectorNames;
+      if ((sectorNames[sector] ?? 0) >= nameCap) continue;
+      const atrMult = inv ? (cfg.inverse.atrMult ?? cfg.sizing.atrMult) : cfg.sizing.atrMult;
+      const riskCfg = inv ? (cfg.inverse.riskPct ?? cfg.sizing.riskPct) : cfg.sizing.riskPct;
+      const maxNameW = inv
+        ? Math.min(cfg.inverse.maxWeight ?? cfg.sizing.maxNameWeight, cfg.sizing.maxNameWeight)
+        : cfg.sizing.maxNameWeight;
+      const stop = r2(m.close - atrMult * m.atr);
       const qty = Math.min(
-        Math.floor((cfg.sizing.riskPct * equity) / (m.close - stop)),
-        Math.floor((cfg.sizing.maxNameWeight * equity) / m.close)
+        Math.floor((riskCfg * equity) / (m.close - stop)),
+        Math.floor((maxNameW * equity) / m.close)
       );
       if (qty < 1) continue;
       const notional = qty * m.close;
@@ -372,6 +389,7 @@ if (MODE === 'eod') {
       if (cashAvail - notional < cfg.sizing.minCash * equity) continue;
       picks.push({
         symbol: m.sym, close: m.close, stop, qty, limit: r2(m.close * (1 + cfg.risk.buyOffset)),
+        sleeve: inv ? 'inverse' : 'core',
         barsSinceFlip: m.since, r20: m.r20 == null ? null : pct(m.r20),
         weightPct: pct(notional / equity), riskPct: pct((qty * (m.close - stop)) / equity)
       });
@@ -385,7 +403,9 @@ if (MODE === 'eod') {
     forSession: nextSession, equity, orders: [], outgoing, picks,
     market: {
       breadthUp: SYMS.filter((s) => market[`US.${s}`]?.st).length, breadthTotal: SYMS.length,
-      spy: { close: market['US.SPY']?.close, superTrend: market['US.SPY']?.st ? 'UP' : 'DOWN', barsSinceFlip: market['US.SPY']?.since }
+      spy: { close: market['US.SPY']?.close, superTrend: market['US.SPY']?.st ? 'UP' : 'DOWN', barsSinceFlip: market['US.SPY']?.since },
+      bearRegime,
+      inverseSleeve: Boolean(cfg.inverse?.enabled) && bearRegime
     },
     warnings: stalls.length ? [`no bar for ${today}: ${stalls.join(', ')}`] : []
   };
