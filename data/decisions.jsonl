@@ -29,3 +29,4 @@
 {"ts":"2026-11-19T21:06:53.864Z","source":"supertrend-cycle","action":"POSITION_CLOSED","symbol":"US.MSFT","reason":"no longer held in account"}
 {"ts":"2026-11-19T21:06:53.865Z","source":"supertrend-cycle","action":"POSITION_CLOSED","symbol":"US.AMZN","reason":"no longer held in account"}
 {"ts":"2026-11-20T14:35:43.173Z","source":"supertrend-cycle","action":"POSITION_CLOSED","symbol":"US.SPCX","reason":"no longer held in account"}
+{"ts":"2026-11-21T01:14:39.239Z","source":"operator-session","action":"STRATEGY_CHANGE","from":"v1.0.0","to":"v1.1.0","summary":"bear sleeve: buy SH/SQQQ/QID when SPY<SMA200 or SuperTrend down, 40-bar continuation, <=2 names, 12% weight, 0.75% risk","reason":"user request: challenge permits bearish exposure (handbook: margin and short selling available); expressed via long inverse ETFs, no short sales","plan":"2026-11-23 SQQQ 58 @57.68 / QID 62 @75.50 awaiting operator approval"}
