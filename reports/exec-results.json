@@ -1,20 +1,29 @@
 [
   {
-    "symbol": "US.MSFT",
+    "symbol": "US.COHH",
     "side": "SELL",
-    "qty": 17,
-    "price": 499.06,
-    "order_id": "3254326",
+    "qty": 1000,
+    "price": 2.64,
+    "order_id": "3259176",
     "status": "SUBMITTED",
-    "reason": "risk flatten: daily -1.62%"
+    "reason": "stop 2.73 hit (low 2.63)"
   },
   {
-    "symbol": "US.AMZN",
-    "side": "SELL",
-    "qty": 29,
-    "price": 256.84,
-    "order_id": "3254327",
+    "symbol": "US.SQQQ",
+    "side": "BUY",
+    "qty": 58,
+    "price": 47.16,
+    "order_id": "3259179",
     "status": "SUBMITTED",
-    "reason": "risk flatten: daily -1.62%"
+    "reason": "entry: flip 27 bars, close>200d, stop 44.98"
+  },
+  {
+    "symbol": "US.QID",
+    "side": "BUY",
+    "qty": 62,
+    "price": 66.29,
+    "order_id": "3259180",
+    "status": "SUBMITTED",
+    "reason": "entry: flip 27 bars, close>200d, stop 63.55"
   }
 ]

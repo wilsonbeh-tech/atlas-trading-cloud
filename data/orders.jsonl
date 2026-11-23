@@ -2,3 +2,6 @@
 {"ts":"2026-11-18T13:30:01.797Z","symbol":"US.AMZN","side":"BUY","qty":29,"orderQty":29,"limitPrice":259.19,"reason":"Atlas Trend v1.0: ST flip 9 bars, close>200d, stop 224.26","orderId":"3249431","status":"SUBMITTED","source":"mcp-agent"}
 {"ts":"2026-11-19T20:36:10.373Z","symbol":"US.MSFT","side":"SELL","qty":17,"orderQty":17,"limitPrice":499.06,"reason":"risk flatten: daily -1.62%","orderId":"3254326","status":"SUBMITTED","source":"mcp-agent"}
 {"ts":"2026-11-19T20:36:10.373Z","symbol":"US.AMZN","side":"SELL","qty":29,"orderQty":29,"limitPrice":256.84,"reason":"risk flatten: daily -1.62%","orderId":"3254327","status":"SUBMITTED","source":"mcp-agent"}
+{"ts":"2026-11-23T14:36:11.137Z","symbol":"US.COHH","side":"SELL","qty":1000,"orderQty":1000,"limitPrice":2.64,"reason":"stop 2.73 hit (low 2.63)","orderId":"3259176","status":"SUBMITTED","source":"mcp-agent"}
+{"ts":"2026-11-23T14:36:11.138Z","symbol":"US.SQQQ","side":"BUY","qty":58,"orderQty":58,"limitPrice":47.16,"reason":"entry: flip 27 bars, close>200d, stop 44.98","orderId":"3259179","status":"SUBMITTED","source":"mcp-agent"}
+{"ts":"2026-11-23T14:36:11.138Z","symbol":"US.QID","side":"BUY","qty":62,"orderQty":62,"limitPrice":66.29,"reason":"entry: flip 27 bars, close>200d, stop 63.55","orderId":"3259180","status":"SUBMITTED","source":"mcp-agent"}
