@@ -6658,6 +6658,24 @@
       "turnover": 3922976798,
       "turnover_rate": 0.00474,
       "volume": 12517446
+    },
+    {
+      "change_rate": 1.9740443757446946,
+      "close_price": 316.66,
+      "code": "US.JPM",
+      "date": 20261123,
+      "high_price": 321.612,
+      "last_close_price": 310.53,
+      "low_price": 315,
+      "name": "JPMorgan",
+      "open_price": 319.19,
+      "pe": 15.817,
+      "sc_name": "摩根大通",
+      "tc_name": "摩根大通",
+      "time_key": 1795410000000,
+      "turnover": 2719909262.235,
+      "turnover_rate": 0.00324,
+      "volume": 8558909
     }
   ]
 }

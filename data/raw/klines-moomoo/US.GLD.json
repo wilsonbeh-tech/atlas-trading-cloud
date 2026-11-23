@@ -6266,6 +6266,7 @@
       "low_price": 335.05,
       "name": "SPDR Gold ETF",
       "open_price": 339.88,
+      "pe": 0,
       "sc_name": "黄金ETF-SPDR",
       "tc_name": "黃金ETF-SPDR",
       "time_key": 1795064400000,
@@ -6283,12 +6284,31 @@
       "low_price": 320.95,
       "name": "SPDR Gold ETF",
       "open_price": 326.975,
+      "pe": 0,
       "sc_name": "黄金ETF-SPDR",
       "tc_name": "黃金ETF-SPDR",
       "time_key": 1795150800000,
       "turnover": 7668639095,
-      "turnover_rate": 0.06455,
+      "turnover_rate": 0.06515,
       "volume": 23643352
+    },
+    {
+      "change_rate": 3.149874562517422,
+      "close_price": 333.04,
+      "code": "US.GLD",
+      "date": 20261123,
+      "high_price": 338,
+      "last_close_price": 322.87,
+      "low_price": 332.515,
+      "name": "SPDR Gold ETF",
+      "open_price": 337.98,
+      "pe": 0,
+      "sc_name": "黄金ETF-SPDR",
+      "tc_name": "黃金ETF-SPDR",
+      "time_key": 1795410000000,
+      "turnover": 3896579214.577,
+      "turnover_rate": 0.03203,
+      "volume": 11623334
     }
   ]
 }

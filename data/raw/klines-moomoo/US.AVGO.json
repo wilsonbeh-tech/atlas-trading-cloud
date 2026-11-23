@@ -6659,6 +6659,24 @@
       "turnover": 18766961376,
       "turnover_rate": 0.01301,
       "volume": 60112570
+    },
+    {
+      "change_rate": 3.002529483262705,
+      "close_price": 313.55,
+      "code": "US.AVGO",
+      "date": 20261123,
+      "high_price": 324.46,
+      "last_close_price": 304.41,
+      "low_price": 304.56,
+      "name": "Broadcom",
+      "open_price": 320.86,
+      "pe": 65.733,
+      "sc_name": "博通",
+      "tc_name": "博通",
+      "time_key": 1795410000000,
+      "turnover": 12723389878.067,
+      "turnover_rate": 0.00881,
+      "volume": 40738626
     }
   ]
 }

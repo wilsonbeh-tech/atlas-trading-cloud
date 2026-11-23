@@ -8,8 +8,9 @@
       "stop": 63.55,
       "peakClose": 75.39,
       "sessionsHeld": 1,
-      "lastBarDate": "2026-11-20",
-      "qty": 62
+      "lastBarDate": "2026-11-23",
+      "qty": 62,
+      "updatedAt": "2026-11-23T21:06:38.020Z"
     }
   },
   "killUntil": null,

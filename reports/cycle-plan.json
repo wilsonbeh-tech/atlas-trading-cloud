@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-23T20:35:54.835Z",
-  "mode": "intraday",
+  "generatedAt": "2026-11-23T21:06:38.020Z",
+  "mode": "eod",
   "today": "2026-11-23",
-  "etTime": "15:35",
-  "marketOpen": true,
-  "equity": 98679.454,
-  "dayPnlPct": -0.22,
-  "drawdownPct": -1.95,
+  "etTime": "16:06",
+  "marketOpen": false,
+  "equity": 98709.834,
+  "dayPnlPct": -0.19,
+  "drawdownPct": -1.92,
   "risk": {
     "flatten": false,
     "deRisk": false,
@@ -34,5 +34,5 @@
   "orderBudget": 8,
   "orders": [],
   "rejected": [],
-  "nextSession": null
+  "nextSession": "2026-11-24"
 }

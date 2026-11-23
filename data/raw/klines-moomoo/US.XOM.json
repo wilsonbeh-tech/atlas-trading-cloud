@@ -6658,6 +6658,24 @@
       "turnover": 2992446388,
       "turnover_rate": 0.00459,
       "volume": 18684395
+    },
+    {
+      "change_rate": -1.9313707106694167,
+      "close_price": 156.9,
+      "code": "US.XOM",
+      "date": 20261123,
+      "high_price": 159.65,
+      "last_close_price": 159.99,
+      "low_price": 156.67,
+      "name": "Exxon Mobil",
+      "open_price": 157.94,
+      "pe": 23.417,
+      "sc_name": "埃克森美孚",
+      "tc_name": "埃克森美孚",
+      "time_key": 1795410000000,
+      "turnover": 2311910873.103,
+      "turnover_rate": 0.0036,
+      "volume": 14656808
     }
   ]
 }

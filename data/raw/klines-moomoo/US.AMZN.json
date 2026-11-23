@@ -6659,6 +6659,24 @@
       "turnover": 18622584211,
       "turnover_rate": 0.00756,
       "volume": 74362636
+    },
+    {
+      "change_rate": 3.4721659508953895,
+      "close_price": 255.39,
+      "code": "US.AMZN",
+      "date": 20261123,
+      "high_price": 262.48,
+      "last_close_price": 246.82,
+      "low_price": 251.25,
+      "name": "Amazon",
+      "open_price": 260.26,
+      "pe": 35.619,
+      "sc_name": "亚马逊",
+      "tc_name": "亞馬遜",
+      "time_key": 1795410000000,
+      "turnover": 13499769121.062,
+      "turnover_rate": 0.00535,
+      "volume": 52661356
     }
   ]
 }
