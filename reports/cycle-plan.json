@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-23T14:35:53.287Z",
+  "generatedAt": "2026-11-23T15:35:49.057Z",
   "mode": "intraday",
   "today": "2026-11-23",
-  "etTime": "09:35",
+  "etTime": "10:35",
   "marketOpen": true,
-  "equity": 98896.51,
-  "dayPnlPct": 0,
-  "drawdownPct": -1.74,
+  "equity": 98653.194,
+  "dayPnlPct": -0.25,
+  "drawdownPct": -1.98,
   "risk": {
     "flatten": false,
     "deRisk": false,
@@ -16,11 +16,19 @@
   },
   "positions": [
     {
-      "symbol": "US.COHH",
-      "qty": 1000,
-      "entryDate": "2026-11-19",
-      "stop": 2.73,
-      "peakClose": 3.03,
+      "symbol": "US.SQQQ",
+      "qty": 58,
+      "entryDate": "2026-11-23",
+      "stop": 44.98,
+      "peakClose": 57.59,
+      "sessionsHeld": 1
+    },
+    {
+      "symbol": "US.QID",
+      "qty": 62,
+      "entryDate": "2026-11-23",
+      "stop": 63.55,
+      "peakClose": 75.39,
       "sessionsHeld": 1
     }
   ],
@@ -30,34 +38,16 @@
     "picks": 2,
     "outgoing": 0
   },
-  "ordersToday": 0,
-  "orderBudget": 12,
+  "ordersToday": 3,
+  "orderBudget": 9,
   "orders": [
     {
-      "symbol": "US.COHH",
-      "side": "SELL",
-      "qty": 1000,
-      "limitPrice": 2.64,
-      "stop": 2.73,
-      "reason": "stop 2.73 hit (low 2.63)"
-    },
-    {
       "symbol": "US.SQQQ",
-      "side": "BUY",
+      "side": "SELL",
       "qty": 58,
-      "limitPrice": 47.16,
-      "planLimit": 57.68,
+      "limitPrice": 44.55,
       "stop": 44.98,
-      "reason": "entry: flip 27 bars, close>200d, stop 44.98"
-    },
-    {
-      "symbol": "US.QID",
-      "side": "BUY",
-      "qty": 62,
-      "limitPrice": 66.29,
-      "planLimit": 75.5,
-      "stop": 63.55,
-      "reason": "entry: flip 27 bars, close>200d, stop 63.55"
+      "reason": "stop 44.98 hit (low 44.015)"
     }
   ],
   "rejected": [],

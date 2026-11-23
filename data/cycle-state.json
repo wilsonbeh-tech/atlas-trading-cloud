@@ -1,15 +1,26 @@
 {
   "positions": {
-    "US.COHH": {
-      "symbol": "US.COHH",
-      "entryDate": "2026-11-19",
-      "entryPrice": 3.03,
-      "initialStop": 2.73,
-      "stop": 2.73,
-      "peakClose": 3.03,
+    "US.SQQQ": {
+      "symbol": "US.SQQQ",
+      "entryDate": "2026-11-23",
+      "entryPrice": 47.07,
+      "initialStop": 44.98,
+      "stop": 44.98,
+      "peakClose": 57.59,
       "sessionsHeld": 1,
-      "lastBarDate": null,
-      "qty": 1000
+      "lastBarDate": "2026-11-20",
+      "qty": 58
+    },
+    "US.QID": {
+      "symbol": "US.QID",
+      "entryDate": "2026-11-23",
+      "entryPrice": 66.26,
+      "initialStop": 63.55,
+      "stop": 63.55,
+      "peakClose": 75.39,
+      "sessionsHeld": 1,
+      "lastBarDate": "2026-11-20",
+      "qty": 62
     }
   },
   "killUntil": null,
