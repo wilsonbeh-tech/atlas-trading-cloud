@@ -1,7 +1,7 @@
 {
   "source": "mcp-agent",
-  "capturedAt": "2026-11-23T19:35:25Z",
-  "sessionNote": "intraday run 2026-11-23 14:35 ET, regular session open; quotes from Moomoo MCP quote_stock_quote (market 100)",
+  "capturedAt": "2026-11-23T20:35:46Z",
+  "sessionNote": "intraday run 2026-11-23 15:35 ET, regular session open; quotes from Moomoo MCP quote_stock_quote (market 100)",
   "account": {
     "account_id": "5830107",
     "account_title": "Moomoo x Qoder AI Paper Trading Agent Challenge",
@@ -11,33 +11,21 @@
   "cash": {
     "balance": "94663.094",
     "hold": "0",
-    "long_mv": "4043.64",
-    "max_power_long": "193369.828",
-    "mv": "4043.64",
+    "long_mv": "4016.36",
+    "max_power_long": "193342.548",
+    "mv": "4016.36",
     "short_mv": "0",
-    "total_asset": "98706.734"
+    "total_asset": "98679.454"
   },
   "positions": [
-    {
-      "symbol": "US.QID",
-      "stock_name": "ProShares UltraShort QQQ",
-      "qty": "62",
-      "qty_avbl": "62",
-      "cost_price": "66.26",
-      "cur_price": "65.22",
-      "last_price": "65.23",
-      "mv": "4043.64",
-      "profit": "-64.48",
-      "profit_ratio": "-1.569574403863568"
-    },
     {
       "symbol": "US.SQQQ",
       "stock_name": "ProShares UltraPro Short QQQ ETF",
       "qty": "0",
       "qty_avbl": "0",
       "cost_price": "0",
-      "cur_price": "45.91",
-      "last_price": "45.91",
+      "cur_price": "45.395",
+      "last_price": "45.395",
       "mv": "0",
       "profit": "-146.16",
       "profit_ratio": "0"
@@ -48,41 +36,593 @@
       "qty": "0",
       "qty_avbl": "0",
       "cost_price": "0",
-      "cur_price": "2.405",
-      "last_price": "2.405",
+      "cur_price": "2.46",
+      "last_price": "2.46",
       "mv": "0",
       "profit": "-360",
       "profit_ratio": "0"
+    },
+    {
+      "symbol": "US.QID",
+      "stock_name": "ProShares UltraShort QQQ",
+      "qty": "62",
+      "qty_avbl": "62",
+      "cost_price": "66.26",
+      "cur_price": "64.78",
+      "last_price": "64.78",
+      "mv": "4016.36",
+      "profit": "-91.76",
+      "profit_ratio": "-2.233625113190462"
     }
   ],
   "quotes": [
-    { "code": "US.SPY", "last_price": 723.4, "open_price": 723.99, "low_price": 713.54, "high_price": 727.98, "prev_close_price": 689.81, "data_date": "2026-11-23", "data_time": 1795462524738, "suspension": false, "sec_status": "NORMAL", "pre_market": { "price": 723.93 }, "after_market": { "price": 697.49 }, "overnight": { "price": 708.81 } },
-    { "code": "US.QQQ", "last_price": 650.86, "open_price": 656, "low_price": 641.9501, "high_price": 657.5025, "prev_close_price": 608.45, "data_date": "2026-11-23", "data_time": 1795462524489, "suspension": false, "sec_status": "NORMAL", "pre_market": { "price": 653.79 }, "after_market": { "price": 617.72 }, "overnight": { "price": 630.46 } },
-    { "code": "US.IWM", "last_price": 265.74, "open_price": 265.55, "low_price": 263, "high_price": 266.08, "prev_close_price": 256.61, "data_date": "2026-11-23", "data_time": 1795462524481, "suspension": false, "sec_status": "NORMAL", "pre_market": { "price": 265.55 }, "after_market": { "price": 258.67 }, "overnight": { "price": 262.57 } },
-    { "code": "US.SMH", "last_price": 457.76, "open_price": 468.57, "low_price": 449.64, "high_price": 469.35, "prev_close_price": 400.06, "data_date": "2026-11-23", "data_time": 1795462524674, "suspension": false, "sec_status": "NORMAL", "pre_market": { "price": 466.96 }, "after_market": { "price": 410.6499 }, "overnight": { "price": 424.17 } },
-    { "code": "US.TLT", "last_price": 81.605, "open_price": 81.11, "low_price": 81.08, "high_price": 81.655, "prev_close_price": 81.45, "data_date": "2026-11-23", "data_time": 1795462515207, "suspension": false, "sec_status": "NORMAL", "pre_market": { "price": 81.1 }, "after_market": { "price": 81.0899 }, "overnight": { "price": 81.2 } },
-    { "code": "US.GLD", "last_price": 334.225, "open_price": 337.78, "low_price": 334.03, "high_price": 338, "prev_close_price": 322.87, "data_date": "2026-11-23", "data_time": 1795462521258, "suspension": false, "sec_status": "NORMAL", "pre_market": { "price": 337.7 }, "after_market": { "price": 324.48 }, "overnight": { "price": 330.99 } },
-    { "code": "US.XLE", "last_price": 60.115, "open_price": 60.53, "low_price": 60.1099, "high_price": 60.99, "prev_close_price": 60.51, "data_date": "2026-11-23", "data_time": 1795462517410, "suspension": false, "sec_status": "NORMAL", "pre_market": { "price": 60.52 }, "after_market": { "price": 60.9 }, "overnight": { "price": 61.09 } },
-    { "code": "US.XLF", "last_price": 55.79, "open_price": 55.64, "low_price": 55.26, "high_price": 55.94, "prev_close_price": 54.57, "data_date": "2026-11-23", "data_time": 1795462513593, "suspension": false, "sec_status": "NORMAL", "pre_market": { "price": 55.64 }, "after_market": { "price": 54.89 }, "overnight": { "price": 55.63 } },
-    { "code": "US.XLK", "last_price": 162.18, "open_price": 163.9, "low_price": 159.9, "high_price": 165.06, "prev_close_price": 149.01, "data_date": "2026-11-23", "data_time": 1795462523835, "suspension": false, "sec_status": "NORMAL", "pre_market": { "price": 163.97 }, "after_market": { "price": 151.8433 }, "overnight": { "price": 155.08 } },
-    { "code": "US.XLV", "last_price": 179.82, "open_price": 177.6, "low_price": 177.24, "high_price": 180.07, "prev_close_price": 177.24, "data_date": "2026-11-23", "data_time": 1795462523790, "suspension": false, "sec_status": "NORMAL", "pre_market": { "price": 177.62 }, "after_market": { "price": 177.5 }, "overnight": { "price": 177.8 } },
-    { "code": "US.XLY", "last_price": 117.35, "open_price": 116.36, "low_price": 115.59, "high_price": 117.72, "prev_close_price": 112.46, "data_date": "2026-11-23", "data_time": 1795462524491, "suspension": false, "sec_status": "NORMAL", "pre_market": { "price": 115.9 }, "after_market": { "price": 114 }, "overnight": { "price": 114.45 } },
-    { "code": "US.XLU", "last_price": 43.305, "open_price": 43.03, "low_price": 42.8246, "high_price": 43.32, "prev_close_price": 42.69, "data_date": "2026-11-23", "data_time": 1795462490543, "suspension": false, "sec_status": "NORMAL", "pre_market": { "price": 43.05 }, "after_market": { "price": 42.81 }, "overnight": { "price": 43.01 } },
-    { "code": "US.AAPL", "last_price": 350.43, "open_price": 347.5, "low_price": 345.4422, "high_price": 352.6, "prev_close_price": 342.56, "data_date": "2026-11-23", "data_time": 1795462524649, "suspension": false, "sec_status": "NORMAL", "pre_market": { "price": 347.39 }, "after_market": { "price": 344.87 }, "overnight": { "price": 347.7 } },
-    { "code": "US.MSFT", "last_price": 496.38, "open_price": 506, "low_price": 495.22, "high_price": 509.15, "prev_close_price": 484.52, "data_date": "2026-11-23", "data_time": 1795462523871, "suspension": false, "sec_status": "NORMAL", "pre_market": { "price": 506 }, "after_market": { "price": 489.5 }, "overnight": { "price": 499.28 } },
-    { "code": "US.NVDA", "last_price": 164.93, "open_price": 167.08, "low_price": 156.93, "high_price": 171.5, "prev_close_price": 125.53, "data_date": "2026-11-23", "data_time": 1795462524617, "suspension": false, "sec_status": "NORMAL", "pre_market": { "price": 166.99 }, "after_market": { "price": 130.01 }, "overnight": { "price": 135.39 } },
-    { "code": "US.AMZN", "last_price": 256.93, "open_price": 260, "low_price": 251.25, "high_price": 262.48, "prev_close_price": 246.82, "data_date": "2026-11-23", "data_time": 1795462523871, "suspension": false, "sec_status": "NORMAL", "pre_market": { "price": 260.11 }, "after_market": { "price": 251 }, "overnight": { "price": 256.43 } },
-    { "code": "US.GOOGL", "last_price": 283.75, "open_price": 284.52, "low_price": 275.36, "high_price": 285.1354, "prev_close_price": 265.29, "data_date": "2026-11-23", "data_time": 1795462524321, "suspension": false, "sec_status": "NORMAL", "pre_market": { "price": 284.52 }, "after_market": { "price": 270.18 }, "overnight": { "price": 277.53 } },
-    { "code": "US.META", "last_price": 599.175, "open_price": 590.42, "low_price": 579.78, "high_price": 600.177, "prev_close_price": 560.84, "data_date": "2026-11-23", "data_time": 1795462523770, "suspension": false, "sec_status": "NORMAL", "pre_market": { "price": 590.42 }, "after_market": { "price": 567.5001 }, "overnight": { "price": 581.76 } },
-    { "code": "US.AVGO", "last_price": 311.135, "open_price": 320.3, "low_price": 304.56, "high_price": 324.44, "prev_close_price": 304.41, "data_date": "2026-11-23", "data_time": 1795462524276, "suspension": false, "sec_status": "NORMAL", "pre_market": { "price": 320.33 }, "after_market": { "price": 311.5 }, "overnight": { "price": 321.02 } },
-    { "code": "US.JPM", "last_price": 318.46, "open_price": 319.35, "low_price": 315, "high_price": 321.55, "prev_close_price": 310.53, "data_date": "2026-11-23", "data_time": 1795462522697, "suspension": false, "sec_status": "NORMAL", "pre_market": { "price": 319.23 }, "after_market": { "price": 312.7972 }, "overnight": { "price": 317.93 } },
-    { "code": "US.LLY", "last_price": 1365.06, "open_price": 1349.26, "low_price": 1344, "high_price": 1381.645, "prev_close_price": 1347.11, "data_date": "2026-11-23", "data_time": 1795462516601, "suspension": false, "sec_status": "NORMAL", "pre_market": { "price": 1347.35 }, "after_market": { "price": 1348.0583 }, "overnight": { "price": 1353.85 } },
-    { "code": "US.V", "last_price": 411.22, "open_price": 404.01, "low_price": 404.6, "high_price": 411.41, "prev_close_price": 401.87, "data_date": "2026-11-23", "data_time": 1795462523296, "suspension": false, "sec_status": "NORMAL", "pre_market": { "price": 405.15 }, "after_market": { "price": 404.8 }, "overnight": { "price": 404.48 } },
-    { "code": "US.COST", "last_price": 1101.08, "open_price": 1090, "low_price": 1085.04, "high_price": 1101.5, "prev_close_price": 1102.15, "data_date": "2026-11-23", "data_time": 1795462523347, "suspension": false, "sec_status": "NORMAL", "pre_market": { "price": 1090.21 }, "after_market": { "price": 1102.85 }, "overnight": { "price": 1102.49 } },
-    { "code": "US.XOM", "last_price": 157.62, "open_price": 157.94, "low_price": 157.16, "high_price": 159.65, "prev_close_price": 159.99, "data_date": "2026-11-23", "data_time": 1795462523932, "suspension": false, "sec_status": "NORMAL", "pre_market": { "price": 157.94 }, "after_market": { "price": 160.4 }, "overnight": { "price": 160.87 } },
-    { "code": "US.SH", "last_price": 34.22, "open_price": 34.225, "low_price": 33.985, "high_price": 34.73, "prev_close_price": 35.93, "data_date": "2026-11-23", "data_time": 1795462486678, "suspension": false, "sec_status": "NORMAL", "pre_market": { "price": 34.21 }, "after_market": { "price": 35.8687 }, "overnight": { "price": 34.98 } },
-    { "code": "US.SQQQ", "last_price": 45.91, "open_price": 44.49, "low_price": 44.015, "high_price": 48.44, "prev_close_price": 57.59, "data_date": "2026-11-23", "data_time": 1795462524491, "suspension": false, "sec_status": "NORMAL", "pre_market": { "price": 45.07 }, "after_market": { "price": 55.09 }, "overnight": { "price": 51.73 } },
-    { "code": "US.QID", "last_price": 65.23, "open_price": 64.42, "low_price": 63.59, "high_price": 67.4, "prev_close_price": 75.39, "data_date": "2026-11-23", "data_time": 1795462500200, "suspension": false, "sec_status": "NORMAL", "pre_market": { "price": 64.23 }, "after_market": { "price": 73.7 }, "overnight": { "price": 70.32 } }
+    {
+      "code": "US.SPY",
+      "last_price": 724.2,
+      "open_price": 723.99,
+      "low_price": 713.54,
+      "high_price": 727.98,
+      "prev_close_price": 689.81,
+      "data_date": "2026-11-23",
+      "data_time": 1795466122743,
+      "suspension": false,
+      "sec_status": "NORMAL",
+      "pre_market": {
+        "price": 723.93
+      },
+      "after_market": {
+        "price": 697.49
+      },
+      "overnight": {
+        "price": 708.81
+      }
+    },
+    {
+      "code": "US.QQQ",
+      "last_price": 652.88,
+      "open_price": 656,
+      "low_price": 641.9501,
+      "high_price": 657.5025,
+      "prev_close_price": 608.45,
+      "data_date": "2026-11-23",
+      "data_time": 1795466122751,
+      "suspension": false,
+      "sec_status": "NORMAL",
+      "pre_market": {
+        "price": 653.79
+      },
+      "after_market": {
+        "price": 617.72
+      },
+      "overnight": {
+        "price": 630.46
+      }
+    },
+    {
+      "code": "US.IWM",
+      "last_price": 265.465,
+      "open_price": 265.55,
+      "low_price": 263,
+      "high_price": 266.08,
+      "prev_close_price": 256.61,
+      "data_date": "2026-11-23",
+      "data_time": 1795466122888,
+      "suspension": false,
+      "sec_status": "NORMAL",
+      "pre_market": {
+        "price": 265.55
+      },
+      "after_market": {
+        "price": 258.67
+      },
+      "overnight": {
+        "price": 262.57
+      }
+    },
+    {
+      "code": "US.SMH",
+      "last_price": 461.1342,
+      "open_price": 468.57,
+      "low_price": 449.64,
+      "high_price": 469.35,
+      "prev_close_price": 400.06,
+      "data_date": "2026-11-23",
+      "data_time": 1795466122283,
+      "suspension": false,
+      "sec_status": "NORMAL",
+      "pre_market": {
+        "price": 466.96
+      },
+      "after_market": {
+        "price": 410.6499
+      },
+      "overnight": {
+        "price": 424.17
+      }
+    },
+    {
+      "code": "US.TLT",
+      "last_price": 81.655,
+      "open_price": 81.11,
+      "low_price": 81.08,
+      "high_price": 81.71,
+      "prev_close_price": 81.45,
+      "data_date": "2026-11-23",
+      "data_time": 1795466119214,
+      "suspension": false,
+      "sec_status": "NORMAL",
+      "pre_market": {
+        "price": 81.1
+      },
+      "after_market": {
+        "price": 81.0899
+      },
+      "overnight": {
+        "price": 81.2
+      }
+    },
+    {
+      "code": "US.GLD",
+      "last_price": 333.5251,
+      "open_price": 337.78,
+      "low_price": 333.165,
+      "high_price": 338,
+      "prev_close_price": 322.87,
+      "data_date": "2026-11-23",
+      "data_time": 1795466121880,
+      "suspension": false,
+      "sec_status": "NORMAL",
+      "pre_market": {
+        "price": 337.7
+      },
+      "after_market": {
+        "price": 324.48
+      },
+      "overnight": {
+        "price": 330.99
+      }
+    },
+    {
+      "code": "US.XLE",
+      "last_price": 59.89,
+      "open_price": 60.53,
+      "low_price": 59.745,
+      "high_price": 60.99,
+      "prev_close_price": 60.51,
+      "data_date": "2026-11-23",
+      "data_time": 1795466121273,
+      "suspension": false,
+      "sec_status": "NORMAL",
+      "pre_market": {
+        "price": 60.52
+      },
+      "after_market": {
+        "price": 60.9
+      },
+      "overnight": {
+        "price": 61.09
+      }
+    },
+    {
+      "code": "US.XLF",
+      "last_price": 55.715,
+      "open_price": 55.64,
+      "low_price": 55.26,
+      "high_price": 55.94,
+      "prev_close_price": 54.57,
+      "data_date": "2026-11-23",
+      "data_time": 1795466117572,
+      "suspension": false,
+      "sec_status": "NORMAL",
+      "pre_market": {
+        "price": 55.64
+      },
+      "after_market": {
+        "price": 54.89
+      },
+      "overnight": {
+        "price": 55.63
+      }
+    },
+    {
+      "code": "US.XLK",
+      "last_price": 163.032,
+      "open_price": 163.9,
+      "low_price": 159.9,
+      "high_price": 165.06,
+      "prev_close_price": 149.01,
+      "data_date": "2026-11-23",
+      "data_time": 1795466122585,
+      "suspension": false,
+      "sec_status": "NORMAL",
+      "pre_market": {
+        "price": 163.97
+      },
+      "after_market": {
+        "price": 151.8433
+      },
+      "overnight": {
+        "price": 155.08
+      }
+    },
+    {
+      "code": "US.XLV",
+      "last_price": 179.5,
+      "open_price": 177.6,
+      "low_price": 177.24,
+      "high_price": 180.07,
+      "prev_close_price": 177.24,
+      "data_date": "2026-11-23",
+      "data_time": 1795466122502,
+      "suspension": false,
+      "sec_status": "NORMAL",
+      "pre_market": {
+        "price": 177.62
+      },
+      "after_market": {
+        "price": 177.5
+      },
+      "overnight": {
+        "price": 177.8
+      }
+    },
+    {
+      "code": "US.XLY",
+      "last_price": 117.31,
+      "open_price": 116.36,
+      "low_price": 115.59,
+      "high_price": 117.72,
+      "prev_close_price": 112.46,
+      "data_date": "2026-11-23",
+      "data_time": 1795466121716,
+      "suspension": false,
+      "sec_status": "NORMAL",
+      "pre_market": {
+        "price": 115.9
+      },
+      "after_market": {
+        "price": 114
+      },
+      "overnight": {
+        "price": 114.45
+      }
+    },
+    {
+      "code": "US.XLU",
+      "last_price": 43.23,
+      "open_price": 43.03,
+      "low_price": 42.8246,
+      "high_price": 43.32,
+      "prev_close_price": 42.69,
+      "data_date": "2026-11-23",
+      "data_time": 1795466117793,
+      "suspension": false,
+      "sec_status": "NORMAL",
+      "pre_market": {
+        "price": 43.05
+      },
+      "after_market": {
+        "price": 42.81
+      },
+      "overnight": {
+        "price": 43.01
+      }
+    },
+    {
+      "code": "US.AAPL",
+      "last_price": 350.91,
+      "open_price": 347.5,
+      "low_price": 345.4422,
+      "high_price": 352.6,
+      "prev_close_price": 342.56,
+      "data_date": "2026-11-23",
+      "data_time": 1795466122191,
+      "suspension": false,
+      "sec_status": "NORMAL",
+      "pre_market": {
+        "price": 347.39
+      },
+      "after_market": {
+        "price": 344.87
+      },
+      "overnight": {
+        "price": 347.7
+      }
+    },
+    {
+      "code": "US.MSFT",
+      "last_price": 497.22,
+      "open_price": 506,
+      "low_price": 494.5,
+      "high_price": 509.15,
+      "prev_close_price": 484.52,
+      "data_date": "2026-11-23",
+      "data_time": 1795466122705,
+      "suspension": false,
+      "sec_status": "NORMAL",
+      "pre_market": {
+        "price": 506
+      },
+      "after_market": {
+        "price": 489.5
+      },
+      "overnight": {
+        "price": 499.28
+      }
+    },
+    {
+      "code": "US.NVDA",
+      "last_price": 166.6148,
+      "open_price": 167.08,
+      "low_price": 156.93,
+      "high_price": 171.5,
+      "prev_close_price": 125.53,
+      "data_date": "2026-11-23",
+      "data_time": 1795466122866,
+      "suspension": false,
+      "sec_status": "NORMAL",
+      "pre_market": {
+        "price": 166.99
+      },
+      "after_market": {
+        "price": 130.01
+      },
+      "overnight": {
+        "price": 135.39
+      }
+    },
+    {
+      "code": "US.AMZN",
+      "last_price": 256.865,
+      "open_price": 260,
+      "low_price": 251.25,
+      "high_price": 262.48,
+      "prev_close_price": 246.82,
+      "data_date": "2026-11-23",
+      "data_time": 1795466122721,
+      "suspension": false,
+      "sec_status": "NORMAL",
+      "pre_market": {
+        "price": 260.11
+      },
+      "after_market": {
+        "price": 251
+      },
+      "overnight": {
+        "price": 256.43
+      }
+    },
+    {
+      "code": "US.GOOGL",
+      "last_price": 283.39,
+      "open_price": 284.52,
+      "low_price": 275.36,
+      "high_price": 285.1354,
+      "prev_close_price": 265.29,
+      "data_date": "2026-11-23",
+      "data_time": 1795466122115,
+      "suspension": false,
+      "sec_status": "NORMAL",
+      "pre_market": {
+        "price": 284.52
+      },
+      "after_market": {
+        "price": 270.18
+      },
+      "overnight": {
+        "price": 277.53
+      }
+    },
+    {
+      "code": "US.META",
+      "last_price": 600.54,
+      "open_price": 590.42,
+      "low_price": 579.78,
+      "high_price": 601.38,
+      "prev_close_price": 560.84,
+      "data_date": "2026-11-23",
+      "data_time": 1795466122376,
+      "suspension": false,
+      "sec_status": "NORMAL",
+      "pre_market": {
+        "price": 590.42
+      },
+      "after_market": {
+        "price": 567.5001
+      },
+      "overnight": {
+        "price": 581.76
+      }
+    },
+    {
+      "code": "US.AVGO",
+      "last_price": 313.235,
+      "open_price": 320.3,
+      "low_price": 304.56,
+      "high_price": 324.44,
+      "prev_close_price": 304.41,
+      "data_date": "2026-11-23",
+      "data_time": 1795466121520,
+      "suspension": false,
+      "sec_status": "NORMAL",
+      "pre_market": {
+        "price": 320.33
+      },
+      "after_market": {
+        "price": 311.5
+      },
+      "overnight": {
+        "price": 321.02
+      }
+    },
+    {
+      "code": "US.JPM",
+      "last_price": 317.66,
+      "open_price": 319.35,
+      "low_price": 315,
+      "high_price": 321.55,
+      "prev_close_price": 310.53,
+      "data_date": "2026-11-23",
+      "data_time": 1795466121307,
+      "suspension": false,
+      "sec_status": "NORMAL",
+      "pre_market": {
+        "price": 319.23
+      },
+      "after_market": {
+        "price": 312.7972
+      },
+      "overnight": {
+        "price": 317.93
+      }
+    },
+    {
+      "code": "US.LLY",
+      "last_price": 1363.78,
+      "open_price": 1349.26,
+      "low_price": 1344,
+      "high_price": 1381.645,
+      "prev_close_price": 1347.11,
+      "data_date": "2026-11-23",
+      "data_time": 1795466122812,
+      "suspension": false,
+      "sec_status": "NORMAL",
+      "pre_market": {
+        "price": 1347.35
+      },
+      "after_market": {
+        "price": 1348.0583
+      },
+      "overnight": {
+        "price": 1353.85
+      }
+    },
+    {
+      "code": "US.V",
+      "last_price": 409.95,
+      "open_price": 404.01,
+      "low_price": 404.6,
+      "high_price": 411.41,
+      "prev_close_price": 401.87,
+      "data_date": "2026-11-23",
+      "data_time": 1795466122492,
+      "suspension": false,
+      "sec_status": "NORMAL",
+      "pre_market": {
+        "price": 405.15
+      },
+      "after_market": {
+        "price": 404.8
+      },
+      "overnight": {
+        "price": 404.48
+      }
+    },
+    {
+      "code": "US.COST",
+      "last_price": 1096.98,
+      "open_price": 1090,
+      "low_price": 1085.04,
+      "high_price": 1101.5,
+      "prev_close_price": 1102.15,
+      "data_date": "2026-11-23",
+      "data_time": 1795466116902,
+      "suspension": false,
+      "sec_status": "NORMAL",
+      "pre_market": {
+        "price": 1090.21
+      },
+      "after_market": {
+        "price": 1102.85
+      },
+      "overnight": {
+        "price": 1102.49
+      }
+    },
+    {
+      "code": "US.XOM",
+      "last_price": 156.95,
+      "open_price": 157.94,
+      "low_price": 156.67,
+      "high_price": 159.65,
+      "prev_close_price": 159.99,
+      "data_date": "2026-11-23",
+      "data_time": 1795466122220,
+      "suspension": false,
+      "sec_status": "NORMAL",
+      "pre_market": {
+        "price": 157.94
+      },
+      "after_market": {
+        "price": 160.4
+      },
+      "overnight": {
+        "price": 160.87
+      }
+    },
+    {
+      "code": "US.SH",
+      "last_price": 34.192,
+      "open_price": 34.225,
+      "low_price": 33.985,
+      "high_price": 34.73,
+      "prev_close_price": 35.93,
+      "data_date": "2026-11-23",
+      "data_time": 1795466118755,
+      "suspension": false,
+      "sec_status": "NORMAL",
+      "pre_market": {
+        "price": 34.21
+      },
+      "after_market": {
+        "price": 35.8687
+      },
+      "overnight": {
+        "price": 34.98
+      }
+    },
+    {
+      "code": "US.SQQQ",
+      "last_price": 45.3398,
+      "open_price": 44.49,
+      "low_price": 44.015,
+      "high_price": 48.44,
+      "prev_close_price": 57.59,
+      "data_date": "2026-11-23",
+      "data_time": 1795466122677,
+      "suspension": false,
+      "sec_status": "NORMAL",
+      "pre_market": {
+        "price": 45.07
+      },
+      "after_market": {
+        "price": 55.09
+      },
+      "overnight": {
+        "price": 51.73
+      }
+    },
+    {
+      "code": "US.QID",
+      "last_price": 64.785,
+      "open_price": 64.42,
+      "low_price": 63.59,
+      "high_price": 67.4,
+      "prev_close_price": 75.39,
+      "data_date": "2026-11-23",
+      "data_time": 1795466112810,
+      "suspension": false,
+      "sec_status": "NORMAL",
+      "pre_market": {
+        "price": 64.23
+      },
+      "after_market": {
+        "price": 73.7
+      },
+      "overnight": {
+        "price": 70.32
+      }
+    }
   ],
   "open_orders": [],
   "cancelled_today": 0,
@@ -90,9 +630,65 @@
   "orders_today": 4,
   "broker_orders_today": 4,
   "broker_orders": [
-    { "order_id": "3259570", "symbol": "US.SQQQ", "side": 2, "qty": "58", "price": "44.55", "avg_fill_price": "44.55", "status": 4, "create_time": "1795448154000000" },
-    { "order_id": "3259180", "symbol": "US.QID", "side": 1, "qty": "62", "price": "66.29", "avg_fill_price": "66.26", "status": 4, "create_time": "1795444565000000" },
-    { "order_id": "3259179", "symbol": "US.SQQQ", "side": 1, "qty": "58", "price": "47.16", "avg_fill_price": "47.07", "status": 4, "create_time": "1795444562000000" },
-    { "order_id": "3259176", "symbol": "US.COHH", "side": 2, "qty": "1000", "price": "2.64", "avg_fill_price": "2.67", "status": 4, "create_time": "1795444560000000" }
+    {
+      "order_id": "3259570",
+      "symbol": "US.SQQQ",
+      "side": 2,
+      "qty": "58",
+      "price": "44.55",
+      "avg_fill_price": "44.55",
+      "cum_qty": "58",
+      "status": 4,
+      "order_type": 1,
+      "order_trade_time_type": 1,
+      "create_time": "1795448154000000",
+      "update_time": "1795448223000000",
+      "text": "atlas stop 44.98 hit low 44.015"
+    },
+    {
+      "order_id": "3259180",
+      "symbol": "US.QID",
+      "side": 1,
+      "qty": "62",
+      "price": "66.29",
+      "avg_fill_price": "66.26",
+      "cum_qty": "62",
+      "status": 4,
+      "order_type": 1,
+      "order_trade_time_type": 1,
+      "create_time": "1795444565000000",
+      "update_time": "1795444566000000",
+      "text": "atlas inverse sleeve entry stop 63.55"
+    },
+    {
+      "order_id": "3259179",
+      "symbol": "US.SQQQ",
+      "side": 1,
+      "qty": "58",
+      "price": "47.16",
+      "avg_fill_price": "47.07",
+      "cum_qty": "58",
+      "status": 4,
+      "order_type": 1,
+      "order_trade_time_type": 1,
+      "create_time": "1795444562000000",
+      "update_time": "1795444566000000",
+      "text": "atlas inverse sleeve entry stop 44.98"
+    },
+    {
+      "order_id": "3259176",
+      "symbol": "US.COHH",
+      "side": 2,
+      "qty": "1000",
+      "price": "2.64",
+      "avg_fill_price": "2.67",
+      "cum_qty": "1000",
+      "status": 4,
+      "order_type": 1,
+      "order_trade_time_type": 1,
+      "create_time": "1795444560000000",
+      "update_time": "1795444563000000",
+      "text": "atlas stop 2.73 hit low 2.63"
+    }
   ]
 }
