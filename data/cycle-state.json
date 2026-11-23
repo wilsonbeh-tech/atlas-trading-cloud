@@ -1,16 +1,5 @@
 {
   "positions": {
-    "US.SQQQ": {
-      "symbol": "US.SQQQ",
-      "entryDate": "2026-11-23",
-      "entryPrice": 47.07,
-      "initialStop": 44.98,
-      "stop": 44.98,
-      "peakClose": 57.59,
-      "sessionsHeld": 1,
-      "lastBarDate": "2026-11-20",
-      "qty": 58
-    },
     "US.QID": {
       "symbol": "US.QID",
       "entryDate": "2026-11-23",

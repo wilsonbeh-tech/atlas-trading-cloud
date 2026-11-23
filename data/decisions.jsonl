@@ -37,3 +37,4 @@
 {"ts":"2026-11-23T15:35:49.162Z","source":"supertrend-cycle","action":"POSITION_QTY_SYNC","symbol":"US.QID","to":62}
 {"ts":"2026-11-23T15:35:49.162Z","source":"supertrend-cycle","action":"POSITION_CLOSED","symbol":"US.COHH","reason":"no longer held in account"}
 {"ts":"2026-11-23T15:36:00.764Z","action":"ORDERS_SUBMITTED","summary":"1 orders submitted (mcp-agent)"}
+{"ts":"2026-11-23T16:35:44.630Z","source":"supertrend-cycle","action":"POSITION_CLOSED","symbol":"US.SQQQ","reason":"no longer held in account"}
