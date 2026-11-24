@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-24T14:36:02.547Z",
+  "generatedAt": "2026-11-24T15:35:32.866Z",
   "mode": "intraday",
   "today": "2026-11-24",
-  "etTime": "09:36",
+  "etTime": "10:35",
   "marketOpen": true,
-  "equity": 98871.654,
+  "equity": 98879.094,
   "dayPnlPct": 0,
-  "drawdownPct": -1.76,
+  "drawdownPct": -1.75,
   "risk": {
     "flatten": false,
     "deRisk": false,
@@ -33,12 +33,6 @@
   "ordersToday": 0,
   "orderBudget": 12,
   "orders": [],
-  "rejected": [
-    {
-      "symbol": "US.SQQQ",
-      "side": "BUY",
-      "reason": "no chase: 48.71 > 46.01 +1%"
-    }
-  ],
+  "rejected": [],
   "nextSession": null
 }
