@@ -6285,8 +6285,6 @@
       "name": "Consumer Discretionary Select Sector SPDR Fund",
       "open_price": 115.625,
       "pe": 0,
-      "sc_name": "非必需消费类ETF-SPDR",
-      "tc_name": "非必需消費類ETF-SPDR",
       "time_key": 1795150800000,
       "turnover": 1443954685,
       "turnover_rate": 0.06567,
@@ -6303,12 +6301,26 @@
       "name": "Consumer Discretionary Select Sector SPDR Fund",
       "open_price": 116.48,
       "pe": 0,
-      "sc_name": "非必需消费类ETF-SPDR",
-      "tc_name": "非必需消費類ETF-SPDR",
       "time_key": 1795410000000,
-      "turnover": 1355604994.709,
-      "turnover_rate": 0.06014,
-      "volume": 11581009
+      "turnover": 1360812246,
+      "turnover_rate": 0.0604,
+      "volume": 11629744
+    },
+    {
+      "change_rate": 0.675617891045925,
+      "close_price": 117.72,
+      "code": "US.XLY",
+      "date": 20261124,
+      "high_price": 118.025,
+      "last_close_price": 116.93,
+      "low_price": 116.04,
+      "name": "Consumer Discretionary Select Sector SPDR Fund",
+      "open_price": 116.34,
+      "pe": 0,
+      "time_key": 1795496400000,
+      "turnover": 861578650.746,
+      "turnover_rate": 0.03815,
+      "volume": 7345985
     }
   ]
 }

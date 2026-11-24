@@ -6282,8 +6282,6 @@
       "name": "The Health Care Select Sector SPDR® Fund",
       "open_price": 179,
       "pe": 0,
-      "sc_name": "医疗保健精选行业指数ETF-SPDR",
-      "tc_name": "醫療保健精選行業指數ETF-SPDR",
       "time_key": 1795150800000,
       "turnover": 3229013295,
       "turnover_rate": 0.06877,
@@ -6300,12 +6298,26 @@
       "name": "The Health Care Select Sector SPDR® Fund",
       "open_price": 177.25,
       "pe": 0,
-      "sc_name": "医疗保健精选行业指数ETF-SPDR",
-      "tc_name": "醫療保健精選行業指數ETF-SPDR",
       "time_key": 1795410000000,
-      "turnover": 2388112854.439,
-      "turnover_rate": 0.05069,
-      "volume": 13325198
+      "turnover": 2394284485,
+      "turnover_rate": 0.05083,
+      "volume": 13361599
+    },
+    {
+      "change_rate": 2.9651097982387693,
+      "close_price": 184.74,
+      "code": "US.XLV",
+      "date": 20261124,
+      "high_price": 185.11,
+      "last_close_price": 179.42,
+      "low_price": 179.27,
+      "name": "The Health Care Select Sector SPDR® Fund",
+      "open_price": 179.65,
+      "pe": 0,
+      "time_key": 1795496400000,
+      "turnover": 2501357404.788,
+      "turnover_rate": 0.05176,
+      "volume": 13605635
     }
   ]
 }

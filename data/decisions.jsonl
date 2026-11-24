@@ -40,3 +40,5 @@
 {"ts":"2026-11-23T16:35:44.630Z","source":"supertrend-cycle","action":"POSITION_CLOSED","symbol":"US.SQQQ","reason":"no longer held in account"}
 {"ts":"2026-11-23T21:06:38.145Z","source":"supertrend-cycle","action":"STOP_RECOMPUTE","symbol":"US.QID","oldStop":63.55,"newStop":63.55,"peakClose":75.39,"atr":4.7,"bar":"2026-11-23"}
 {"ts":"2026-11-23T21:06:38.146Z","source":"supertrend-cycle","action":"ENTRY_PLANNED","symbol":"US.SQQQ","forSession":"2026-11-24","qty":48,"limit":46.01,"stop":30.73}
+{"ts":"2026-11-24T21:07:06.894Z","source":"supertrend-cycle","action":"STOP_RECOMPUTE","symbol":"US.QID","oldStop":63.55,"newStop":63.55,"peakClose":75.39,"atr":4.77,"bar":"2026-11-24"}
+{"ts":"2026-11-24T21:07:06.895Z","source":"supertrend-cycle","action":"ENTRY_PLANNED","symbol":"US.SQQQ","forSession":"2026-11-25","qty":47,"limit":48.73,"stop":33.19}

@@ -6285,8 +6285,6 @@
       "name": "iShares Russell 2000 ETF",
       "open_price": 263.32,
       "pe": 0,
-      "sc_name": "罗素2000ETF-iShares",
-      "tc_name": "羅素2000ETF-iShares",
       "time_key": 1795150800000,
       "turnover": 14954948575,
       "turnover_rate": 0.20629,
@@ -6303,12 +6301,26 @@
       "name": "iShares Russell 2000 ETF",
       "open_price": 266.035,
       "pe": 0,
-      "sc_name": "罗素2000ETF-iShares",
-      "tc_name": "羅素2000ETF-iShares",
       "time_key": 1795410000000,
-      "turnover": 7475536742.474,
-      "turnover_rate": 0.10132,
-      "volume": 28221591
+      "turnover": 7975745995,
+      "turnover_rate": 0.10813,
+      "volume": 30118604
+    },
+    {
+      "change_rate": 0.5268307368104161,
+      "close_price": 267.14,
+      "code": "US.IWM",
+      "date": 20261124,
+      "high_price": 268.31,
+      "last_close_price": 265.74,
+      "low_price": 263.97,
+      "name": "iShares Russell 2000 ETF",
+      "open_price": 264.02,
+      "pe": 0,
+      "time_key": 1795496400000,
+      "turnover": 7314696370.131,
+      "turnover_rate": 0.09854,
+      "volume": 27447300
     }
   ]
 }

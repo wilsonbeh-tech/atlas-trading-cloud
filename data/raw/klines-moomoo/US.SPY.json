@@ -6285,16 +6285,14 @@
       "name": "SPDR S&P 500 ETF",
       "open_price": 713.56,
       "pe": 0,
-      "sc_name": "标普500ETF-SPDR",
-      "tc_name": "標普500指數ETF-SPDR",
       "time_key": 1795150800000,
       "turnover": 106268575921,
       "turnover_rate": 0.1436,
       "volume": 151413318
     },
     {
-      "change_rate": 4.740435772169148,
-      "close_price": 722.51,
+      "change_rate": 4.708542932111741,
+      "close_price": 722.29,
       "code": "US.SPY",
       "date": 20261123,
       "high_price": 727.98,
@@ -6303,12 +6301,26 @@
       "name": "SPDR S&P 500 ETF",
       "open_price": 724.33,
       "pe": 0,
-      "sc_name": "标普500ETF-SPDR",
-      "tc_name": "標普500指數ETF-SPDR",
       "time_key": 1795410000000,
-      "turnover": 56338371985.933,
-      "turnover_rate": 0.07404,
-      "volume": 78061708
+      "turnover": 63510898646,
+      "turnover_rate": 0.08373,
+      "volume": 88283783
+    },
+    {
+      "change_rate": -0.5136441041686858,
+      "close_price": 718.58,
+      "code": "US.SPY",
+      "date": 20261124,
+      "high_price": 720.93,
+      "last_close_price": 722.29,
+      "low_price": 712.14,
+      "name": "SPDR S&P 500 ETF",
+      "open_price": 715.148,
+      "pe": 0,
+      "time_key": 1795496400000,
+      "turnover": 42145175653.207,
+      "turnover_rate": 0.05577,
+      "volume": 58804718
     }
   ]
 }

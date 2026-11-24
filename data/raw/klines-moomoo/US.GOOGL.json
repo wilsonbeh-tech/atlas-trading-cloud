@@ -6653,8 +6653,6 @@
       "name": "Alphabet-A",
       "open_price": 274.5,
       "pe": 24.541,
-      "sc_name": "谷歌-A",
-      "tc_name": "谷歌-A",
       "time_key": 1795150800000,
       "turnover": 15852242371,
       "turnover_rate": 0.00549,
@@ -6671,12 +6669,26 @@
       "name": "Alphabet-A",
       "open_price": 284.275,
       "pe": 26.096,
-      "sc_name": "谷歌-A",
-      "tc_name": "谷歌-A",
       "time_key": 1795410000000,
-      "turnover": 12304306869.415,
-      "turnover_rate": 0.00411,
-      "volume": 43630562
+      "turnover": 12512902623,
+      "turnover_rate": 0.00418,
+      "volume": 44375551
+    },
+    {
+      "change_rate": -1.0811768876285006,
+      "close_price": 279.05,
+      "code": "US.GOOGL",
+      "date": 20261124,
+      "high_price": 281.78,
+      "last_close_price": 282.1,
+      "low_price": 276.03,
+      "name": "Alphabet-A",
+      "open_price": 281.6,
+      "pe": 25.814,
+      "time_key": 1795496400000,
+      "turnover": 9214885787.755,
+      "turnover_rate": 0.00311,
+      "volume": 33048467
     }
   ]
 }
