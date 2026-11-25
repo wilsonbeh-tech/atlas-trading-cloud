@@ -182,7 +182,14 @@ const t = nyTime();
 const earlyClose = cfg.competition.earlyClose?.[today];
 const sessionEnd = earlyClose ?? '16:00';
 const isFinalSession = today === cfg.competition.finalSession;
-const finalFlatten = isFinalSession && t >= cfg.competition.finalFlattenET;
+// Scheduled intraday runs land at :35, so a 12:45 mark against a 13:00 early close would never
+// fall inside the session. Start the flatten one lead window before the close instead.
+const toMin = (hhmm) => { const [h, m] = hhmm.split(':').map(Number); return h * 60 + m; };
+const flattenAtMin = Math.min(
+  toMin(cfg.competition.finalFlattenET),
+  toMin(sessionEnd) - (cfg.competition.finalFlattenLeadMin ?? 30)
+);
+const finalFlatten = isFinalSession && toMin(t) >= flattenAtMin;
 const killActive = Boolean(cstate.killUntil && today <= cstate.killUntil);
 let flatten = finalFlatten || killActive;
 let deRisk = false;

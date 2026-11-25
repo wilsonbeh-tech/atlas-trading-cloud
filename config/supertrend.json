@@ -12,6 +12,7 @@
     "noNewEntriesAfter": "2026-11-25",
     "finalSession": "2026-11-27",
     "finalFlattenET": "12:45",
+    "finalFlattenLeadMin": 30,
     "holidays": ["2026-11-26"],
     "earlyClose": { "2026-11-27": "13:00" }
   },
