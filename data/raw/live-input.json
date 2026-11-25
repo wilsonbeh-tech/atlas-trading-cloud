@@ -1,7 +1,7 @@
 {
   "source": "mcp-agent",
-  "capturedAt": "2026-11-25T20:35:32.582Z",
-  "sessionNote": "Intraday cycle 2026-11-25 15:35 ET (EST), regular session. Account flat: today only order 3262666 QID SELL 62 filled at 72.31; cash 99145.31, total asset 99145.31. Broad tape weak after gap-down open and partial rebound: SPY -0.60% vs prev close, QQQ -1.21%, SMH -2.34%, NVDA -4.95%; inverse sleeve SQQQ +3.62%, QID +2.61%, SH +0.64%. No new entries after 2026-11-25 close.",
+  "capturedAt": "2026-11-25T20:45:47.391Z",
+  "sessionNote": "Intraday cycle 2026-11-25 15:45 ET (EST), regular session, 15 min to close. Account flat. Today: single order 3262666 QID SELL 62 @69 filled 72.31 at 09:30 ET (planned exit). Today-session plan executedAt 09:35 ET; its one SQQQ entry was rejected by no-chase (open gap above plan limit 48.73). No working orders. No new entries after 2026-11-25 close.",
   "account": {
     "account_id": "5830107",
     "account_title": "Moomoo x Qoder AI Paper Trading Agent Challenge",
@@ -27,14 +27,14 @@
   "quotes": [
     {
       "code": "US.SPY",
-      "name": "SPY",
-      "last_price": 714.49,
+      "name": "SPDR S&P 500 ETF",
+      "last_price": 715.11,
       "open_price": 703.02,
       "low_price": 695.45,
       "high_price": 718.43,
       "prev_close_price": 718.78,
       "data_date": "2026-11-25",
-      "data_time": 1795638918150,
+      "data_time": 1795639516662,
       "suspension": false,
       "pre_market": {
         "price": 702.99
@@ -42,14 +42,14 @@
     },
     {
       "code": "US.QQQ",
-      "name": "QQQ",
-      "last_price": 630.365,
+      "name": "Invesco QQQ Trust",
+      "last_price": 631.03,
       "open_price": 617.08,
       "low_price": 607.76,
       "high_price": 634.89,
       "prev_close_price": 638.1,
       "data_date": "2026-11-25",
-      "data_time": 1795638918382,
+      "data_time": 1795639515383,
       "suspension": false,
       "pre_market": {
         "price": 617.17
@@ -57,14 +57,14 @@
     },
     {
       "code": "US.IWM",
-      "name": "IWM",
-      "last_price": 268.3,
+      "name": "iShares Russell 2000 ETF",
+      "last_price": 268.28,
       "open_price": 263.26,
       "low_price": 260.84,
       "high_price": 269.77,
       "prev_close_price": 267.14,
       "data_date": "2026-11-25",
-      "data_time": 1795638918374,
+      "data_time": 1795639515821,
       "suspension": false,
       "pre_market": {
         "price": 263.28
@@ -72,14 +72,14 @@
     },
     {
       "code": "US.SMH",
-      "name": "SMH",
-      "last_price": 416.76,
+      "name": "VanEck Semiconductor ETF",
+      "last_price": 417.14,
       "open_price": 402.73,
       "low_price": 393.8801,
       "high_price": 421.49,
       "prev_close_price": 426.75,
       "data_date": "2026-11-25",
-      "data_time": 1795638918207,
+      "data_time": 1795639515382,
       "suspension": false,
       "pre_market": {
         "price": 402.62
@@ -87,14 +87,14 @@
     },
     {
       "code": "US.TLT",
-      "name": "TLT",
-      "last_price": 82.385,
+      "name": "iShares 20+ Year Treasury Bond ETF",
+      "last_price": 82.375,
       "open_price": 82.35,
       "low_price": 82.3117,
       "high_price": 82.81,
       "prev_close_price": 81.49,
       "data_date": "2026-11-25",
-      "data_time": 1795638912874,
+      "data_time": 1795639508083,
       "suspension": false,
       "pre_market": {
         "price": 82.37
@@ -102,14 +102,14 @@
     },
     {
       "code": "US.GLD",
-      "name": "GLD",
-      "last_price": 327.18,
+      "name": "SPDR Gold ETF",
+      "last_price": 327.21,
       "open_price": 318.235,
       "low_price": 313.96,
       "high_price": 328.68,
       "prev_close_price": 325.45,
       "data_date": "2026-11-25",
-      "data_time": 1795638917011,
+      "data_time": 1795639516868,
       "suspension": false,
       "pre_market": {
         "price": 318.2
@@ -117,14 +117,14 @@
     },
     {
       "code": "US.XLE",
-      "name": "XLE",
-      "last_price": 60.92,
+      "name": "Energy Select Sector SPDR",
+      "last_price": 60.945,
       "open_price": 59.9,
       "low_price": 59.635,
       "high_price": 61.285,
       "prev_close_price": 60.45,
       "data_date": "2026-11-25",
-      "data_time": 1795638913574,
+      "data_time": 1795639512359,
       "suspension": false,
       "pre_market": {
         "price": 59.88
@@ -132,14 +132,14 @@
     },
     {
       "code": "US.XLF",
-      "name": "XLF",
+      "name": "Financial Select Sector SPDR",
       "last_price": 56.5,
       "open_price": 55.48,
       "low_price": 55.335,
       "high_price": 56.705,
       "prev_close_price": 56.11,
       "data_date": "2026-11-25",
-      "data_time": 1795638918306,
+      "data_time": 1795639513311,
       "suspension": false,
       "pre_market": {
         "price": 55.49
@@ -147,14 +147,14 @@
     },
     {
       "code": "US.XLK",
-      "name": "XLK",
-      "last_price": 154.52,
+      "name": "Technology Select Sector SPDR",
+      "last_price": 154.67,
       "open_price": 150.89,
       "low_price": 148.39,
       "high_price": 155.79,
       "prev_close_price": 157.09,
       "data_date": "2026-11-25",
-      "data_time": 1795638918150,
+      "data_time": 1795639516355,
       "suspension": false,
       "pre_market": {
         "price": 150.81
@@ -162,14 +162,14 @@
     },
     {
       "code": "US.XLV",
-      "name": "XLV",
-      "last_price": 183.57,
+      "name": "Health Care Select Sector SPDR",
+      "last_price": 183.84,
       "open_price": 184.13,
       "low_price": 181.705,
       "high_price": 185.26,
       "prev_close_price": 184.72,
       "data_date": "2026-11-25",
-      "data_time": 1795638916982,
+      "data_time": 1795639516352,
       "suspension": false,
       "pre_market": {
         "price": 184.1
@@ -177,14 +177,14 @@
     },
     {
       "code": "US.XLY",
-      "name": "XLY",
-      "last_price": 117.475,
+      "name": "Consumer Discretionary SPDR",
+      "last_price": 117.5401,
       "open_price": 115.62,
       "low_price": 113.85,
       "high_price": 118.27,
       "prev_close_price": 117.72,
       "data_date": "2026-11-25",
-      "data_time": 1795638914491,
+      "data_time": 1795639514468,
       "suspension": false,
       "pre_market": {
         "price": 115.54
@@ -192,14 +192,14 @@
     },
     {
       "code": "US.XLU",
-      "name": "XLU",
-      "last_price": 43.59,
+      "name": "Utilities Select Sector SPDR",
+      "last_price": 43.64,
       "open_price": 43.34,
       "low_price": 43.28,
       "high_price": 43.755,
       "prev_close_price": 43.4,
       "data_date": "2026-11-25",
-      "data_time": 1795638909227,
+      "data_time": 1795639505150,
       "suspension": false,
       "pre_market": {
         "price": 43.29
@@ -207,14 +207,14 @@
     },
     {
       "code": "US.AAPL",
-      "name": "AAPL",
-      "last_price": 354.04,
+      "name": "Apple",
+      "last_price": 354.41,
       "open_price": 353.5,
       "low_price": 345.13,
       "high_price": 356.44,
       "prev_close_price": 354.07,
       "data_date": "2026-11-25",
-      "data_time": 1795638918217,
+      "data_time": 1795639516552,
       "suspension": false,
       "pre_market": {
         "price": 353.34
@@ -222,14 +222,14 @@
     },
     {
       "code": "US.MSFT",
-      "name": "MSFT",
-      "last_price": 489.19,
+      "name": "Microsoft",
+      "last_price": 489.29,
       "open_price": 485.92,
       "low_price": 477.39,
       "high_price": 493.437,
       "prev_close_price": 496.13,
       "data_date": "2026-11-25",
-      "data_time": 1795638918405,
+      "data_time": 1795639516971,
       "suspension": false,
       "pre_market": {
         "price": 485.54
@@ -237,14 +237,14 @@
     },
     {
       "code": "US.NVDA",
-      "name": "NVDA",
-      "last_price": 147.695,
+      "name": "NVIDIA",
+      "last_price": 147.71,
       "open_price": 144.13,
       "low_price": 141.17,
       "high_price": 148.83,
       "prev_close_price": 155.38,
       "data_date": "2026-11-25",
-      "data_time": 1795638918832,
+      "data_time": 1795639516941,
       "suspension": false,
       "pre_market": {
         "price": 144.97
@@ -252,14 +252,14 @@
     },
     {
       "code": "US.AMZN",
-      "name": "AMZN",
-      "last_price": 244.8501,
+      "name": "Amazon",
+      "last_price": 244.9826,
       "open_price": 243.03,
       "low_price": 235.96,
       "high_price": 246.55,
       "prev_close_price": 252.29,
       "data_date": "2026-11-25",
-      "data_time": 1795638918723,
+      "data_time": 1795639516799,
       "suspension": false,
       "pre_market": {
         "price": 243.13
@@ -267,14 +267,14 @@
     },
     {
       "code": "US.GOOGL",
-      "name": "GOOGL",
-      "last_price": 271.79,
+      "name": "Alphabet-A",
+      "last_price": 272.19,
       "open_price": 265,
       "low_price": 262.73,
       "high_price": 273.41,
       "prev_close_price": 279.05,
       "data_date": "2026-11-25",
-      "data_time": 1795638918523,
+      "data_time": 1795639517005,
       "suspension": false,
       "pre_market": {
         "price": 265.26
@@ -282,14 +282,14 @@
     },
     {
       "code": "US.META",
-      "name": "META",
-      "last_price": 603.59,
+      "name": "Meta Platforms",
+      "last_price": 604.95,
       "open_price": 574.95,
       "low_price": 567.75,
       "high_price": 608.415,
       "prev_close_price": 589.82,
       "data_date": "2026-11-25",
-      "data_time": 1795638918697,
+      "data_time": 1795639516902,
       "suspension": false,
       "pre_market": {
         "price": 575.1
@@ -297,14 +297,14 @@
     },
     {
       "code": "US.AVGO",
-      "name": "AVGO",
-      "last_price": 296.66,
+      "name": "Broadcom",
+      "last_price": 296.89,
       "open_price": 286.63,
       "low_price": 278,
       "high_price": 298.58,
       "prev_close_price": 301.08,
       "data_date": "2026-11-25",
-      "data_time": 1795638918292,
+      "data_time": 1795639516982,
       "suspension": false,
       "pre_market": {
         "price": 286.74
@@ -312,14 +312,14 @@
     },
     {
       "code": "US.JPM",
-      "name": "JPM",
-      "last_price": 316.5851,
+      "name": "JPMorgan",
+      "last_price": 316.56,
       "open_price": 310.82,
       "low_price": 309.538,
       "high_price": 318.34,
       "prev_close_price": 317.1,
       "data_date": "2026-11-25",
-      "data_time": 1795638912421,
+      "data_time": 1795639515910,
       "suspension": false,
       "pre_market": {
         "price": 310.53
@@ -327,14 +327,14 @@
     },
     {
       "code": "US.LLY",
-      "name": "LLY",
-      "last_price": 1394.58,
+      "name": "Eli Lilly and Co",
+      "last_price": 1398.01,
       "open_price": 1407.98,
       "low_price": 1370.76,
       "high_price": 1412.99,
       "prev_close_price": 1407.59,
       "data_date": "2026-11-25",
-      "data_time": 1795638918797,
+      "data_time": 1795639515558,
       "suspension": false,
       "pre_market": {
         "price": 1407.01
@@ -342,14 +342,14 @@
     },
     {
       "code": "US.V",
-      "name": "V",
-      "last_price": 425.29,
+      "name": "Visa",
+      "last_price": 425.82,
       "open_price": 414.75,
       "low_price": 413.475,
       "high_price": 426.26,
       "prev_close_price": 416.78,
       "data_date": "2026-11-25",
-      "data_time": 1795638918229,
+      "data_time": 1795639514530,
       "suspension": false,
       "pre_market": {
         "price": 415.86
@@ -357,14 +357,14 @@
     },
     {
       "code": "US.COST",
-      "name": "COST",
-      "last_price": 1088.23,
+      "name": "Costco",
+      "last_price": 1090.56,
       "open_price": 1093,
       "low_price": 1086.26,
       "high_price": 1098,
       "prev_close_price": 1091.71,
       "data_date": "2026-11-25",
-      "data_time": 1795638914695,
+      "data_time": 1795639508824,
       "suspension": false,
       "pre_market": {
         "price": 1092.9
@@ -372,14 +372,14 @@
     },
     {
       "code": "US.XOM",
-      "name": "XOM",
-      "last_price": 158.71,
+      "name": "Exxon Mobil",
+      "last_price": 158.775,
       "open_price": 157.8,
       "low_price": 156.8345,
       "high_price": 159.7,
       "prev_close_price": 158.23,
       "data_date": "2026-11-25",
-      "data_time": 1795638906790,
+      "data_time": 1795639516078,
       "suspension": false,
       "pre_market": {
         "price": 158.15
@@ -387,14 +387,14 @@
     },
     {
       "code": "US.SH",
-      "name": "SH",
-      "last_price": 34.67,
+      "name": "Short S&P 500 Proshares",
+      "last_price": 34.645,
       "open_price": 35.255,
       "low_price": 34.48,
       "high_price": 35.58,
       "prev_close_price": 34.45,
       "data_date": "2026-11-25",
-      "data_time": 1795638918641,
+      "data_time": 1795639511867,
       "suspension": false,
       "pre_market": {
         "price": 35.22
@@ -402,14 +402,14 @@
     },
     {
       "code": "US.SQQQ",
-      "name": "SQQQ",
-      "last_price": 50.42,
+      "name": "ProShares UltraPro Short QQQ",
+      "last_price": 50.275,
       "open_price": 53.48,
       "low_price": 49.402,
       "high_price": 55.6199,
       "prev_close_price": 48.66,
       "data_date": "2026-11-25",
-      "data_time": 1795638918386,
+      "data_time": 1795639516203,
       "suspension": false,
       "pre_market": {
         "price": 53.46
@@ -417,14 +417,14 @@
     },
     {
       "code": "US.QID",
-      "name": "QID",
-      "last_price": 69.56,
+      "name": "ProShares UltraShort QQQ",
+      "last_price": 69.36,
       "open_price": 72.31,
       "low_price": 68.57,
       "high_price": 74.26,
       "prev_close_price": 67.79,
       "data_date": "2026-11-25",
-      "data_time": 1795638902677,
+      "data_time": 1795639509815,
       "suspension": false,
       "pre_market": {
         "price": 72.2
@@ -437,14 +437,13 @@
     {
       "order_id": "3262666",
       "symbol": "US.QID",
-      "side": 2,
-      "side_name": "SELL",
-      "qty": "62",
-      "price": "69",
-      "avg_fill_price": "72.31",
-      "order_type": 1,
-      "status": 4,
-      "filled_at": "2026-11-25T16:43:04Z"
+      "side": "SELL",
+      "qty": 62,
+      "limit_price": 69,
+      "avg_fill_price": 72.31,
+      "status": "FILLED",
+      "create_time": 1795604184000000,
+      "update_time": 1795617003000000
     }
   ],
   "orders_today": 1
