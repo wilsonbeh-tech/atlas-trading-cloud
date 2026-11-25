@@ -228,6 +228,12 @@ const orders = [];
 const rejected = [];
 const ordersToday = num(live.orders_today);
 const orderBudget = Math.max(0, cfg.risk.maxOrdersPerDay - ordersToday);
+// live.open_orders holds working (status 2) orders only. A second sell while one is working
+// cannot fill (shares are reserved) and only produces a broker rejection, so skip the symbol.
+const normSym = (s) => `US.${String(s ?? '').replace(/^US\./, '')}`;
+const workingSells = new Set((live.open_orders ?? [])
+  .filter((o) => Number(o?.side ?? o?.order_side) === 2)
+  .map((o) => normSym(o.symbol)));
 
 function sellQty(rec, mode) {
   if (mode === 'half') return Math.floor(rec.qty / 2);
@@ -238,10 +244,13 @@ function buildSell(rec, reason, kind) {
   const q = quotes[rec.symbol];
   const last = q?.last;
   if (!q || !(last > 0)) { rejected.push({ symbol: rec.symbol, side: 'SELL', reason: 'no valid quote' }); return; }
+  const offset = kind === 'final'
+    ? Math.min(cfg.risk.maxLimitDeviationPct, cfg.risk.finalFlattenSellOffsetPct ?? 0.01)
+    : cfg.risk.sellOffset;
   let ref = last;
   if (kind === 'stop') ref = Math.min(last, rec.stop);
-  let limit = r2(ref * (1 - cfg.risk.sellOffset));
-  if (limit < last * (1 - cfg.risk.maxLimitDeviationPct)) limit = r2(last * (1 - cfg.risk.sellOffset));
+  let limit = r2(ref * (1 - offset));
+  if (limit < last * (1 - cfg.risk.maxLimitDeviationPct)) limit = r2(last * (1 - offset));
   const qty = sellQty(rec, kind === 'half' ? 'half' : 'all');
   if (qty < 1) return;
   orders.push({ symbol: rec.symbol, side: 'SELL', qty, limitPrice: limit, stop: rec.stop, reason });
@@ -250,7 +259,8 @@ function buildSell(rec, reason, kind) {
 if (MODE === 'intraday' && isOpen()) {
   for (const rec of Object.values(cstate.positions)) {
     const q = quotes[rec.symbol];
-    if (flatten) { buildSell(rec, `risk flatten: ${riskReasons.join('; ') || 'kill active'}`, 'flat'); continue; }
+    if (workingSells.has(rec.symbol)) { log({ action: 'EXIT_ALREADY_WORKING', symbol: rec.symbol, qty: rec.qty }); continue; }
+    if (flatten) { buildSell(rec, `risk flatten: ${riskReasons.join('; ') || 'kill active'}`, finalFlatten ? 'final' : 'flat'); continue; }
     const planned = plan?.forSession === today && (plan.outgoing ?? []).find((o) => o.symbol === rec.symbol);
     const m = market[rec.symbol];
     const sessionLow = q && q.dataDate === today ? q.low : null;

@@ -57,6 +57,7 @@
     "maxLimitDeviationPct": 0.03,
     "buyOffset": 0.0015,
     "sellOffset": 0.0015,
+    "finalFlattenSellOffsetPct": 0.01,
     "noChasePct": 0.01
   },
   "exits": {
