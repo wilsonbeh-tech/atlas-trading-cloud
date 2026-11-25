@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-24T21:07:06.833Z",
-  "mode": "eod",
-  "today": "2026-11-24",
-  "etTime": "16:07",
-  "marketOpen": false,
-  "equity": 98880.334,
-  "dayPnlPct": -0.04,
-  "drawdownPct": -1.75,
+  "generatedAt": "2026-11-25T14:35:47.135Z",
+  "mode": "intraday",
+  "today": "2026-11-25",
+  "etTime": "09:35",
+  "marketOpen": true,
+  "equity": 99145.314,
+  "dayPnlPct": 0,
+  "drawdownPct": -1.49,
   "risk": {
     "flatten": false,
     "deRisk": false,
@@ -14,25 +14,22 @@
     "killUntil": null,
     "reasons": []
   },
-  "positions": [
-    {
-      "symbol": "US.QID",
-      "qty": 62,
-      "entryDate": "2026-11-23",
-      "stop": 63.55,
-      "peakClose": 75.39,
-      "sessionsHeld": 2
-    }
-  ],
+  "positions": [],
   "plan": {
-    "forSession": "2026-11-24",
-    "executedAt": "2026-11-24T14:36:02.547Z",
+    "forSession": "2026-11-25",
+    "executedAt": "2026-11-25T14:35:47.135Z",
     "picks": 1,
     "outgoing": 0
   },
-  "ordersToday": 0,
-  "orderBudget": 12,
+  "ordersToday": 1,
+  "orderBudget": 11,
   "orders": [],
-  "rejected": [],
-  "nextSession": "2026-11-25"
+  "rejected": [
+    {
+      "symbol": "US.SQQQ",
+      "side": "BUY",
+      "reason": "no chase: 54.61 > 48.73 +1%"
+    }
+  ],
+  "nextSession": null
 }

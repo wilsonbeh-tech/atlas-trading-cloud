@@ -1,22 +1,9 @@
 {
-  "positions": {
-    "US.QID": {
-      "symbol": "US.QID",
-      "entryDate": "2026-11-23",
-      "entryPrice": 66.26,
-      "initialStop": 63.55,
-      "stop": 63.55,
-      "peakClose": 75.39,
-      "sessionsHeld": 2,
-      "lastBarDate": "2026-11-24",
-      "qty": 62,
-      "updatedAt": "2026-11-24T21:07:06.833Z"
-    }
-  },
+  "positions": {},
   "killUntil": null,
   "peakEquity": 100643.181,
   "dayStart": {
-    "date": "2026-11-24",
-    "equity": 98916.604
+    "date": "2026-11-25",
+    "equity": 99145.314
   }
 }
