@@ -6298,6 +6298,8 @@
       "name": "Financial Select Sector SPDR Fund",
       "open_price": 55.57,
       "pe": 0,
+      "sc_name": "金融行业ETF-SPDR",
+      "tc_name": "金融行業ETF-SPDR",
       "time_key": 1795410000000,
       "turnover": 3281438101,
       "turnover_rate": 0.06413,
@@ -6314,10 +6316,30 @@
       "name": "Financial Select Sector SPDR Fund",
       "open_price": 55.51,
       "pe": 0,
+      "sc_name": "金融行业ETF-SPDR",
+      "tc_name": "金融行業ETF-SPDR",
       "time_key": 1795496400000,
-      "turnover": 2212441177.817,
-      "turnover_rate": 0.04301,
-      "volume": 39531480
+      "turnover": 2226764480,
+      "turnover_rate": 0.04286,
+      "volume": 39781170
+    },
+    {
+      "change_rate": 0.6950632685795759,
+      "close_price": 56.5,
+      "code": "US.XLF",
+      "date": 20261125,
+      "high_price": 56.705,
+      "last_close_price": 56.11,
+      "low_price": 55.33,
+      "name": "Financial Select Sector SPDR Fund",
+      "open_price": 55.5,
+      "pe": 0,
+      "sc_name": "金融行业ETF-SPDR",
+      "tc_name": "金融行業ETF-SPDR",
+      "time_key": 1795582800000,
+      "turnover": 2147363684.789,
+      "turnover_rate": 0.04123,
+      "volume": 38271260
     }
   ]
 }

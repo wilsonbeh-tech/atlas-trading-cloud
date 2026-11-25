@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-25T20:45:49.721Z",
-  "mode": "intraday",
+  "generatedAt": "2026-11-25T21:07:07.256Z",
+  "mode": "eod",
   "today": "2026-11-25",
-  "etTime": "15:45",
-  "marketOpen": true,
+  "etTime": "16:07",
+  "marketOpen": false,
   "equity": 99145.314,
   "dayPnlPct": 0,
   "drawdownPct": -1.49,
@@ -25,5 +25,5 @@
   "orderBudget": 11,
   "orders": [],
   "rejected": [],
-  "nextSession": null
+  "nextSession": "2026-11-27"
 }

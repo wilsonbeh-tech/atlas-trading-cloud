@@ -6669,6 +6669,8 @@
       "name": "Broadcom",
       "open_price": 320.86,
       "pe": 65.733,
+      "sc_name": "博通",
+      "tc_name": "博通",
       "time_key": 1795410000000,
       "turnover": 12827773506,
       "turnover_rate": 0.00889,
@@ -6685,10 +6687,30 @@
       "name": "Broadcom",
       "open_price": 301.29,
       "pe": 63.119,
+      "sc_name": "博通",
+      "tc_name": "博通",
       "time_key": 1795496400000,
-      "turnover": 9011549421.648,
-      "turnover_rate": 0.00646,
-      "volume": 29874510
+      "turnover": 9437341100,
+      "turnover_rate": 0.00677,
+      "volume": 31269923
+    },
+    {
+      "change_rate": -0.07307028032416633,
+      "close_price": 300.86,
+      "code": "US.AVGO",
+      "date": 20261125,
+      "high_price": 301.27,
+      "last_close_price": 301.08,
+      "low_price": 278,
+      "name": "Broadcom",
+      "open_price": 286.98,
+      "pe": 63.073,
+      "sc_name": "博通",
+      "tc_name": "博通",
+      "time_key": 1795582800000,
+      "turnover": 9582157935.647,
+      "turnover_rate": 0.00707,
+      "volume": 32668275
     }
   ]
 }

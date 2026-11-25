@@ -6297,6 +6297,8 @@
       "name": "ProShares UltraShort QQQ",
       "open_price": 64.1,
       "pe": 0,
+      "sc_name": "ProShares两倍做空纳斯达克指数ETF",
+      "tc_name": "ProShares兩倍做空納斯達克指數ETF",
       "time_key": 1795410000000,
       "turnover": 329525482,
       "turnover_rate": 1.46209,
@@ -6313,10 +6315,30 @@
       "name": "ProShares UltraShort QQQ",
       "open_price": 67.49,
       "pe": 0,
+      "sc_name": "ProShares两倍做空纳斯达克指数ETF",
+      "tc_name": "ProShares兩倍做空納斯達克指數ETF",
       "time_key": 1795496400000,
-      "turnover": 241938631.027,
-      "turnover_rate": 1.03962,
-      "volume": 3560416
+      "turnover": 244918411,
+      "turnover_rate": 1.02414,
+      "volume": 3609799
+    },
+    {
+      "change_rate": 1.37188375866647,
+      "close_price": 68.72,
+      "code": "US.QID",
+      "date": 20261125,
+      "high_price": 74.26,
+      "last_close_price": 67.79,
+      "low_price": 68.53,
+      "name": "ProShares UltraShort QQQ",
+      "open_price": 72.31,
+      "pe": 0,
+      "sc_name": "ProShares两倍做空纳斯达克指数ETF",
+      "tc_name": "ProShares兩倍做空納斯達克指數ETF",
+      "time_key": 1795582800000,
+      "turnover": 406139992.677,
+      "turnover_rate": 1.61577,
+      "volume": 5695138
     }
   ]
 }

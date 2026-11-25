@@ -6669,6 +6669,8 @@
       "name": "Eli Lilly and Co",
       "open_price": 1345.11,
       "pe": 59.459,
+      "sc_name": "礼来",
+      "tc_name": "禮來",
       "time_key": 1795410000000,
       "turnover": 4005534447,
       "turnover_rate": 0.00313,
@@ -6685,10 +6687,30 @@
       "name": "Eli Lilly and Co",
       "open_price": 1370.225,
       "pe": 61.332,
+      "sc_name": "礼来",
+      "tc_name": "禮來",
       "time_key": 1795496400000,
-      "turnover": 4152555802.97,
-      "turnover_rate": 0.00314,
-      "volume": 2950547
+      "turnover": 4337027285.025,
+      "turnover_rate": 0.00329,
+      "volume": 3082985
+    },
+    {
+      "change_rate": -1.091937282873564,
+      "close_price": 1392.22,
+      "code": "US.LLY",
+      "date": 20261125,
+      "high_price": 1412.99,
+      "last_close_price": 1407.59,
+      "low_price": 1370.76,
+      "name": "Eli Lilly and Co",
+      "open_price": 1405,
+      "pe": 60.663,
+      "sc_name": "礼来",
+      "tc_name": "禮來",
+      "time_key": 1795582800000,
+      "turnover": 3896313324.611,
+      "turnover_rate": 0.00298,
+      "volume": 2801116
     }
   ]
 }
