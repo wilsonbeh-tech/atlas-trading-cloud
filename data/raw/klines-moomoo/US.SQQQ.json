@@ -6327,8 +6327,8 @@
       "volume": 66571645
     },
     {
-      "change_rate": 1.8865598027127002,
-      "close_price": 49.578,
+      "change_rate": 1.9317714755445952,
+      "close_price": 49.6,
       "code": "US.SQQQ",
       "date": 20261125,
       "high_price": 55.6199,
@@ -6340,9 +6340,27 @@
       "sc_name": "三倍做空纳指ETF-ProShares",
       "tc_name": "三倍做空納指ETF-ProShares",
       "time_key": 1795582800000,
-      "turnover": 4796685193.754,
-      "turnover_rate": 2.65512,
-      "volume": 90941000
+      "turnover": 4879208561,
+      "turnover_rate": 2.55078,
+      "volume": 92596376
+    },
+    {
+      "change_rate": -7.741935483870968,
+      "close_price": 45.76,
+      "code": "US.SQQQ",
+      "date": 20261127,
+      "high_price": 49.03,
+      "last_close_price": 49.6,
+      "low_price": 45.61,
+      "name": "ProShares UltraPro Short QQQ ETF",
+      "open_price": 46.93,
+      "pe": 0,
+      "sc_name": "三倍做空纳指ETF-ProShares",
+      "tc_name": "三倍做空納指ETF-ProShares",
+      "time_key": 1795755600000,
+      "turnover": 1950367419.832,
+      "turnover_rate": 1.13854,
+      "volume": 41330253
     }
   ]
 }

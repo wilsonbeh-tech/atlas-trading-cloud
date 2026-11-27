@@ -6331,9 +6331,27 @@
       "sc_name": "Proshares做空标普500",
       "tc_name": "Proshares做空標普500",
       "time_key": 1795582800000,
-      "turnover": 359939429.023,
-      "turnover_rate": 0.33063,
-      "volume": 10295262
+      "turnover": 361075450,
+      "turnover_rate": 0.3542,
+      "volume": 10329556
+    },
+    {
+      "change_rate": -1.5914351851851853,
+      "close_price": 34.01,
+      "code": "US.SH",
+      "date": 20261127,
+      "high_price": 34.45,
+      "last_close_price": 34.56,
+      "low_price": 33.99,
+      "name": "Short S&P 500 Proshares",
+      "open_price": 34.15,
+      "pe": 0,
+      "sc_name": "Proshares做空标普500",
+      "tc_name": "Proshares做空標普500",
+      "time_key": 1795755600000,
+      "turnover": 229362533.891,
+      "turnover_rate": 0.23004,
+      "volume": 6708748
     }
   ]
 }

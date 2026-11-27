@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-25T21:07:07.256Z",
+  "generatedAt": "2026-11-27T21:06:30.164Z",
   "strategy": "Atlas Trend SuperTrend(10,3) + bear sleeve",
   "version": "1.1.0",
   "spec": "docs/STRATEGY_SPEC.md",
   "mode": "eod",
-  "forSession": "2026-11-27",
+  "forSession": "2026-11-30",
   "equity": 99145.314,
   "orders": [],
   "outgoing": [],
@@ -13,9 +13,9 @@
     "breadthUp": 10,
     "breadthTotal": 27,
     "spy": {
-      "close": 716.7,
+      "close": 728.32,
       "superTrend": "DOWN",
-      "barsSinceFlip": 18
+      "barsSinceFlip": 19
     },
     "bearRegime": true,
     "inverseSleeve": true
