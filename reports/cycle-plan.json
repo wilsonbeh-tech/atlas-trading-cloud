@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-25T21:07:07.256Z",
-  "mode": "eod",
-  "today": "2026-11-25",
-  "etTime": "16:07",
-  "marketOpen": false,
+  "generatedAt": "2026-11-27T14:35:40.788Z",
+  "mode": "intraday",
+  "today": "2026-11-27",
+  "etTime": "09:35",
+  "marketOpen": true,
   "equity": 99145.314,
   "dayPnlPct": 0,
   "drawdownPct": -1.49,
@@ -16,14 +16,14 @@
   },
   "positions": [],
   "plan": {
-    "forSession": "2026-11-25",
-    "executedAt": "2026-11-25T14:35:47.135Z",
-    "picks": 1,
+    "forSession": "2026-11-27",
+    "executedAt": null,
+    "picks": 0,
     "outgoing": 0
   },
-  "ordersToday": 1,
-  "orderBudget": 11,
+  "ordersToday": 0,
+  "orderBudget": 12,
   "orders": [],
   "rejected": [],
-  "nextSession": "2026-11-27"
+  "nextSession": null
 }
