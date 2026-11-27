@@ -1,18 +1,20 @@
 {
-  "generatedAt": "2026-11-27T16:45:40.088Z",
+  "generatedAt": "2026-11-27T17:35:54.262Z",
   "mode": "intraday",
   "today": "2026-11-27",
-  "etTime": "11:45",
+  "etTime": "12:35",
   "marketOpen": true,
   "equity": 99145.314,
   "dayPnlPct": 0,
   "drawdownPct": -1.49,
   "risk": {
-    "flatten": false,
+    "flatten": true,
     "deRisk": false,
     "killActive": false,
     "killUntil": null,
-    "reasons": []
+    "reasons": [
+      "final session flatten window"
+    ]
   },
   "positions": [],
   "plan": {
